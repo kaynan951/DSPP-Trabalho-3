@@ -4,14 +4,18 @@ services:
 
   mongo:
     image: mongo
-    restart: always
+    restart: unless-stop
+    ports:
+      - 27017:27017
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: example
+    networks:
+      - mongo_network
 
   mongo-express:
     image: mongo-express
-    restart: always
+    restart: unless-stop
     ports:
       - 8081:8081
     environment:
@@ -19,3 +23,9 @@ services:
       ME_CONFIG_MONGODB_ADMINPASSWORD: example
       ME_CONFIG_MONGODB_URL: mongodb://root:example@mongo:27017/
       ME_CONFIG_BASICAUTH: false
+    networks:
+      - mongo_network
+
+networks:
+  mongo_network:
+    driver: bridge
