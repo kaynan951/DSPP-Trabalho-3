@@ -1,7 +1,13 @@
-from .client import Client
-from .mesa import Mesa
-from .comanda import Comanda
-from .prato import Prato
-from .ingrediente import Ingrediente
+from .client import Cliente, ClienteCreate, ClienteUpdate
+from .mesa import Mesa, MesaCreate, MesaUpdate
+from .comanda import Comanda, ComandaCreate, ComandaUpdate
+from .prato import Prato, PratoCreate, PratoUpdate
+from .ingrediente import Ingrediente, IngredienteCreate, IngredienteUpdate
 
-__all__ = ["Client","Mesa","Comanda","Prato","Ingrediente"]
+__all__ = [
+    "Cliente", "ClienteCreate", "ClienteUpdate",
+    "Mesa", "MesaCreate", "MesaUpdate",
+    "Comanda", "ComandaCreate", "ComandaUpdate",
+    "Prato", "PratoCreate", "PratoUpdate",
+    "Ingrediente", "IngredienteCreate", "IngredienteUpdate"
+]
