@@ -9,6 +9,7 @@ class Ingrediente(BaseModel):
     preco_unitario: float = Field(ge=0)
     data_validade: Optional[datetime] = Field(None)
     
+    
 class IngredienteCreate(Ingrediente):
     pass
 
