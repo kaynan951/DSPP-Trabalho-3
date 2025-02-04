@@ -33,4 +33,4 @@ networks:
     driver: bridge
 
 volumes:
-  mongo_data:  # Named volume to persist data
+  mongo_data:  

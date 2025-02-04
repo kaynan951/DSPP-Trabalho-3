@@ -3,7 +3,7 @@ from typing import Optional
 from app.models import *
 
 class Cliente(BaseModel):
-    id: str = Field(default=None, alias="_id")
+    id: Optional[str] = Field(default=None, alias="_id")
     nome: str = Field(min_length=2)
     telefone: str = Field(min_length=10)
     email: Optional[str] = Field(default=None)

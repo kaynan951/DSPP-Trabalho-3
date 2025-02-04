@@ -4,7 +4,7 @@ from datetime import datetime
 from app.models import *
 
 class Comanda(BaseModel):
-    id: str = Field(None, alias="_id")
+    id: Optional[str] = Field(None, alias="_id")
     id_cliente : str 
     data_abertura: datetime = Field(default_factory=datetime.now)
     data_fechamento: Optional[datetime] = Field(None)

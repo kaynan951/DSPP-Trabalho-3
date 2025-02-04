@@ -2,7 +2,7 @@ from typing import Optional,List
 from pydantic import BaseModel,Field
 from app.models import *
 class Mesa(BaseModel):
-    id: str = Field(None, alias="_id")
+    id: Optional[str] = Field(None, alias="_id")
     numero: int = Field(ge=1)
     capacidade: int = Field(ge=1)
     localizacao: str = Field(min_length=3)
