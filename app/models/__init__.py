@@ -11,3 +11,20 @@ __all__ = [
     "Prato", "PratoCreate", "PratoUpdate",
     "Ingrediente", "IngredienteCreate", "IngredienteUpdate"
 ]
+
+
+Cliente.model_rebuild()
+ClienteCreate.model_rebuild()
+ClienteUpdate.model_rebuild()
+Mesa.model_rebuild()
+MesaCreate.model_rebuild()
+MesaUpdate.model_rebuild()
+Comanda.model_rebuild()
+ComandaCreate.model_rebuild()
+ComandaUpdate.model_rebuild()
+Prato.model_rebuild()
+PratoCreate.model_rebuild()
+PratoUpdate.model_rebuild()
+Ingrediente.model_rebuild()
+IngredienteCreate.model_rebuild()
+IngredienteUpdate.model_rebuild()

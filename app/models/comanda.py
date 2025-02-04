@@ -10,7 +10,7 @@ class Comanda(BaseModel):
     data_fechamento: Optional[datetime] = Field(None)
     status: str = Field(default='aberta')
     valor_total: float = Field(default=0.0, ge=0)
-    pratos_ids: Optional[List[Prato]] = Field(default=[])
+    pratos_ids: Optional[List["Prato"]] = Field(default_factory=list)
     
     
 class ComandaCreate(Comanda):

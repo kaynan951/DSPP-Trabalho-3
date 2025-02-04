@@ -1,5 +1,5 @@
 from .config import settings
-from .database import get_db,engine
+from .database import db
 from .logging_config import setup_logging
 
-__all__ = ["settings","get_db","engine","setup_logging"]
+__all__ = ["settings","db","setup_logging"]
