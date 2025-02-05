@@ -8,7 +8,6 @@ class Cliente(BaseModel):
     telefone: str = Field(min_length=10)
     email: Optional[str] = Field(default=None)
     cpf: Optional[str] = Field(min_length=11,max_length=11)
-    comanda : Optional["Comanda"] = Field(None)
     id_mesa : str = Field(default=None)
 
 
