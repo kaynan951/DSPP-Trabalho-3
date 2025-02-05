@@ -3,7 +3,7 @@ import os
 load_dotenv()
 
 class Settings:
-    DATABASE_URL: str = os.getenv("DATABASE_URL")
+    DATABASE_URI: str = os.getenv("DATABASE_URI")
 
 settings = Settings()
 

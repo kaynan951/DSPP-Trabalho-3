@@ -1,5 +1,5 @@
 from app.models import *
-from config import *
+from app.config import *
 from typing import Optional, Dict, Any, List
 class IngredienteController:
     @staticmethod

@@ -28,5 +28,5 @@ async def update_mesa(mesa_id: str, mesa_data: MesaUpdate):
     return await MesaController.update_mesa(mesa_id, mesa_data)
 
 @router_mesa.delete("/{mesa_id}", status_code=204)
-def delete_mesa(mesa_id: str):
-    return {"ok": MesaController.delete_mesa(mesa_id)}
+async def delete_mesa(mesa_id: str):
+    return {"ok": await MesaController.delete_mesa(mesa_id)}

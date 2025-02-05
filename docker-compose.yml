@@ -1,10 +1,10 @@
-# code from docker hub: https://hub.docker.com/_/mongo
+# # code from docker hub: https://hub.docker.com/_/mongo
 
 services:
 
   mongo:
     image: mongo
-    restart: unless-stop
+    restart: unless-stopped
     ports:
       - 27017:27017
     environment:
@@ -12,10 +12,12 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: example
     networks:
       - mongo_network
+    volumes:
+      - mongo_data:/data/db
 
   mongo-express:
     image: mongo-express
-    restart: unless-stop
+    restart: unless-stopped
     ports:
       - 8081:8081
     environment:
@@ -29,3 +31,6 @@ services:
 networks:
   mongo_network:
     driver: bridge
+
+volumes:
+  mongo_data:  
