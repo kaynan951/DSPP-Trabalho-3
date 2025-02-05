@@ -17,5 +17,4 @@ class MesaUpdate(Mesa):
     capacidade: Optional[int]  
     localizacao: Optional[str]  
     status: Optional[str]
-    clientes: Optional[List["Cliente"]] 
     

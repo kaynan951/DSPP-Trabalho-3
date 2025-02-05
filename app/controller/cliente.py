@@ -5,9 +5,7 @@ from typing import Optional,Dict,Any
 class ClienteController:
     @staticmethod
     async def create_cliente(cliente : ClienteCreate) ->Cliente :
-        cliente_json = cliente.model_dump(exclude="_id")
-        novo_cliente = await db.cliente.insert_one(cliente_json)
-        print(novo_cliente)
+        pass
 
     @staticmethod
     async def list_clientes(
