@@ -2,7 +2,7 @@ from app.models import *
 from app.config import *
 from typing import Optional,Dict,Any
 from fastapi import HTTPException
-from bson import ObjectId
+from bson import ObjectId,InvalidId
 
 class ClienteController:
     @staticmethod
@@ -73,24 +73,147 @@ class ClienteController:
         email: Optional[str] = None,
         cpf: Optional[str] = None,
     ) -> Dict[str, Any]:
-        pass
-    
+        """Lista clientes com paginação e filtros."""
+        logger.debug(
+            f"Listando clientes - página: {page}, limite: {limit}, nome: {nome}, email: {email}, cpf: {cpf}"
+        )
+        try:
+            skip = (page - 1) * limit  # Calcula quantos documentos pular
+            query = {}  # Query inicial vazia
+
+            # Adiciona filtros se forem fornecidos
+            if nome:
+                query["nome"] = {"$regex": nome, "$options": "i"}  # Case-insensitive search
+            if email:
+                query["email"] = {"$regex": email, "$options": "i"}
+            if cpf:
+                query["cpf"] = cpf
+
+            # Busca os clientes com paginação
+            clientes = (
+                await db.clientes.find(query)
+                .skip(skip)
+                .limit(limit)
+                .to_list(length=limit)
+            )
+            total_clientes = await db.clientes.count_documents(query)  # Total de clientes (sem paginação)
+
+            # Converte _id para string e cria objetos Cliente
+            clientes_list = []
+            for cliente in clientes:
+                cliente["_id"] = str(cliente["_id"])
+                clientes_list.append(Cliente(**cliente))
+
+            logger.info(
+                f"Listagem de clientes retornou {len(clientes_list)} clientes (total: {total_clientes})"
+            )
+
+            return {
+                "page": page,
+                "limit": limit,
+                "total": total_clientes,
+                "clientes": clientes_list,
+            }
+        except Exception as e:
+            logger.exception(f"Erro ao listar clientes: {e}")
+            raise HTTPException(
+                status_code=500, detail="Erro interno ao listar clientes."
+            )
+
     @staticmethod
     async def get_cliente(cliente_id: str) -> Cliente:
-        pass
-        
+        """Busca um cliente pelo ID."""
+        logger.debug(f"Buscando cliente com ID: {cliente_id}")
+        try:
+            cliente = await db.clientes.find_one({"_id": ObjectId(cliente_id)})
+            if not cliente:
+                logger.warning(f"Cliente não encontrado com ID: {cliente_id}")
+                raise HTTPException(status_code=404, detail="Cliente não encontrado.")
+
+            cliente["_id"] = str(cliente["_id"])  # Converte _id para string
+            logger.info(f"Cliente {cliente_id} encontrado com sucesso.")
+            return Cliente(**cliente)
+        except InvalidId:
+            logger.warning(f"ID de cliente inválido: {cliente_id}")
+            raise HTTPException(status_code=400, detail="ID de cliente inválido.")
+        except Exception as e:
+            logger.exception(f"Erro ao buscar cliente com ID {cliente_id}: {e}")
+            raise HTTPException(
+                status_code=500, detail="Erro interno ao buscar cliente."
+            )
+
     @staticmethod
     async def update_cliente(cliente_id: str, cliente_data: ClienteUpdate) -> Cliente:
-       pass
+        """Atualiza um cliente."""
+        logger.debug(f"Atualizando cliente com ID: {cliente_id}, dados: {cliente_data}")
+        try:
+            # Converte o model para um dict, excluindo campos que não foram enviados
+            update_data = cliente_data.model_dump(exclude_unset=True)
+
+            # Garante que não está tentando atualizar o _id
+            if "_id" in update_data:
+                del update_data["_id"]
+
+            # Atualiza o cliente no banco de dados
+            result = await db.clientes.update_one(
+                {"_id": ObjectId(cliente_id)}, {"$set": update_data}
+            )
+
+            if result.modified_count == 0:
+                logger.warning(f"Cliente não encontrado ou dados iguais: {cliente_id}")
+                raise HTTPException(
+                    status_code=404, detail="Cliente não encontrado ou dados iguais."
+                )
+
+            # Busca o cliente atualizado
+            cliente = await db.clientes.find_one({"_id": ObjectId(cliente_id)})
+            cliente["_id"] = str(cliente["_id"])
+
+            logger.info(f"Cliente {cliente_id} atualizado com sucesso.")
+            return Cliente(**cliente)
+
+        except InvalidId:
+            logger.warning(f"ID de cliente inválido: {cliente_id}")
+            raise HTTPException(status_code=400, detail="ID de cliente inválido.")
+        except Exception as e:
+            logger.exception(f"Erro ao atualizar cliente com ID {cliente_id}: {e}")
+            raise HTTPException(
+                status_code=500, detail="Erro interno ao atualizar cliente."
+            )
 
     @staticmethod
     async def delete_cliente(cliente_id: str) -> bool:
-        pass
+        """Deleta um cliente."""
+        logger.debug(f"Deletando cliente com ID: {cliente_id}")
+        try:
+            result = await db.clientes.delete_one({"_id": ObjectId(cliente_id)})
+            if result.deleted_count == 0:
+                logger.warning(f"Cliente não encontrado: {cliente_id}")
+                raise HTTPException(status_code=404, detail="Cliente não encontrado.")
+
+            logger.info(f"Cliente {cliente_id} deletado com sucesso.")
+            return True  # Indica que a deleção foi bem-sucedida
+        except InvalidId:
+            logger.warning(f"ID de cliente inválido: {cliente_id}")
+            raise HTTPException(status_code=400, detail="ID de cliente inválido.")
+        except Exception as e:
+            logger.exception(f"Erro ao deletar cliente com ID {cliente_id}: {e}")
+            raise HTTPException(
+                status_code=500, detail="Erro interno ao deletar cliente."
+            )
 
     @staticmethod
     async def num_cliente() -> Dict[str, int]:
-       pass
-        
-    
+        """Retorna o número total de clientes."""
+        logger.debug("Contando o número total de clientes.")
+        try:
+            total_clientes = await db.clientes.count_documents({})
+            logger.info(f"Número total de clientes: {total_clientes}")
+            return {"total": total_clientes}
+        except Exception as e:
+            logger.exception(f"Erro ao contar clientes: {e}")
+            raise HTTPException(
+                status_code=500, detail="Erro interno ao contar clientes."
+            )
        
 
