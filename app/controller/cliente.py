@@ -1,8 +1,10 @@
 from app.models import *
 from app.config import *
-from typing import Optional,Dict,Any
+from typing import Optional, Dict, Any
 from fastapi import HTTPException
-from bson import ObjectId,InvalidId
+from bson import ObjectId
+
+#python -m uvicorn main:app --reload
 
 class ClienteController:
     @staticmethod
@@ -109,10 +111,13 @@ class ClienteController:
             )
 
             return {
-                "page": page,
-                "limit": limit,
-                "total": total_clientes,
                 "clientes": clientes_list,
+                "pagination": {
+                    "total": total_clientes,
+                    "currentPage": page,
+                    "totalPages": -(-total_clientes // limit),
+                    "totalItemsPerPage": limit,
+                },
             }
         except Exception as e:
             logger.exception(f"Erro ao listar clientes: {e}")
@@ -125,7 +130,13 @@ class ClienteController:
         """Busca um cliente pelo ID."""
         logger.debug(f"Buscando cliente com ID: {cliente_id}")
         try:
-            cliente = await db.clientes.find_one({"_id": ObjectId(cliente_id)})
+            try:
+                object_id = ObjectId(cliente_id)  # Tenta criar o ObjectId
+            except Exception:
+                logger.warning(f"ID de cliente inválido: {cliente_id}")
+                raise HTTPException(status_code=400, detail="ID de cliente inválido.")
+
+            cliente = await db.clientes.find_one({"_id": object_id})
             if not cliente:
                 logger.warning(f"Cliente não encontrado com ID: {cliente_id}")
                 raise HTTPException(status_code=404, detail="Cliente não encontrado.")
@@ -133,10 +144,10 @@ class ClienteController:
             cliente["_id"] = str(cliente["_id"])  # Converte _id para string
             logger.info(f"Cliente {cliente_id} encontrado com sucesso.")
             return Cliente(**cliente)
-        except InvalidId:
-            logger.warning(f"ID de cliente inválido: {cliente_id}")
-            raise HTTPException(status_code=400, detail="ID de cliente inválido.")
-        except Exception as e:
+
+        except HTTPException as http_ex:
+            raise http_ex  # Re-levanta a exceção HTTP já tratada
+        except Exception as e:  # Captura qualquer outro erro
             logger.exception(f"Erro ao buscar cliente com ID {cliente_id}: {e}")
             raise HTTPException(
                 status_code=500, detail="Erro interno ao buscar cliente."
@@ -147,6 +158,12 @@ class ClienteController:
         """Atualiza um cliente."""
         logger.debug(f"Atualizando cliente com ID: {cliente_id}, dados: {cliente_data}")
         try:
+            try:
+                object_id = ObjectId(cliente_id)  # Tenta criar o ObjectId
+            except Exception:
+                logger.warning(f"ID de cliente inválido: {cliente_id}")
+                raise HTTPException(status_code=400, detail="ID de cliente inválido.")
+                
             # Converte o model para um dict, excluindo campos que não foram enviados
             update_data = cliente_data.model_dump(exclude_unset=True)
 
@@ -156,7 +173,7 @@ class ClienteController:
 
             # Atualiza o cliente no banco de dados
             result = await db.clientes.update_one(
-                {"_id": ObjectId(cliente_id)}, {"$set": update_data}
+                {"_id": object_id}, {"$set": update_data}
             )
 
             if result.modified_count == 0:
@@ -166,16 +183,15 @@ class ClienteController:
                 )
 
             # Busca o cliente atualizado
-            cliente = await db.clientes.find_one({"_id": ObjectId(cliente_id)})
+            cliente = await db.clientes.find_one({"_id": object_id})
             cliente["_id"] = str(cliente["_id"])
 
             logger.info(f"Cliente {cliente_id} atualizado com sucesso.")
             return Cliente(**cliente)
 
-        except InvalidId:
-            logger.warning(f"ID de cliente inválido: {cliente_id}")
-            raise HTTPException(status_code=400, detail="ID de cliente inválido.")
-        except Exception as e:
+        except HTTPException as http_ex:
+            raise http_ex  # Re-levanta a exceção HTTP já tratada
+        except Exception as e:  # Captura qualquer outro erro
             logger.exception(f"Erro ao atualizar cliente com ID {cliente_id}: {e}")
             raise HTTPException(
                 status_code=500, detail="Erro interno ao atualizar cliente."
@@ -186,17 +202,23 @@ class ClienteController:
         """Deleta um cliente."""
         logger.debug(f"Deletando cliente com ID: {cliente_id}")
         try:
-            result = await db.clientes.delete_one({"_id": ObjectId(cliente_id)})
+            try:
+                object_id = ObjectId(cliente_id)  # Tenta criar o ObjectId
+            except Exception:
+                logger.warning(f"ID de cliente inválido: {cliente_id}")
+                raise HTTPException(status_code=400, detail="ID de cliente inválido.")
+
+            result = await db.clientes.delete_one({"_id": object_id})
             if result.deleted_count == 0:
                 logger.warning(f"Cliente não encontrado: {cliente_id}")
                 raise HTTPException(status_code=404, detail="Cliente não encontrado.")
 
             logger.info(f"Cliente {cliente_id} deletado com sucesso.")
             return True  # Indica que a deleção foi bem-sucedida
-        except InvalidId:
-            logger.warning(f"ID de cliente inválido: {cliente_id}")
-            raise HTTPException(status_code=400, detail="ID de cliente inválido.")
-        except Exception as e:
+
+        except HTTPException as http_ex:
+            raise http_ex  # Re-levanta a exceção HTTP já tratada
+        except Exception as e:  # Captura qualquer outro erro
             logger.exception(f"Erro ao deletar cliente com ID {cliente_id}: {e}")
             raise HTTPException(
                 status_code=500, detail="Erro interno ao deletar cliente."
@@ -215,5 +237,3 @@ class ClienteController:
             raise HTTPException(
                 status_code=500, detail="Erro interno ao contar clientes."
             )
-       
-

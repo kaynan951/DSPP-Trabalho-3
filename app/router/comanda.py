@@ -1,6 +1,7 @@
 from app.models import *
 from app.controller import *
-from fastapi import APIRouter, Query
+from fastapi import APIRouter, Query, HTTPException, Response
+from starlette.status import HTTP_204_NO_CONTENT
 from typing import *
 
 router_comanda = APIRouter()
@@ -25,6 +26,15 @@ async def get_comanda(comanda_id: str):
 async def update_comanda(comanda_id: str, comanda_data: ComandaUpdate):
     return await ComandaController.update_comanda(comanda_id, comanda_data)
 
-@router_comanda.delete("/{comanda_id}", status_code=204)
-def delete_comanda(comanda_id: str):
-    return {"ok": ComandaController.delete_comanda(comanda_id)}
+@router_comanda.delete("/{comanda_id}", status_code=HTTP_204_NO_CONTENT)
+async def delete_comanda(comanda_id: str):
+    try:
+        success = await ComandaController.delete_comanda(comanda_id)
+        if success:
+            return Response(status_code=HTTP_204_NO_CONTENT)
+        else:
+            raise HTTPException(status_code=404, detail="Comanda não encontrada")
+    except HTTPException as e:
+        raise e
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))

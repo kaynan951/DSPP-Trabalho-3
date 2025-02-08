@@ -1,6 +1,7 @@
 from app.models import *
 from app.controller import *
-from fastapi import APIRouter, Query
+from fastapi import APIRouter, Query, HTTPException, Response
+from starlette.status import HTTP_204_NO_CONTENT
 from typing import *
 
 router_ingrediente = APIRouter()
@@ -25,6 +26,15 @@ async def get_ingrediente(ingrediente_id: str):
 async def update_ingrediente(ingrediente_id: str, ingrediente_data: IngredienteUpdate):
     return await IngredienteController.update_ingrediente(ingrediente_id, ingrediente_data)
 
-@router_ingrediente.delete("/{ingrediente_id}", status_code=204)
-def delete_ingrediente(ingrediente_id: str):
-    return {"ok": IngredienteController.delete_ingrediente(ingrediente_id)}
+@router_ingrediente.delete("/{ingrediente_id}", status_code=HTTP_204_NO_CONTENT)
+async def delete_ingrediente(ingrediente_id: str):
+    try:
+        success = await IngredienteController.delete_ingrediente(ingrediente_id)
+        if success:
+            return Response(status_code=HTTP_204_NO_CONTENT)
+        else:
+            raise HTTPException(status_code=404, detail="Ingrediente não encontrado")
+    except HTTPException as e:
+        raise e  # Re-levanta a exceção para que o tratamento de erros do FastAPI a capture
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e)) # Lidar com outros erros inesperados
