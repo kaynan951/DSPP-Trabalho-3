@@ -1,6 +1,7 @@
 from app.models import *
 from app.controller import *
-from fastapi import APIRouter, Query
+from fastapi import APIRouter, Query, HTTPException, Response
+from starlette.status import HTTP_204_NO_CONTENT
 from typing import *
 
 router_mesa = APIRouter()
@@ -27,6 +28,15 @@ async def get_mesa(mesa_id: str):
 async def update_mesa(mesa_id: str, mesa_data: MesaUpdate):
     return await MesaController.update_mesa(mesa_id, mesa_data)
 
-@router_mesa.delete("/{mesa_id}", status_code=204)
+@router_mesa.delete("/{mesa_id}", status_code=HTTP_204_NO_CONTENT)
 async def delete_mesa(mesa_id: str):
-    return {"ok": await MesaController.delete_mesa(mesa_id)}
+    try:
+        success = await MesaController.delete_mesa(mesa_id)
+        if success:
+            return Response(status_code=HTTP_204_NO_CONTENT)
+        else:
+            raise HTTPException(status_code=404, detail="Mesa não encontrada")
+    except HTTPException as e:
+        raise e  # Re-levanta a exceção para que o tratamento de erros do FastAPI a capture
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e)) # Lidar com outros erros inesperados

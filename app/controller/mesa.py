@@ -3,6 +3,7 @@ from app.config import *
 from typing import Optional, Dict, Any
 from fastapi import HTTPException
 from bson import ObjectId
+from starlette.status import HTTP_204_NO_CONTENT
 
 
 class MesaController:
@@ -39,7 +40,16 @@ class MesaController:
             mesas.append(Mesa(**mesa))
 
         total = await db.mesas.count_documents(query)
-        return {"mesas": mesas, "total": total, "page": page, "limit": limit}
+        totalPages = -(-total // limit)
+        return {
+            "mesas": mesas, 
+            "pagination": {
+                "total": total,    
+                "currentPage": page,
+                "totalPages": totalPages,
+                "totalItemsPerPage": limit
+            },
+        }
 
     @staticmethod
     async def get_mesa(mesa_id: str) -> Mesa:

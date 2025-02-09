@@ -20,15 +20,15 @@ async def list_clientes(
     return await ClienteController.list_clientes(page=page, limit=limit, nome=nome, email=email, cpf=cpf)
 
 @router_cliente.get("/{cliente_id}", response_model=Cliente,status_code=200)
-async def get_cliente(cliente_id: int):
+async def get_cliente(cliente_id: str):
     return await ClienteController.get_cliente(cliente_id)
 
 
 @router_cliente.put("/{cliente_id}", response_model=Cliente,status_code=200)
-async def update_cliente(cliente_id: int, cliente_data: ClienteUpdate):
+async def update_cliente(cliente_id: str, cliente_data: ClienteUpdate):
     return await ClienteController.update_cliente(cliente_id, cliente_data)
 
 
 @router_cliente.delete("/{cliente_id}",status_code=204)
-async def delete_cliente(cliente_id: int):
+async def delete_cliente(cliente_id: str):
     return {"ok": await ClienteController.delete_cliente(cliente_id)}

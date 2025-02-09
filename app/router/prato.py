@@ -1,6 +1,7 @@
 from app.models import *
 from app.controller import *
-from fastapi import APIRouter, Query
+from fastapi import APIRouter, Query, HTTPException, Response
+from starlette.status import HTTP_204_NO_CONTENT
 from typing import *
 
 router_prato = APIRouter()
@@ -25,6 +26,15 @@ async def get_prato(prato_id: str):
 async def update_prato(prato_id: str, prato_data: PratoUpdate):
     return await PratoController.update_prato(prato_id, prato_data)
 
-@router_prato.delete("/{prato_id}", status_code=204)
-def delete_prato(prato_id: str):
-    return {"ok": PratoController.delete_prato(prato_id)}
+@router_prato.delete("/{prato_id}", status_code=HTTP_204_NO_CONTENT)
+async def delete_prato(prato_id: str):
+    try:
+        success = await PratoController.delete_prato(prato_id)
+        if success:
+            return Response(status_code=HTTP_204_NO_CONTENT)
+        else:
+            raise HTTPException(status_code=404, detail="Prato não encontrado")
+    except HTTPException as e:
+        raise e  # Re-levanta a exceção para que o tratamento de erros do FastAPI a capture
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e)) # Lidar com outros erros inesperados
