@@ -346,3 +346,61 @@
 2025-02-09 01:01:56,998 - DEBUG - Criando ingrediente: string
 2025-02-09 01:01:57,029 - INFO - Ingrediente 67a828b46e9b891153c355ae criado com sucesso.
 2025-02-09 01:01:57,029 - INFO - Ingrediente 67a828b46e9b891153c355ae criado com sucesso.
+2025-02-09 12:58:48,931 - DEBUG - Iniciando create_cliente para o cliente: Gui
+2025-02-09 12:58:48,931 - DEBUG - Iniciando create_cliente para o cliente: Gui
+2025-02-09 12:58:48,941 - DEBUG - Clientes na mesa 67a8d0692390dbf6622a75ff: 0, Capacidade: 2
+2025-02-09 12:58:48,941 - DEBUG - Clientes na mesa 67a8d0692390dbf6622a75ff: 0, Capacidade: 2
+2025-02-09 12:58:48,980 - INFO - Cliente 67a8d0b82390dbf6622a7600 criado com sucesso na mesa 67a8d0692390dbf6622a75ff
+2025-02-09 12:58:48,980 - INFO - Cliente 67a8d0b82390dbf6622a7600 criado com sucesso na mesa 67a8d0692390dbf6622a75ff
+2025-02-09 12:59:08,915 - DEBUG - Iniciando create_cliente para o cliente: Kaynan
+2025-02-09 12:59:08,915 - DEBUG - Iniciando create_cliente para o cliente: Kaynan
+2025-02-09 12:59:08,919 - DEBUG - Clientes na mesa 67a8d0692390dbf6622a75ff: 1, Capacidade: 2
+2025-02-09 12:59:08,919 - DEBUG - Clientes na mesa 67a8d0692390dbf6622a75ff: 1, Capacidade: 2
+2025-02-09 12:59:08,922 - INFO - Cliente 67a8d0cc2390dbf6622a7601 criado com sucesso na mesa 67a8d0692390dbf6622a75ff
+2025-02-09 12:59:08,922 - INFO - Cliente 67a8d0cc2390dbf6622a7601 criado com sucesso na mesa 67a8d0692390dbf6622a75ff
+2025-02-09 13:00:18,254 - DEBUG - Criando comanda para cliente_id: 67a8d0b82390dbf6622a7600
+2025-02-09 13:00:18,254 - DEBUG - Criando comanda para cliente_id: 67a8d0b82390dbf6622a7600
+2025-02-09 13:00:18,254 - DEBUG - Buscando cliente com ID: 67a8d0b82390dbf6622a7600
+2025-02-09 13:00:18,254 - DEBUG - Buscando cliente com ID: 67a8d0b82390dbf6622a7600
+2025-02-09 13:00:18,257 - INFO - Cliente 67a8d0b82390dbf6622a7600 encontrado com sucesso.
+2025-02-09 13:00:18,257 - INFO - Cliente 67a8d0b82390dbf6622a7600 encontrado com sucesso.
+2025-02-09 13:00:18,372 - INFO - Comanda 67a8d1122390dbf6622a7602 criada com sucesso.
+2025-02-09 13:00:18,372 - INFO - Comanda 67a8d1122390dbf6622a7602 criada com sucesso.
+2025-02-09 13:00:48,425 - DEBUG - Criando comanda para cliente_id: 67a8d0cc2390dbf6622a7601
+2025-02-09 13:00:48,425 - DEBUG - Criando comanda para cliente_id: 67a8d0cc2390dbf6622a7601
+2025-02-09 13:00:48,425 - DEBUG - Buscando cliente com ID: 67a8d0cc2390dbf6622a7601
+2025-02-09 13:00:48,425 - DEBUG - Buscando cliente com ID: 67a8d0cc2390dbf6622a7601
+2025-02-09 13:00:48,427 - INFO - Cliente 67a8d0cc2390dbf6622a7601 encontrado com sucesso.
+2025-02-09 13:00:48,427 - INFO - Cliente 67a8d0cc2390dbf6622a7601 encontrado com sucesso.
+2025-02-09 13:00:48,432 - INFO - Comanda 67a8d1302390dbf6622a7603 criada com sucesso.
+2025-02-09 13:00:48,432 - INFO - Comanda 67a8d1302390dbf6622a7603 criada com sucesso.
+2025-02-09 13:05:31,262 - DEBUG - Criando ingrediente: Arroz
+2025-02-09 13:05:31,262 - DEBUG - Criando ingrediente: Arroz
+2025-02-09 13:05:31,297 - INFO - Ingrediente 67a8d24b2390dbf6622a7604 criado com sucesso.
+2025-02-09 13:05:31,297 - INFO - Ingrediente 67a8d24b2390dbf6622a7604 criado com sucesso.
+2025-02-09 13:05:45,480 - DEBUG - Criando ingrediente: Camarão
+2025-02-09 13:05:45,480 - DEBUG - Criando ingrediente: Camarão
+2025-02-09 13:05:45,484 - INFO - Ingrediente 67a8d2592390dbf6622a7605 criado com sucesso.
+2025-02-09 13:05:45,484 - INFO - Ingrediente 67a8d2592390dbf6622a7605 criado com sucesso.
+2025-02-09 13:06:03,275 - DEBUG - Criando ingrediente: Pão
+2025-02-09 13:06:03,275 - DEBUG - Criando ingrediente: Pão
+2025-02-09 13:06:03,278 - INFO - Ingrediente 67a8d26b2390dbf6622a7606 criado com sucesso.
+2025-02-09 13:06:03,278 - INFO - Ingrediente 67a8d26b2390dbf6622a7606 criado com sucesso.
+2025-02-09 13:06:24,942 - DEBUG - Criando ingrediente: Salsicha
+2025-02-09 13:06:24,942 - DEBUG - Criando ingrediente: Salsicha
+2025-02-09 13:06:24,946 - INFO - Ingrediente 67a8d2802390dbf6622a7607 criado com sucesso.
+2025-02-09 13:06:24,946 - INFO - Ingrediente 67a8d2802390dbf6622a7607 criado com sucesso.
+2025-02-09 13:07:07,671 - DEBUG - Criando prato: Arroz Internacional
+2025-02-09 13:07:07,671 - DEBUG - Criando prato: Arroz Internacional
+2025-02-09 13:07:07,709 - INFO - Prato 67a8d2ab2390dbf6622a7608 criado com sucesso.
+2025-02-09 13:07:07,709 - INFO - Prato 67a8d2ab2390dbf6622a7608 criado com sucesso.
+2025-02-09 13:07:37,541 - DEBUG - Criando prato: Hot Dog
+2025-02-09 13:07:37,541 - DEBUG - Criando prato: Hot Dog
+2025-02-09 13:07:37,544 - INFO - Prato 67a8d2c92390dbf6622a7609 criado com sucesso.
+2025-02-09 13:07:37,544 - INFO - Prato 67a8d2c92390dbf6622a7609 criado com sucesso.
+2025-02-09 13:07:45,526 - DEBUG - Listando pratos - página: 1, limite: 10, nome: None, categoria: None
+2025-02-09 13:07:45,526 - DEBUG - Listando pratos - página: 1, limite: 10, nome: None, categoria: None
+2025-02-09 13:07:45,531 - INFO - Listagem de pratos retornou 2 pratos (total: 2)
+2025-02-09 13:07:45,531 - INFO - Listagem de pratos retornou 2 pratos (total: 2)
+2025-02-09 13:38:32,021 - INFO - Comanda_prato criado com sucesso
+2025-02-09 13:38:32,021 - INFO - Comanda_prato criado com sucesso
