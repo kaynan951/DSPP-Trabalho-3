@@ -2,3 +2,4 @@ mysql
 .env
 __pycache__/
 alembic.ini
+dot.txt

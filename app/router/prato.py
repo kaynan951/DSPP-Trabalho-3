@@ -14,7 +14,8 @@ async def create_prato(prato_data: PratoCreate):
 async def list_pratos(
     page: int = Query(1, description="Número da página", ge=1),
     limit: int = Query(10, description="Número de itens por página", ge=1),
-    categoria: Optional[str] = Query(None, description="Filtrar por categoria")
+    categoria: Optional[str] = Query(None, description="Filtrar por categoria"),
+    nome : Optional[str] = Query(None,description="Filtrar por nome do prato")
 ):
     return await PratoController.list_pratos(page=page, limit=limit, categoria=categoria)
 
@@ -38,3 +39,7 @@ async def delete_prato(prato_id: str):
         raise e  # Re-levanta a exceção para que o tratamento de erros do FastAPI a capture
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e)) # Lidar com outros erros inesperados
+    
+@router_prato.get("/num/",status_code=200)
+async def get_num():
+    return await PratoController.num_pratos()

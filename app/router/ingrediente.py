@@ -26,15 +26,19 @@ async def get_ingrediente(ingrediente_id: str):
 async def update_ingrediente(ingrediente_id: str, ingrediente_data: IngredienteUpdate):
     return await IngredienteController.update_ingrediente(ingrediente_id, ingrediente_data)
 
-@router_ingrediente.delete("/{ingrediente_id}", status_code=HTTP_204_NO_CONTENT)
+@router_ingrediente.delete("/{ingrediente_id}", status_code=204)
 async def delete_ingrediente(ingrediente_id: str):
     try:
         success = await IngredienteController.delete_ingrediente(ingrediente_id)
         if success:
-            return Response(status_code=HTTP_204_NO_CONTENT)
+            return Response(status_code=204)
         else:
             raise HTTPException(status_code=404, detail="Ingrediente não encontrado")
     except HTTPException as e:
         raise e  # Re-levanta a exceção para que o tratamento de erros do FastAPI a capture
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e)) # Lidar com outros erros inesperados
+
+@router_ingrediente.get("/num/",status_code=200)
+async def get_num():
+    return await IngredienteController.num_ingredientes()

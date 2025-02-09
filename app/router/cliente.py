@@ -32,3 +32,7 @@ async def update_cliente(cliente_id: str, cliente_data: ClienteUpdate):
 @router_cliente.delete("/{cliente_id}",status_code=204)
 async def delete_cliente(cliente_id: str):
     return {"ok": await ClienteController.delete_cliente(cliente_id)}
+
+@router_cliente.get("/num/",status_code=200)
+async def get_num():
+    return await ClienteController.num_cliente()

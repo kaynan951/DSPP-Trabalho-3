@@ -28,15 +28,19 @@ async def get_mesa(mesa_id: str):
 async def update_mesa(mesa_id: str, mesa_data: MesaUpdate):
     return await MesaController.update_mesa(mesa_id, mesa_data)
 
-@router_mesa.delete("/{mesa_id}", status_code=HTTP_204_NO_CONTENT)
+@router_mesa.delete("/{mesa_id}", status_code=204)
 async def delete_mesa(mesa_id: str):
     try:
         success = await MesaController.delete_mesa(mesa_id)
         if success:
-            return Response(status_code=HTTP_204_NO_CONTENT)
+            return Response(status_code=204)
         else:
             raise HTTPException(status_code=404, detail="Mesa não encontrada")
     except HTTPException as e:
         raise e  # Re-levanta a exceção para que o tratamento de erros do FastAPI a capture
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e)) # Lidar com outros erros inesperados
+    
+@router_mesa.get("/num/",status_code=200)
+async def get_num():
+    return await MesaController.num_mesa()

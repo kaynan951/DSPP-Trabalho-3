@@ -115,3 +115,16 @@ class MesaController:
             return True
         else:
             raise HTTPException(status_code=404, detail="Mesa não encontrada")
+    
+    async def num_mesa() -> Dict[str,int] :
+        logger.debug("Contando o número total de mesas")
+        try:
+            total_mesas = await db.mesas.count_documents({})
+            logger.info(f"Número total de mesas: {total_mesas}")
+            return {"total" : total_mesas}
+        except Exception as e:
+            logger.exception(f"Erro ao contar mesas: {e}")
+            raise HTTPException(
+                status_code=500,detail="Erro interno ao contar mesas"
+            )
+            

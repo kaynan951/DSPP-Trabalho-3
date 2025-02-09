@@ -11,21 +11,6 @@ class PratoController:
         """Cria um novo prato."""
         logger.debug(f"Criando prato: {prato.nome}")
         try:
-            # Validar se o id_comanda é um ObjectId válido
-            if not ObjectId.is_valid(prato.id_comanda):
-                logger.warning(f"ID de comanda inválido: {prato.id_comanda}")
-                raise HTTPException(
-                    status_code=400, detail="id_comanda inválido. Deve ser um ObjectId válido."
-                )
-            
-            #Validar se a comanda existe
-            try:
-                 await ComandaController.get_comanda(prato.id_comanda)
-            except HTTPException as e:
-                 raise HTTPException(
-                        status_code=404, detail="Comanda não encontrada."
-                    )
-
             prato_dict = prato.model_dump(by_alias=True, exclude={"id"})
             novo_prato = await db.pratos.insert_one(prato_dict)
             response = await db.pratos.find_one({"_id": novo_prato.inserted_id})
@@ -147,7 +132,6 @@ class PratoController:
         limit: int = 10,
         nome: Optional[str] = None,
         categoria: Optional[str] = None,
-        id_comanda : Optional[str] = None
     ) -> Dict[str, Any]:
         """Lista pratos com paginação e filtros."""
         logger.debug(
@@ -162,14 +146,6 @@ class PratoController:
             if categoria:
                 query["categoria"] = categoria
             
-            if id_comanda:
-                try:
-                    ObjectId(id_comanda)
-                except Exception:
-                    logger.warning(f"ID de comanda inválido: {id_comanda}")
-                    raise HTTPException(status_code=400, detail="ID de comanda inválido.")
-                query["id_comanda"] = id_comanda
-
             pratos = (
                 await db.pratos.find(query)
                 .skip(skip)

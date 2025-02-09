@@ -26,15 +26,19 @@ async def get_comanda(comanda_id: str):
 async def update_comanda(comanda_id: str, comanda_data: ComandaUpdate):
     return await ComandaController.update_comanda(comanda_id, comanda_data)
 
-@router_comanda.delete("/{comanda_id}", status_code=HTTP_204_NO_CONTENT)
+@router_comanda.delete("/{comanda_id}", status_code=204)
 async def delete_comanda(comanda_id: str):
     try:
         success = await ComandaController.delete_comanda(comanda_id)
         if success:
-            return Response(status_code=HTTP_204_NO_CONTENT)
+            return Response(status_code=204)
         else:
             raise HTTPException(status_code=404, detail="Comanda não encontrada")
     except HTTPException as e:
         raise e
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
+@router_comanda.get("/num/",status_code=200)
+async def get_num():
+    return await ComandaController.num_comandas()
