@@ -1,8 +1,9 @@
 from app.config import *
 from app.models import *
-from typing import Dict
+from typing import *
 from bson import ObjectId
 from fastapi import HTTPException
+
 
 class ActionController:
     @staticmethod
@@ -108,4 +109,75 @@ class ActionController:
 
         response["_id"] = str(response["_id"])
         return Prato_Ingrediente(**response)
-        
+    
+       
+    @staticmethod
+    async def pegar_info_da_mesa(id: str) -> List[ComandaInfo]:
+        # valida o id da mesa
+        if not ObjectId.is_valid(id):
+            logger.warning(f"Id da mesa inválido: {id}")
+            raise HTTPException(400, detail="Id da mesa é invalido")  
+
+        # pega a mesa
+        mesa = await db.mesas.find_one({"_id": ObjectId(id)})
+        if not mesa:
+            logger.warning(f"Mesa não encontrada com id: {id}")
+            raise HTTPException(404, detail="Mesa não encontrada")
+        mesa["_id"] = str(mesa["_id"])
+
+        # pega os clientes que estão na mesa
+        clientes_na_mesa = []
+        async for cliente in db.clientes.find({"id_mesa": id}):  
+            cliente["_id"] = str(cliente["_id"])
+            clientes_na_mesa.append(cliente)
+
+        comandas_info: List[ComandaInfo] = []  
+
+        # pega os pratos dos clientes junto com o valor da comanda
+        for cliente in clientes_na_mesa:
+            async for comanda in db.comandas.find({"cliente_id": cliente["_id"]}):
+                comanda["_id"] = str(comanda["_id"])
+                pratos_ids = []
+                async for comanda_prato in db.comandas_pratos.find({"id_comada": comanda["_id"]}):
+                    pratos_ids.append(comanda_prato["id_prato"])
+
+                nomes_pratos = []
+                for prato_id in pratos_ids:
+                    prato = await db.pratos.find_one({"_id": ObjectId(prato_id)})
+                    if prato:
+                        nomes_pratos.append(prato["nome"])
+
+                comanda_info = ComandaInfo(
+                    cliente_nome=cliente["nome"],
+                    comanda_id=comanda["_id"],
+                    valor_total=comanda["valor_total"],
+                    pratos=nomes_pratos,
+                )
+                comandas_info.append(comanda_info)
+
+        return comandas_info
+    
+    @staticmethod
+    async def total_comandas():
+        # usa a pipeline aggregate para agregar dados
+        resultado = await db.comandas.aggregate([
+            {
+                "$group": {
+                    "_id": None,  
+                    "valor_total": {"$sum": "$valor_total"}, 
+                    "quantidade_comandas": {"$sum": 1}  
+                }
+            }
+        ]).to_list(1)  
+
+        if resultado:
+            return resultado[0]  
+        return {"valor_total": 0, "quantidade_comandas": 0} 
+
+    @staticmethod
+    async def clientes_ordenados():
+        # ordena os clientes por nome
+        clientes = []
+        async for cliente in db.clientes.find({}, {"_id": 0}).sort("nome", 1): 
+            clientes.append(cliente)
+        return clientes
