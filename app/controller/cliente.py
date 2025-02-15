@@ -1,8 +1,9 @@
 from app.models import *
 from app.config import *
-from typing import Optional, Dict, Any
+from typing import Optional, Dict, Any,List
 from fastapi import HTTPException
 from bson import ObjectId
+from pymongo import ASCENDING, DESCENDING
 
 #python -m uvicorn main:app --reload
 
@@ -74,10 +75,12 @@ class ClienteController:
         nome: Optional[str] = None,
         email: Optional[str] = None,
         cpf: Optional[str] = None,
+        sort_by: Optional[str] = None,  # Adicionado
+        sort_direction: int = 1,  # Adicionado
     ) -> Dict[str, Any]:
-        """Lista clientes com paginação e filtros."""
+        """Lista clientes com paginação, filtros e ordenação."""
         logger.debug(
-            f"Listando clientes - página: {page}, limite: {limit}, nome: {nome}, email: {email}, cpf: {cpf}"
+            f"Listando clientes - página: {page}, limite: {limit}, nome: {nome}, email: {email}, cpf: {cpf}, sort_by: {sort_by}, sort_direction: {sort_direction}"
         )
         try:
             skip = (page - 1) * limit  # Calcula quantos documentos pular
@@ -91,14 +94,32 @@ class ClienteController:
             if cpf:
                 query["cpf"] = cpf
 
-            # Busca os clientes com paginação
-            clientes = (
-                await db.clientes.find(query)
-                .skip(skip)
-                .limit(limit)
-                .to_list(length=limit)
-            )
-            total_clientes = await db.clientes.count_documents(query)  # Total de clientes (sem paginação)
+            # Define a direção da ordenação
+            sort_order = ASCENDING if sort_direction == 1 else DESCENDING
+
+            # Cria o objeto de ordenação se sort_by for especificado
+            sort = [(sort_by, sort_order)] if sort_by else None
+
+            # Busca os clientes com paginação e ordenação
+            if sort:
+                clientes = (
+                    await db.clientes.find(query)
+                    .sort(sort)
+                    .skip(skip)
+                    .limit(limit)
+                    .to_list(length=limit)
+                )
+            else:
+                clientes = (
+                    await db.clientes.find(query)
+                    .skip(skip)
+                    .limit(limit)
+                    .to_list(length=limit)
+                )
+
+            total_clientes = await db.clientes.count_documents(
+                query
+            )  # Total de clientes (sem paginação)
 
             # Converte _id para string e cria objetos Cliente
             clientes_list = []
@@ -124,7 +145,6 @@ class ClienteController:
             raise HTTPException(
                 status_code=500, detail="Erro interno ao listar clientes."
             )
-
     @staticmethod
     async def get_cliente(cliente_id: str) -> Cliente:
         """Busca um cliente pelo ID."""
@@ -236,4 +256,40 @@ class ClienteController:
             logger.exception(f"Erro ao contar clientes: {e}")
             raise HTTPException(
                 status_code=500, detail="Erro interno ao contar clientes."
+            )
+    @staticmethod
+    async def listar_clientes_com_comanda(
+        pagina: int = 1, limite: int = 10,
+    ) -> List[ClienteComComanda]:
+        if pagina < 1 or limite < 1:
+            logger.warning("Página ou limite inválidos.")
+            raise HTTPException(
+                status_code=400,
+                detail="Página e limite devem ser maiores que zero.",
+            )
+
+        skip = (pagina - 1) * limite
+
+        try:
+            clientes_cursor = db.clientes.find().skip(skip).limit(limite)
+            clientes = await clientes_cursor.to_list(length=limite)
+
+            cliente_list = []
+            for cliente in clientes:
+                cliente["_id"] = str(cliente["_id"])
+
+                comanda = await db.comandas.find_one({"cliente_id": cliente["_id"]})
+                if comanda:
+                    comanda["_id"] = str(comanda["_id"])
+
+                cliente_com_comanda = ClienteComComanda(**cliente, comanda=comanda)
+                cliente_list.append(cliente_com_comanda)
+
+            logger.info("Clientes com comandas listados com sucesso.")
+            return cliente_list
+
+        except Exception as e:
+            logger.error(f"Erro ao listar clientes com comanda: {e}")
+            raise HTTPException(
+                status_code=500, detail="Erro ao listar clientes com comanda"
             )

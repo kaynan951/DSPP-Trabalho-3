@@ -472,3 +472,21 @@
 2025-02-15 13:54:23,712 - DEBUG - Listando ingredientes - página: 1, limite: 10, nome: None
 2025-02-15 13:54:23,715 - INFO - Listagem de ingredientes retornou 4 ingredientes (total: 4)
 2025-02-15 13:54:23,715 - INFO - Listagem de ingredientes retornou 4 ingredientes (total: 4)
+2025-02-15 15:33:36,288 - INFO - Clientes ordenados por nome obtidos com sucesso.
+2025-02-15 15:33:36,288 - INFO - Clientes ordenados por nome obtidos com sucesso.
+2025-02-15 15:35:40,376 - INFO - Clientes com comandas listados com sucesso.
+2025-02-15 15:35:40,376 - INFO - Clientes com comandas listados com sucesso.
+2025-02-15 15:36:54,461 - INFO - Clientes com comandas listados com sucesso.
+2025-02-15 15:36:54,461 - INFO - Clientes com comandas listados com sucesso.
+2025-02-15 15:37:04,365 - INFO - Clientes ordenados por nome obtidos com sucesso.
+2025-02-15 15:37:04,365 - INFO - Clientes ordenados por nome obtidos com sucesso.
+2025-02-15 15:41:13,915 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: nome, sort_direction: 1
+2025-02-15 15:41:13,915 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: nome, sort_direction: 1
+2025-02-15 15:41:13,929 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
+2025-02-15 15:41:13,929 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
+2025-02-15 15:41:28,169 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: cpf, sort_direction: 1
+2025-02-15 15:41:28,169 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: cpf, sort_direction: 1
+2025-02-15 15:41:28,173 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
+2025-02-15 15:41:28,173 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
+2025-02-15 15:46:27,780 - INFO - Clientes com comandas listados com sucesso.
+2025-02-15 15:46:27,780 - INFO - Clientes com comandas listados com sucesso.

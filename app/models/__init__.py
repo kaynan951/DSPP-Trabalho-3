@@ -5,16 +5,18 @@ from .prato import Prato, PratoCreate, PratoUpdate
 from .ingrediente import Ingrediente, IngredienteCreate, IngredienteUpdate
 from .comanda_prato import Comanda_Prato
 from .prato_ingrediente import Prato_Ingrediente
-from .actions import Pedir_Prato, ComandaInfo
+from .actions import Pedir_Prato, ComandaInfo,ClienteComComanda
 
 __all__ = [
     "Cliente", "ClienteCreate", "ClienteUpdate", "Pedir_Prato",
     "Mesa", "MesaCreate", "MesaUpdate",
     "Comanda", "ComandaCreate", "ComandaUpdate",
     "Prato", "PratoCreate", "PratoUpdate","ComandaInfo",
-    "Ingrediente", "IngredienteCreate", "IngredienteUpdate","Comanda_Prato", "Prato_Ingrediente"
+    "Ingrediente", "IngredienteCreate", "IngredienteUpdate","Comanda_Prato", "Prato_Ingrediente","ClienteComComanda"
 ]
 
+ComandaInfo.model_rebuild()
+ClienteComComanda.model_rebuild()
 Comanda_Prato.model_rebuild()
 Prato_Ingrediente.model_rebuild()
 Pedir_Prato.model_rebuild()
