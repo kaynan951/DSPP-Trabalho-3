@@ -10,3 +10,12 @@ class ComandaInfo(BaseModel):
     comanda_id: str
     valor_total: float
     pratos: List[str]
+    
+class ClienteComComanda(BaseModel): 
+    id: Optional[str] = Field(alias="_id")
+    nome: str
+    telefone: str
+    email: Optional[str] = None
+    cpf: Optional[str] = None
+    id_mesa: str
+    comanda: Optional[Dict[str, Any]]  

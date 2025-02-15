@@ -1,6 +1,6 @@
 from app.models import *
 from app.config import *
-from typing import Optional, Dict, Any
+from typing import Optional, Dict, Any, List
 from fastapi import HTTPException
 from bson import ObjectId
 from starlette.status import HTTP_204_NO_CONTENT
@@ -128,3 +128,57 @@ class MesaController:
                 status_code=500,detail="Erro interno ao contar mesas"
             )
             
+    @staticmethod
+    async def pegar_info_da_mesa(id: str) -> List[ComandaInfo]:
+        if not ObjectId.is_valid(id):
+            logger.warning(f"Id da mesa inválido: {id}")
+            raise HTTPException(400, detail="Id da mesa é invalido")
+
+        try:
+            mesa = await db.mesas.find_one({"_id": ObjectId(id)})
+            if not mesa:
+                logger.warning(f"Mesa não encontrada com id: {id}")
+                raise HTTPException(404, detail="Mesa não encontrada")
+            mesa["_id"] = str(mesa["_id"])
+        except Exception as e:
+            logger.error(f"Erro ao obter mesa: {e}")
+            raise HTTPException(status_code=500, detail="Erro ao obter mesa")
+
+        try:
+            clientes_na_mesa = []
+            async for cliente in db.clientes.find({"id_mesa": id}):
+                cliente["_id"] = str(cliente["_id"])
+                clientes_na_mesa.append(cliente)
+        except Exception as e:
+            logger.error(f"Erro ao obter clientes da mesa: {e}")
+            raise HTTPException(status_code=500, detail="Erro ao obter clientes da mesa")
+
+        comandas_info: List[ComandaInfo] = []
+
+        try:
+            for cliente in clientes_na_mesa:
+                comanda = await db.comandas.find_one({"cliente_id": cliente["_id"]})
+                if comanda:
+                    comanda["_id"] = str(comanda["_id"])
+                    pratos_ids = []
+                    async for comanda_prato in db.comandas_pratos.find({"id_comada": comanda["_id"]}):
+                        pratos_ids.append(comanda_prato["id_prato"])
+
+                    nomes_pratos = []
+                    for prato_id in pratos_ids:
+                        prato = await db.pratos.find_one({"_id": ObjectId(prato_id)})
+                        if prato:
+                            nomes_pratos.append(prato["nome"])
+
+                    comanda_info = ComandaInfo(
+                        cliente_nome=cliente["nome"],
+                        comanda_id=comanda["_id"],
+                        valor_total=comanda["valor_total"],
+                        pratos=nomes_pratos,
+                    )
+                    comandas_info.append(comanda_info)
+        except Exception as e:
+            logger.error(f"Erro ao obter info da comanda: {e}")
+            raise HTTPException(status_code=500, detail="Erro ao obter info da comanda")
+
+        return comandas_info

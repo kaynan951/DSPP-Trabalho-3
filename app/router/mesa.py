@@ -41,6 +41,12 @@ async def delete_mesa(mesa_id: str):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e)) # Lidar com outros erros inesperados
     
+    
+@router_mesa.get("/info_mesa/{id}",status_code=200,response_model=List[ComandaInfo])
+async def info_das_mesas(id : str):
+    return await MesaController.pegar_info_da_mesa(id) 
+    
+    
 @router_mesa.get("/num/",status_code=200)
 async def get_num():
     return await MesaController.num_mesa()
