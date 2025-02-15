@@ -404,3 +404,71 @@
 2025-02-09 13:07:45,531 - INFO - Listagem de pratos retornou 2 pratos (total: 2)
 2025-02-09 13:38:32,021 - INFO - Comanda_prato criado com sucesso
 2025-02-09 13:38:32,021 - INFO - Comanda_prato criado com sucesso
+2025-02-13 10:40:28,153 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None
+2025-02-13 10:40:28,153 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None
+2025-02-13 10:40:28,161 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
+2025-02-13 10:40:28,161 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
+2025-02-13 10:41:54,060 - DEBUG - Iniciando create_cliente para o cliente: joh
+2025-02-13 10:41:54,060 - DEBUG - Iniciando create_cliente para o cliente: joh
+2025-02-13 10:41:54,085 - DEBUG - Clientes na mesa 67a8d0692390dbf6622a75ff: 2, Capacidade: 2
+2025-02-13 10:41:54,085 - DEBUG - Clientes na mesa 67a8d0692390dbf6622a75ff: 2, Capacidade: 2
+2025-02-13 10:41:54,086 - WARNING - Mesa 67a8d0692390dbf6622a75ff está cheia. Capacidade: 2, Clientes: 2
+2025-02-13 10:41:54,086 - WARNING - Mesa 67a8d0692390dbf6622a75ff está cheia. Capacidade: 2, Clientes: 2
+2025-02-13 10:42:11,464 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-13 10:42:11,464 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-13 10:42:11,475 - INFO - Listagem de comandas retornou 2 comandas (total: 2)
+2025-02-13 10:42:11,475 - INFO - Listagem de comandas retornou 2 comandas (total: 2)
+2025-02-13 10:43:42,552 - DEBUG - Criando comanda para cliente_id: 67a8d0b82390dbf6622a7600
+2025-02-13 10:43:42,552 - DEBUG - Criando comanda para cliente_id: 67a8d0b82390dbf6622a7600
+2025-02-13 10:43:42,554 - DEBUG - Buscando cliente com ID: 67a8d0b82390dbf6622a7600
+2025-02-13 10:43:42,554 - DEBUG - Buscando cliente com ID: 67a8d0b82390dbf6622a7600
+2025-02-13 10:43:42,559 - INFO - Cliente 67a8d0b82390dbf6622a7600 encontrado com sucesso.
+2025-02-13 10:43:42,559 - INFO - Cliente 67a8d0b82390dbf6622a7600 encontrado com sucesso.
+2025-02-13 10:43:42,561 - WARNING - Já existe uma comanda aberta para o cliente 67a8d0b82390dbf6622a7600.
+2025-02-13 10:43:42,561 - WARNING - Já existe uma comanda aberta para o cliente 67a8d0b82390dbf6622a7600.
+2025-02-13 10:44:20,529 - INFO - Comanda_prato criado com sucesso
+2025-02-13 10:44:20,529 - INFO - Comanda_prato criado com sucesso
+2025-02-13 10:44:44,009 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-13 10:44:44,009 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-13 10:44:44,014 - INFO - Listagem de comandas retornou 2 comandas (total: 2)
+2025-02-13 10:44:44,014 - INFO - Listagem de comandas retornou 2 comandas (total: 2)
+2025-02-13 10:45:37,376 - INFO - Comanda_prato criado com sucesso
+2025-02-13 10:45:37,376 - INFO - Comanda_prato criado com sucesso
+2025-02-13 10:50:42,626 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-13 10:50:42,626 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-13 10:50:42,635 - INFO - Listagem de comandas retornou 2 comandas (total: 2)
+2025-02-13 10:50:42,635 - INFO - Listagem de comandas retornou 2 comandas (total: 2)
+2025-02-13 10:50:56,142 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None
+2025-02-13 10:50:56,142 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None
+2025-02-13 10:50:56,147 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
+2025-02-13 10:50:56,147 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
+2025-02-15 13:52:43,314 - DEBUG - Contando o número total de mesas
+2025-02-15 13:52:43,314 - DEBUG - Contando o número total de mesas
+2025-02-15 13:52:43,396 - INFO - Número total de mesas: 1
+2025-02-15 13:52:43,396 - INFO - Número total de mesas: 1
+2025-02-15 13:52:47,827 - DEBUG - Contando o número total de clientes.
+2025-02-15 13:52:47,827 - DEBUG - Contando o número total de clientes.
+2025-02-15 13:52:47,835 - INFO - Número total de clientes: 2
+2025-02-15 13:52:47,835 - INFO - Número total de clientes: 2
+2025-02-15 13:52:53,170 - DEBUG - Contando o número total de comandas.
+2025-02-15 13:52:53,170 - DEBUG - Contando o número total de comandas.
+2025-02-15 13:52:53,179 - INFO - Número total de comandas: 2
+2025-02-15 13:52:53,179 - INFO - Número total de comandas: 2
+2025-02-15 13:53:13,894 - DEBUG - Contando o número total de ingredientes.
+2025-02-15 13:53:13,894 - DEBUG - Contando o número total de ingredientes.
+2025-02-15 13:53:13,901 - INFO - Número total de ingredientes: 4
+2025-02-15 13:53:13,901 - INFO - Número total de ingredientes: 4
+2025-02-15 13:53:21,529 - DEBUG - Contando o número total de pratos.
+2025-02-15 13:53:21,529 - DEBUG - Contando o número total de pratos.
+2025-02-15 13:53:21,533 - INFO - Número total de pratos: 2
+2025-02-15 13:53:21,533 - INFO - Número total de pratos: 2
+2025-02-15 13:53:50,757 - INFO - API inicializada
+2025-02-15 13:53:50,757 - INFO - API inicializada
+2025-02-15 13:54:05,472 - DEBUG - Listando ingredientes - página: 1, limite: 10, nome: a
+2025-02-15 13:54:05,472 - DEBUG - Listando ingredientes - página: 1, limite: 10, nome: a
+2025-02-15 13:54:05,487 - INFO - Listagem de ingredientes retornou 3 ingredientes (total: 3)
+2025-02-15 13:54:05,487 - INFO - Listagem de ingredientes retornou 3 ingredientes (total: 3)
+2025-02-15 13:54:23,712 - DEBUG - Listando ingredientes - página: 1, limite: 10, nome: None
+2025-02-15 13:54:23,712 - DEBUG - Listando ingredientes - página: 1, limite: 10, nome: None
+2025-02-15 13:54:23,715 - INFO - Listagem de ingredientes retornou 4 ingredientes (total: 4)
+2025-02-15 13:54:23,715 - INFO - Listagem de ingredientes retornou 4 ingredientes (total: 4)

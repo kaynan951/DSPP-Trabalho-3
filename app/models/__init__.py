@@ -5,13 +5,13 @@ from .prato import Prato, PratoCreate, PratoUpdate
 from .ingrediente import Ingrediente, IngredienteCreate, IngredienteUpdate
 from .comanda_prato import Comanda_Prato
 from .prato_ingrediente import Prato_Ingrediente
-from .actions import Pedir_Prato
+from .actions import Pedir_Prato, ComandaInfo
 
 __all__ = [
     "Cliente", "ClienteCreate", "ClienteUpdate", "Pedir_Prato",
     "Mesa", "MesaCreate", "MesaUpdate",
     "Comanda", "ComandaCreate", "ComandaUpdate",
-    "Prato", "PratoCreate", "PratoUpdate",
+    "Prato", "PratoCreate", "PratoUpdate","ComandaInfo",
     "Ingrediente", "IngredienteCreate", "IngredienteUpdate","Comanda_Prato", "Prato_Ingrediente"
 ]
 
