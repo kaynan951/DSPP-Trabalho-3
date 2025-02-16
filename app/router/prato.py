@@ -40,6 +40,13 @@ async def delete_prato(prato_id: str):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e)) # Lidar com outros erros inesperados
     
+@router_prato.get("/mais_pedidos/",status_code=200)
+async def get_pratos_mais_pedidos(
+    page: int = Query(1, description="Número da página", ge=1),
+    limit: int = Query(10, description="Número de itens por página", ge=1),
+):
+    return await PratoController.get_pratos_mais_pedidos(page,limit)
+    
 @router_prato.get("/num/",status_code=200)
 async def get_num():
     return await PratoController.num_pratos()
