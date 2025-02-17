@@ -490,3 +490,429 @@
 2025-02-15 15:41:28,173 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
 2025-02-15 15:46:27,780 - INFO - Clientes com comandas listados com sucesso.
 2025-02-15 15:46:27,780 - INFO - Clientes com comandas listados com sucesso.
+2025-02-15 15:54:36,996 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-15 15:54:36,996 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-15 15:55:07,025 - ERROR - Erro ao listar clientes: SSL handshake failed: dbtrabalho3persistencia-shard-00-02.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: dbtrabalho3persistencia-shard-00-00.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: dbtrabalho3persistencia-shard-00-01.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 67b0e2ca612890a23fa7960f, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('dbtrabalho3persistencia-shard-00-00.ly2eu.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: dbtrabalho3persistencia-shard-00-00.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('dbtrabalho3persistencia-shard-00-01.ly2eu.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: dbtrabalho3persistencia-shard-00-01.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('dbtrabalho3persistencia-shard-00-02.ly2eu.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: dbtrabalho3persistencia-shard-00-02.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+Traceback (most recent call last):
+  File "C:\Users\Kaynan\Desktop\Trabalho 3 de Persistência\DSPP-Trabalho-3\app\controller\cliente.py", line 114, in list_clientes
+    await db.clientes.find(query)
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\motor\core.py", line 1696, in _to_list
+    result = get_more_result.result()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\cursor.py", line 1205, in _refresh
+    self._send_message(q)
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\cursor.py", line 1100, in _send_message
+    response = client._run_operation(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1752, in _run_operation
+    return self._retryable_read(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1861, in _retryable_read
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1828, in _retry_internal
+    ).run()
+      ^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2565, in run
+    return self._read() if self._is_read else self._write()
+           ^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2700, in _read
+    self._server = self._get_server()
+                   ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2656, in _get_server
+    return self._client._select_server(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1647, in _select_server
+    server = topology.select_server(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\topology.py", line 402, in select_server
+    server = self._select_server(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\topology.py", line 380, in _select_server
+    servers = self.select_servers(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\topology.py", line 287, in select_servers
+    server_descriptions = self._select_servers_loop(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\topology.py", line 337, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: SSL handshake failed: dbtrabalho3persistencia-shard-00-02.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: dbtrabalho3persistencia-shard-00-00.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: dbtrabalho3persistencia-shard-00-01.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 67b0e2ca612890a23fa7960f, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('dbtrabalho3persistencia-shard-00-00.ly2eu.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: dbtrabalho3persistencia-shard-00-00.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('dbtrabalho3persistencia-shard-00-01.ly2eu.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: dbtrabalho3persistencia-shard-00-01.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('dbtrabalho3persistencia-shard-00-02.ly2eu.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: dbtrabalho3persistencia-shard-00-02.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2025-02-15 15:55:07,025 - ERROR - Erro ao listar clientes: SSL handshake failed: dbtrabalho3persistencia-shard-00-02.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: dbtrabalho3persistencia-shard-00-00.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: dbtrabalho3persistencia-shard-00-01.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 67b0e2ca612890a23fa7960f, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('dbtrabalho3persistencia-shard-00-00.ly2eu.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: dbtrabalho3persistencia-shard-00-00.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('dbtrabalho3persistencia-shard-00-01.ly2eu.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: dbtrabalho3persistencia-shard-00-01.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('dbtrabalho3persistencia-shard-00-02.ly2eu.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: dbtrabalho3persistencia-shard-00-02.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+Traceback (most recent call last):
+  File "C:\Users\Kaynan\Desktop\Trabalho 3 de Persistência\DSPP-Trabalho-3\app\controller\cliente.py", line 114, in list_clientes
+    await db.clientes.find(query)
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\motor\core.py", line 1696, in _to_list
+    result = get_more_result.result()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\cursor.py", line 1205, in _refresh
+    self._send_message(q)
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\cursor.py", line 1100, in _send_message
+    response = client._run_operation(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1752, in _run_operation
+    return self._retryable_read(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1861, in _retryable_read
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1828, in _retry_internal
+    ).run()
+      ^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2565, in run
+    return self._read() if self._is_read else self._write()
+           ^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2700, in _read
+    self._server = self._get_server()
+                   ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2656, in _get_server
+    return self._client._select_server(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1647, in _select_server
+    server = topology.select_server(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\topology.py", line 402, in select_server
+    server = self._select_server(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\topology.py", line 380, in _select_server
+    servers = self.select_servers(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\topology.py", line 287, in select_servers
+    server_descriptions = self._select_servers_loop(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\topology.py", line 337, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: SSL handshake failed: dbtrabalho3persistencia-shard-00-02.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: dbtrabalho3persistencia-shard-00-00.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: dbtrabalho3persistencia-shard-00-01.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 67b0e2ca612890a23fa7960f, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('dbtrabalho3persistencia-shard-00-00.ly2eu.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: dbtrabalho3persistencia-shard-00-00.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('dbtrabalho3persistencia-shard-00-01.ly2eu.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: dbtrabalho3persistencia-shard-00-01.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('dbtrabalho3persistencia-shard-00-02.ly2eu.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: dbtrabalho3persistencia-shard-00-02.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2025-02-15 15:57:13,083 - INFO - API inicializada
+2025-02-15 15:57:13,083 - INFO - API inicializada
+2025-02-15 15:57:23,483 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-15 15:57:23,483 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-15 15:57:53,866 - ERROR - Erro ao listar clientes: SSL handshake failed: dbtrabalho3persistencia-shard-00-02.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: dbtrabalho3persistencia-shard-00-00.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: dbtrabalho3persistencia-shard-00-01.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 67b0e37ee7b1b83ec9d34058, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('dbtrabalho3persistencia-shard-00-00.ly2eu.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: dbtrabalho3persistencia-shard-00-00.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('dbtrabalho3persistencia-shard-00-01.ly2eu.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: dbtrabalho3persistencia-shard-00-01.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('dbtrabalho3persistencia-shard-00-02.ly2eu.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: dbtrabalho3persistencia-shard-00-02.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+Traceback (most recent call last):
+  File "C:\Users\Kaynan\Desktop\Trabalho 3 de Persistência\DSPP-Trabalho-3\app\controller\cliente.py", line 114, in list_clientes
+    await db.clientes.find(query)
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\motor\core.py", line 1696, in _to_list
+    result = get_more_result.result()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\cursor.py", line 1205, in _refresh
+    self._send_message(q)
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\cursor.py", line 1100, in _send_message
+    response = client._run_operation(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1752, in _run_operation
+    return self._retryable_read(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1861, in _retryable_read
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1828, in _retry_internal
+    ).run()
+      ^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2565, in run
+    return self._read() if self._is_read else self._write()
+           ^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2700, in _read
+    self._server = self._get_server()
+                   ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2656, in _get_server
+    return self._client._select_server(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1647, in _select_server
+    server = topology.select_server(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\topology.py", line 402, in select_server
+    server = self._select_server(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\topology.py", line 380, in _select_server
+    servers = self.select_servers(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\topology.py", line 287, in select_servers
+    server_descriptions = self._select_servers_loop(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\topology.py", line 337, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: SSL handshake failed: dbtrabalho3persistencia-shard-00-02.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: dbtrabalho3persistencia-shard-00-00.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: dbtrabalho3persistencia-shard-00-01.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 67b0e37ee7b1b83ec9d34058, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('dbtrabalho3persistencia-shard-00-00.ly2eu.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: dbtrabalho3persistencia-shard-00-00.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('dbtrabalho3persistencia-shard-00-01.ly2eu.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: dbtrabalho3persistencia-shard-00-01.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('dbtrabalho3persistencia-shard-00-02.ly2eu.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: dbtrabalho3persistencia-shard-00-02.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2025-02-15 15:57:53,866 - ERROR - Erro ao listar clientes: SSL handshake failed: dbtrabalho3persistencia-shard-00-02.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: dbtrabalho3persistencia-shard-00-00.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: dbtrabalho3persistencia-shard-00-01.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 67b0e37ee7b1b83ec9d34058, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('dbtrabalho3persistencia-shard-00-00.ly2eu.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: dbtrabalho3persistencia-shard-00-00.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('dbtrabalho3persistencia-shard-00-01.ly2eu.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: dbtrabalho3persistencia-shard-00-01.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('dbtrabalho3persistencia-shard-00-02.ly2eu.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: dbtrabalho3persistencia-shard-00-02.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+Traceback (most recent call last):
+  File "C:\Users\Kaynan\Desktop\Trabalho 3 de Persistência\DSPP-Trabalho-3\app\controller\cliente.py", line 114, in list_clientes
+    await db.clientes.find(query)
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\motor\core.py", line 1696, in _to_list
+    result = get_more_result.result()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\cursor.py", line 1205, in _refresh
+    self._send_message(q)
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\cursor.py", line 1100, in _send_message
+    response = client._run_operation(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1752, in _run_operation
+    return self._retryable_read(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1861, in _retryable_read
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\_csot.py", line 119, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1828, in _retry_internal
+    ).run()
+      ^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2565, in run
+    return self._read() if self._is_read else self._write()
+           ^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2700, in _read
+    self._server = self._get_server()
+                   ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2656, in _get_server
+    return self._client._select_server(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1647, in _select_server
+    server = topology.select_server(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\topology.py", line 402, in select_server
+    server = self._select_server(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\topology.py", line 380, in _select_server
+    servers = self.select_servers(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\topology.py", line 287, in select_servers
+    server_descriptions = self._select_servers_loop(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\pymongo\synchronous\topology.py", line 337, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: SSL handshake failed: dbtrabalho3persistencia-shard-00-02.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: dbtrabalho3persistencia-shard-00-00.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: dbtrabalho3persistencia-shard-00-01.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 67b0e37ee7b1b83ec9d34058, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('dbtrabalho3persistencia-shard-00-00.ly2eu.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: dbtrabalho3persistencia-shard-00-00.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('dbtrabalho3persistencia-shard-00-01.ly2eu.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: dbtrabalho3persistencia-shard-00-01.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('dbtrabalho3persistencia-shard-00-02.ly2eu.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: dbtrabalho3persistencia-shard-00-02.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2025-02-15 16:20:03,579 - INFO - API inicializada
+2025-02-15 16:20:03,579 - INFO - API inicializada
+2025-02-15 16:55:32,645 - INFO - Clientes com comandas listados com sucesso.
+2025-02-15 16:55:32,645 - INFO - Clientes com comandas listados com sucesso.
+2025-02-15 16:56:59,689 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-15 16:56:59,689 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-15 16:56:59,813 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
+2025-02-15 16:56:59,813 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
+2025-02-15 16:57:07,428 - DEBUG - Listando clientes - página: 1, limite: 10, nome: ka, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-15 16:57:07,428 - DEBUG - Listando clientes - página: 1, limite: 10, nome: ka, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-15 16:57:07,554 - INFO - Listagem de clientes retornou 1 clientes (total: 1)
+2025-02-15 16:57:07,554 - INFO - Listagem de clientes retornou 1 clientes (total: 1)
+2025-02-15 16:57:12,082 - DEBUG - Listando clientes - página: 1, limite: 10, nome: y, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-15 16:57:12,082 - DEBUG - Listando clientes - página: 1, limite: 10, nome: y, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-15 16:57:12,210 - INFO - Listagem de clientes retornou 1 clientes (total: 1)
+2025-02-15 16:57:12,210 - INFO - Listagem de clientes retornou 1 clientes (total: 1)
+2025-02-15 16:57:17,093 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-15 16:57:17,093 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-15 16:57:17,219 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
+2025-02-15 16:57:17,219 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
+2025-02-15 16:57:25,612 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: 1, sort_by: None, sort_direction: 1
+2025-02-15 16:57:25,612 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: 1, sort_by: None, sort_direction: 1
+2025-02-15 16:57:25,735 - INFO - Listagem de clientes retornou 0 clientes (total: 0)
+2025-02-15 16:57:25,735 - INFO - Listagem de clientes retornou 0 clientes (total: 0)
+2025-02-15 16:57:31,917 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-15 16:57:31,917 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-15 16:57:32,041 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
+2025-02-15 16:57:32,041 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
+2025-02-15 16:57:43,452 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: nao, cpf: None, sort_by: None, sort_direction: 1
+2025-02-15 16:57:43,452 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: nao, cpf: None, sort_by: None, sort_direction: 1
+2025-02-15 16:57:43,576 - INFO - Listagem de clientes retornou 1 clientes (total: 1)
+2025-02-15 16:57:43,576 - INFO - Listagem de clientes retornou 1 clientes (total: 1)
+2025-02-15 16:57:47,652 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: a, cpf: None, sort_by: None, sort_direction: 1
+2025-02-15 16:57:47,652 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: a, cpf: None, sort_by: None, sort_direction: 1
+2025-02-15 16:57:47,782 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
+2025-02-15 16:57:47,782 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
+2025-02-15 16:58:00,608 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: 65156156155, sort_by: None, sort_direction: 1
+2025-02-15 16:58:00,608 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: 65156156155, sort_by: None, sort_direction: 1
+2025-02-15 16:58:00,731 - INFO - Listagem de clientes retornou 1 clientes (total: 1)
+2025-02-15 16:58:00,731 - INFO - Listagem de clientes retornou 1 clientes (total: 1)
+2025-02-15 16:58:06,193 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: 65, sort_by: None, sort_direction: 1
+2025-02-15 16:58:06,193 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: 65, sort_by: None, sort_direction: 1
+2025-02-15 16:58:06,314 - INFO - Listagem de clientes retornou 0 clientes (total: 0)
+2025-02-15 16:58:06,314 - INFO - Listagem de clientes retornou 0 clientes (total: 0)
+2025-02-15 16:58:08,879 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-15 16:58:08,879 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-15 16:58:09,006 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
+2025-02-15 16:58:09,006 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
+2025-02-15 16:58:24,191 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: cpf, sort_direction: 1
+2025-02-15 16:58:24,191 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: cpf, sort_direction: 1
+2025-02-15 16:58:24,318 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
+2025-02-15 16:58:24,318 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
+2025-02-15 16:58:39,973 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-15 16:58:39,973 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-15 16:58:40,108 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
+2025-02-15 16:58:40,108 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
+2025-02-16 20:26:25,791 - INFO - API inicializada
+2025-02-16 20:26:25,791 - INFO - API inicializada
+2025-02-16 20:31:01,049 - INFO - Clientes com comandas listados com sucesso.
+2025-02-16 20:31:01,049 - INFO - Clientes com comandas listados com sucesso.
+2025-02-16 20:34:49,221 - DEBUG - Listando pratos - página: 1, limite: 10, nome: None, categoria: None
+2025-02-16 20:34:49,221 - DEBUG - Listando pratos - página: 1, limite: 10, nome: None, categoria: None
+2025-02-16 20:34:49,341 - INFO - Listagem de pratos retornou 2 pratos (total: 2)
+2025-02-16 20:34:49,341 - INFO - Listagem de pratos retornou 2 pratos (total: 2)
+2025-02-16 20:35:13,559 - WARNING - id de prato invalido: string
+2025-02-16 20:35:13,559 - WARNING - id de prato invalido: string
+2025-02-16 20:36:03,783 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-16 20:36:03,783 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-16 20:36:03,910 - INFO - Listagem de comandas retornou 1 comandas (total: 1)
+2025-02-16 20:36:03,910 - INFO - Listagem de comandas retornou 1 comandas (total: 1)
+2025-02-16 20:53:10,334 - DEBUG - Buscando comanda com ID: abertas
+2025-02-16 20:53:10,334 - DEBUG - Buscando comanda com ID: abertas
+2025-02-16 20:53:10,335 - WARNING - ID de comanda inválido: abertas
+2025-02-16 20:53:10,335 - WARNING - ID de comanda inválido: abertas
+2025-02-16 20:53:26,686 - DEBUG - Buscando comanda com ID: abertas
+2025-02-16 20:53:26,686 - DEBUG - Buscando comanda com ID: abertas
+2025-02-16 20:53:26,687 - WARNING - ID de comanda inválido: abertas
+2025-02-16 20:53:26,687 - WARNING - ID de comanda inválido: abertas
+2025-02-16 20:56:38,014 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-16 20:56:38,014 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-16 20:56:38,790 - INFO - Listagem de comandas retornou 1 comandas (total: 1)
+2025-02-16 20:56:38,790 - INFO - Listagem de comandas retornou 1 comandas (total: 1)
+2025-02-16 20:57:49,978 - DEBUG - Fechando comanda com ID: 67a7a1f6311e319ee5a51cf0
+2025-02-16 20:57:49,978 - DEBUG - Fechando comanda com ID: 67a7a1f6311e319ee5a51cf0
+2025-02-16 20:57:50,113 - INFO - Comanda 67a7a1f6311e319ee5a51cf0 fechada com sucesso.
+2025-02-16 20:57:50,113 - INFO - Comanda 67a7a1f6311e319ee5a51cf0 fechada com sucesso.
+2025-02-16 20:57:58,846 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-16 20:57:58,846 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-16 20:57:58,973 - INFO - Listagem de comandas retornou 1 comandas (total: 1)
+2025-02-16 20:57:58,973 - INFO - Listagem de comandas retornou 1 comandas (total: 1)
+2025-02-16 20:58:04,586 - DEBUG - Buscando comanda com ID: abertas
+2025-02-16 20:58:04,586 - DEBUG - Buscando comanda com ID: abertas
+2025-02-16 20:58:04,586 - WARNING - ID de comanda inválido: abertas
+2025-02-16 20:58:04,586 - WARNING - ID de comanda inválido: abertas
+2025-02-16 20:58:06,812 - DEBUG - Buscando comanda com ID: abertas
+2025-02-16 20:58:06,812 - DEBUG - Buscando comanda com ID: abertas
+2025-02-16 20:58:06,813 - WARNING - ID de comanda inválido: abertas
+2025-02-16 20:58:06,813 - WARNING - ID de comanda inválido: abertas
+2025-02-16 21:01:17,233 - DEBUG - Buscando comanda com ID: abertas
+2025-02-16 21:01:17,233 - DEBUG - Buscando comanda com ID: abertas
+2025-02-16 21:01:17,233 - WARNING - ID de comanda inválido: abertas
+2025-02-16 21:01:17,233 - WARNING - ID de comanda inválido: abertas
+2025-02-17 13:27:40,528 - INFO - API inicializada
+2025-02-17 13:27:40,528 - INFO - API inicializada
+2025-02-17 13:27:54,792 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-17 13:27:54,792 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-17 13:27:55,619 - INFO - Listagem de comandas retornou 1 comandas (total: 1)
+2025-02-17 13:27:55,619 - INFO - Listagem de comandas retornou 1 comandas (total: 1)
+2025-02-17 13:28:12,774 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-17 13:28:12,774 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-17 13:28:12,898 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
+2025-02-17 13:28:12,898 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
+2025-02-17 13:49:11,246 - DEBUG - Criando comanda para cliente_id: 67a7a0184bf90e1cd1f1f5eb
+2025-02-17 13:49:11,246 - DEBUG - Criando comanda para cliente_id: 67a7a0184bf90e1cd1f1f5eb
+2025-02-17 13:49:11,247 - DEBUG - Buscando cliente com ID: 67a7a0184bf90e1cd1f1f5eb
+2025-02-17 13:49:11,247 - DEBUG - Buscando cliente com ID: 67a7a0184bf90e1cd1f1f5eb
+2025-02-17 13:49:11,312 - INFO - Cliente 67a7a0184bf90e1cd1f1f5eb encontrado com sucesso.
+2025-02-17 13:49:11,312 - INFO - Cliente 67a7a0184bf90e1cd1f1f5eb encontrado com sucesso.
+2025-02-17 13:49:11,492 - INFO - Comanda 67b36887c6d860ffbffe430e criada com sucesso.
+2025-02-17 13:49:11,492 - INFO - Comanda 67b36887c6d860ffbffe430e criada com sucesso.
+2025-02-17 13:49:17,803 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-17 13:49:17,803 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-17 13:49:17,919 - INFO - Listagem de comandas retornou 2 comandas (total: 2)
+2025-02-17 13:49:17,919 - INFO - Listagem de comandas retornou 2 comandas (total: 2)
+2025-02-17 13:49:26,105 - DEBUG - Buscando comanda com ID: abertas
+2025-02-17 13:49:26,105 - DEBUG - Buscando comanda com ID: abertas
+2025-02-17 13:49:26,105 - WARNING - ID de comanda inválido: abertas
+2025-02-17 13:49:26,105 - WARNING - ID de comanda inválido: abertas
+2025-02-17 13:52:39,823 - DEBUG - Buscando comanda com ID: abertas
+2025-02-17 13:52:39,823 - DEBUG - Buscando comanda com ID: abertas
+2025-02-17 13:52:39,823 - WARNING - ID de comanda inválido: abertas
+2025-02-17 13:52:39,823 - WARNING - ID de comanda inválido: abertas
+2025-02-17 13:53:58,979 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-17 13:53:58,979 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-17 13:53:59,809 - INFO - Listagem de comandas retornou 2 comandas (total: 2)
+2025-02-17 13:53:59,809 - INFO - Listagem de comandas retornou 2 comandas (total: 2)
+2025-02-17 14:03:53,292 - DEBUG - Buscando comanda com ID: abertas
+2025-02-17 14:03:53,292 - DEBUG - Buscando comanda com ID: abertas
+2025-02-17 14:03:53,292 - WARNING - ID de comanda inválido: abertas
+2025-02-17 14:03:53,292 - WARNING - ID de comanda inválido: abertas
+2025-02-17 14:05:06,879 - DEBUG - Buscando comanda com ID: abertas
+2025-02-17 14:05:06,879 - DEBUG - Buscando comanda com ID: abertas
+2025-02-17 14:05:06,879 - WARNING - ID de comanda inválido: abertas
+2025-02-17 14:05:06,879 - WARNING - ID de comanda inválido: abertas
+2025-02-17 14:05:33,556 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-17 14:05:33,556 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-17 14:05:34,300 - INFO - Listagem de comandas retornou 2 comandas (total: 2)
+2025-02-17 14:05:34,300 - INFO - Listagem de comandas retornou 2 comandas (total: 2)
+2025-02-17 14:05:40,121 - DEBUG - Buscando cliente e mesa para a comanda com ID: 67b36887c6d860ffbffe430e
+2025-02-17 14:05:40,121 - DEBUG - Buscando cliente e mesa para a comanda com ID: 67b36887c6d860ffbffe430e
+2025-02-17 14:05:40,311 - INFO - Dados encontrados para comanda 67b36887c6d860ffbffe430e: {'nome_cliente': 'GUI GUI', 'capacidade_mesa': 2}
+2025-02-17 14:05:40,311 - INFO - Dados encontrados para comanda 67b36887c6d860ffbffe430e: {'nome_cliente': 'GUI GUI', 'capacidade_mesa': 2}
+2025-02-17 14:09:11,739 - DEBUG - Buscando comanda com ID: abertas
+2025-02-17 14:09:11,739 - DEBUG - Buscando comanda com ID: abertas
+2025-02-17 14:09:11,739 - WARNING - ID de comanda inválido: abertas
+2025-02-17 14:09:11,739 - WARNING - ID de comanda inválido: abertas
+2025-02-17 14:16:22,471 - DEBUG - Buscando comanda com ID: 67b36887c6d860ffbffe430e
+2025-02-17 14:16:22,471 - DEBUG - Buscando comanda com ID: 67b36887c6d860ffbffe430e
+2025-02-17 14:16:23,166 - INFO - Comanda 67b36887c6d860ffbffe430e encontrada com sucesso.
+2025-02-17 14:16:23,166 - INFO - Comanda 67b36887c6d860ffbffe430e encontrada com sucesso.
+2025-02-17 14:17:31,211 - DEBUG - Listando comandas abertas.
+2025-02-17 14:17:31,211 - DEBUG - Listando comandas abertas.
+2025-02-17 14:17:31,860 - INFO - Listagem de comandas abertas retornou 1 comandas.
+2025-02-17 14:17:31,860 - INFO - Listagem de comandas abertas retornou 1 comandas.
+2025-02-17 14:33:27,184 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-17 14:33:27,184 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-17 14:33:27,308 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
+2025-02-17 14:33:27,308 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
+2025-02-17 14:33:45,914 - DEBUG - Criando comanda para cliente_id: 67a79fe84bf90e1cd1f1f5ea
+2025-02-17 14:33:45,914 - DEBUG - Criando comanda para cliente_id: 67a79fe84bf90e1cd1f1f5ea
+2025-02-17 14:33:45,914 - DEBUG - Buscando cliente com ID: 67a79fe84bf90e1cd1f1f5ea
+2025-02-17 14:33:45,914 - DEBUG - Buscando cliente com ID: 67a79fe84bf90e1cd1f1f5ea
+2025-02-17 14:33:45,993 - INFO - Cliente 67a79fe84bf90e1cd1f1f5ea encontrado com sucesso.
+2025-02-17 14:33:45,993 - INFO - Cliente 67a79fe84bf90e1cd1f1f5ea encontrado com sucesso.
+2025-02-17 14:33:46,195 - INFO - Comanda 67b372fad0cf22d22e439550 criada com sucesso.
+2025-02-17 14:33:46,195 - INFO - Comanda 67b372fad0cf22d22e439550 criada com sucesso.
+2025-02-17 14:33:53,130 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-17 14:33:53,130 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-17 14:33:53,247 - INFO - Listagem de comandas retornou 3 comandas (total: 3)
+2025-02-17 14:33:53,247 - INFO - Listagem de comandas retornou 3 comandas (total: 3)
+2025-02-17 14:34:02,370 - DEBUG - Listando comandas abertas.
+2025-02-17 14:34:02,370 - DEBUG - Listando comandas abertas.
+2025-02-17 14:34:02,431 - INFO - Listagem de comandas abertas retornou 2 comandas.
+2025-02-17 14:34:02,431 - INFO - Listagem de comandas abertas retornou 2 comandas.
+2025-02-17 14:34:26,475 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-17 14:34:26,475 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-17 14:34:26,697 - INFO - Listagem de comandas retornou 3 comandas (total: 3)
+2025-02-17 14:34:26,697 - INFO - Listagem de comandas retornou 3 comandas (total: 3)
+2025-02-17 14:34:39,179 - DEBUG - Buscando cliente e mesa para a comanda com ID: 67a79fe84bf90e1cd1f1f5ea
+2025-02-17 14:34:39,179 - DEBUG - Buscando cliente e mesa para a comanda com ID: 67a79fe84bf90e1cd1f1f5ea
+2025-02-17 14:34:39,252 - WARNING - Comanda não encontrada: 67a79fe84bf90e1cd1f1f5ea
+2025-02-17 14:34:39,252 - WARNING - Comanda não encontrada: 67a79fe84bf90e1cd1f1f5ea
+2025-02-17 14:34:47,963 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-17 14:34:47,963 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-17 14:34:48,086 - INFO - Listagem de comandas retornou 3 comandas (total: 3)
+2025-02-17 14:34:48,086 - INFO - Listagem de comandas retornou 3 comandas (total: 3)
+2025-02-17 14:35:01,377 - DEBUG - Buscando cliente e mesa para a comanda com ID: 67b372fad0cf22d22e439550
+2025-02-17 14:35:01,377 - DEBUG - Buscando cliente e mesa para a comanda com ID: 67b372fad0cf22d22e439550
+2025-02-17 14:35:01,557 - INFO - Dados encontrados para comanda 67b372fad0cf22d22e439550: {'nome_cliente': 'Kaynan', 'capacidade_mesa': 1}
+2025-02-17 14:35:01,557 - INFO - Dados encontrados para comanda 67b372fad0cf22d22e439550: {'nome_cliente': 'Kaynan', 'capacidade_mesa': 1}
+2025-02-17 14:35:15,374 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-17 14:35:15,374 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-17 14:35:15,498 - INFO - Listagem de comandas retornou 3 comandas (total: 3)
+2025-02-17 14:35:15,498 - INFO - Listagem de comandas retornou 3 comandas (total: 3)

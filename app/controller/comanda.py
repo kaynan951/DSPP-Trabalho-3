@@ -233,3 +233,110 @@ class ComandaController:
             raise HTTPException(
                 status_code=500, detail="Erro interno ao contar comandas."
             )
+        
+    @staticmethod
+    async def close_comanda(comanda_id: str) -> Comanda:
+        """Fecha uma comanda."""
+        logger.debug(f"Fechando comanda com ID: {comanda_id}")
+        try:
+            try:
+                object_id = ObjectId(comanda_id)
+            except Exception:
+                logger.warning(f"ID de comanda inválido: {comanda_id}")
+                raise HTTPException(status_code=400, detail="ID de comanda inválido.")
+
+            update_data = {"status": "fechada"}
+
+            result = await db.comandas.update_one(
+                {"_id": object_id}, {"$set": update_data}
+            )
+
+            if result.modified_count == 0:
+                logger.warning(f"Comanda não encontrada ou já fechada: {comanda_id}")
+                raise HTTPException(
+                    status_code=404, detail="Comanda não encontrada ou já fechada."
+                )
+
+            comanda = await db.comandas.find_one({"_id": object_id})
+            comanda["_id"] = str(comanda["_id"])
+
+            logger.info(f"Comanda {comanda_id} fechada com sucesso.")
+            return Comanda(**comanda)
+        except HTTPException as http_ex:
+            raise http_ex
+        except Exception as e:
+            logger.exception(f"Erro ao fechar comanda com ID {comanda_id}: {e}")
+            raise HTTPException(
+                status_code=500, detail="Erro interno ao fechar comanda."
+            )
+        
+    @staticmethod
+    async def list_comandas_abertas() -> List[Comanda]:
+        """Lista comandas abertas."""
+        logger.debug("Listando comandas abertas.")
+        try:
+            query = {"status": "aberta"}
+            comandas = await db.comandas.find(query).to_list(length=1000)
+
+            comandas_list = []
+            for comanda in comandas:
+                comanda["_id"] = str(comanda["_id"])
+
+                if "cliente_id" in comanda:
+                    try:
+                        comanda["cliente_id"] = str(ObjectId(comanda["cliente_id"]))
+                    except Exception:
+                        logger.warning(f"ID de cliente inválido: {comanda['cliente_id']}")
+                        raise HTTPException(status_code=400, detail="ID de cliente inválido.")
+
+                comandas_list.append(Comanda(**comanda))
+
+            logger.info(f"Listagem de comandas abertas retornou {len(comandas_list)} comandas.")
+            return comandas_list
+
+        except HTTPException as http_ex:
+            raise http_ex
+        except Exception as e:
+            logger.exception(f"Erro ao listar comandas abertas: {e}")
+            raise HTTPException(
+                status_code=500, detail="Erro interno ao listar comandas abertas."
+            )
+        
+    @staticmethod
+    async def get_cliente_mesa_por_comanda(comanda_id: str) -> dict:
+        """Retorna o nome do cliente e a capacidade da mesa associada a uma comanda."""
+        logger.debug(f"Buscando cliente e mesa para a comanda com ID: {comanda_id}")
+        try:
+            try:
+                object_id = ObjectId(comanda_id)
+            except Exception:
+                logger.warning(f"ID de comanda inválido: {comanda_id}")
+                raise HTTPException(status_code=400, detail="ID de comanda inválido.")
+
+            comanda = await db.comandas.find_one({"_id": object_id})
+            if not comanda:
+                logger.warning(f"Comanda não encontrada: {comanda_id}")
+                raise HTTPException(status_code=404, detail="Comanda não encontrada.")
+
+            cliente = await db.clientes.find_one({"_id": ObjectId(comanda["cliente_id"])})
+            if not cliente:
+                logger.warning(f"Cliente não encontrado para comanda: {comanda_id}")
+                raise HTTPException(status_code=404, detail="Cliente não encontrado.")
+
+            mesa = await db.mesas.find_one({"_id": ObjectId(cliente["id_mesa"])})
+            if not mesa:
+                logger.warning(f"Mesa não encontrada para cliente: {cliente['_id']}")
+                raise HTTPException(status_code=404, detail="Mesa não encontrada.")
+
+            resultado = {
+                "nome_cliente": cliente["nome"],
+                "capacidade_mesa": mesa["capacidade"]
+            }
+
+            logger.info(f"Dados encontrados para comanda {comanda_id}: {resultado}")
+            return resultado
+        except HTTPException as http_ex:
+            raise http_ex
+        except Exception as e:
+            logger.exception(f"Erro ao buscar dados para comanda {comanda_id}: {e}")
+            raise HTTPException(status_code=500, detail="Erro interno ao buscar dados da comanda.")
