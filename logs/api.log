@@ -917,3 +917,119 @@ pymongo.errors.ServerSelectionTimeoutError: SSL handshake failed: dbtrabalho3per
 2025-02-17 14:35:15,498 - INFO - Listagem de comandas retornou 3 comandas (total: 3)
 2025-02-17 14:35:15,498 - INFO - Listagem de comandas retornou 3 comandas (total: 3)
 
+2025-02-18 16:21:00,642 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-18 16:21:00,642 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-18 16:21:00,661 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
+2025-02-18 16:21:00,661 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
+2025-02-18 16:21:53,349 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-18 16:21:53,349 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-18 16:21:53,355 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
+2025-02-18 16:21:53,355 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
+2025-02-18 16:22:02,632 - DEBUG - Deletando cliente com ID: 67a8d0b82390dbf6622a7600
+2025-02-18 16:22:02,632 - DEBUG - Deletando cliente com ID: 67a8d0b82390dbf6622a7600
+2025-02-18 16:22:02,642 - INFO - Cliente 67a8d0b82390dbf6622a7600 deletado com sucesso.
+2025-02-18 16:22:02,642 - INFO - Cliente 67a8d0b82390dbf6622a7600 deletado com sucesso.
+2025-02-18 16:22:17,507 - DEBUG - Deletando cliente com ID: 67a8d0cc2390dbf6622a7601
+2025-02-18 16:22:17,507 - DEBUG - Deletando cliente com ID: 67a8d0cc2390dbf6622a7601
+2025-02-18 16:22:17,511 - INFO - Cliente 67a8d0cc2390dbf6622a7601 deletado com sucesso.
+2025-02-18 16:22:17,511 - INFO - Cliente 67a8d0cc2390dbf6622a7601 deletado com sucesso.
+2025-02-18 16:22:28,650 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-18 16:22:28,650 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-18 16:22:28,665 - INFO - Listagem de comandas retornou 2 comandas (total: 2)
+2025-02-18 16:22:28,665 - INFO - Listagem de comandas retornou 2 comandas (total: 2)
+2025-02-18 16:25:20,501 - DEBUG - Contando o número total de mesas
+2025-02-18 16:25:20,501 - DEBUG - Contando o número total de mesas
+2025-02-18 16:25:20,506 - INFO - Número total de mesas: 1
+2025-02-18 16:25:20,506 - INFO - Número total de mesas: 1
+2025-02-18 16:25:54,956 - DEBUG - Iniciando create_cliente para o cliente: Guigui
+2025-02-18 16:25:54,956 - DEBUG - Iniciando create_cliente para o cliente: Guigui
+2025-02-18 16:25:54,965 - DEBUG - Clientes na mesa 67b4de60e3892d9353f1cb95: 0, Capacidade: 2
+2025-02-18 16:25:54,965 - DEBUG - Clientes na mesa 67b4de60e3892d9353f1cb95: 0, Capacidade: 2
+2025-02-18 16:25:54,970 - INFO - Cliente 67b4dec2e3892d9353f1cb96 criado com sucesso na mesa 67b4de60e3892d9353f1cb95
+2025-02-18 16:25:54,970 - INFO - Cliente 67b4dec2e3892d9353f1cb96 criado com sucesso na mesa 67b4de60e3892d9353f1cb95
+2025-02-18 16:26:18,122 - DEBUG - Iniciando create_cliente para o cliente: Kaynara
+2025-02-18 16:26:18,122 - DEBUG - Iniciando create_cliente para o cliente: Kaynara
+2025-02-18 16:26:18,133 - DEBUG - Clientes na mesa 67b4de60e3892d9353f1cb95: 1, Capacidade: 2
+2025-02-18 16:26:18,133 - DEBUG - Clientes na mesa 67b4de60e3892d9353f1cb95: 1, Capacidade: 2
+2025-02-18 16:26:18,138 - INFO - Cliente 67b4dedae3892d9353f1cb97 criado com sucesso na mesa 67b4de60e3892d9353f1cb95
+2025-02-18 16:26:18,138 - INFO - Cliente 67b4dedae3892d9353f1cb97 criado com sucesso na mesa 67b4de60e3892d9353f1cb95
+2025-02-18 16:26:26,364 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-18 16:26:26,364 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-18 16:26:26,372 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
+2025-02-18 16:26:26,372 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
+2025-02-18 16:26:59,151 - INFO - Clientes com comandas listados com sucesso.
+2025-02-18 16:26:59,151 - INFO - Clientes com comandas listados com sucesso.
+2025-02-18 16:27:32,751 - DEBUG - Criando comanda para cliente_id: 67b4dec2e3892d9353f1cb96
+2025-02-18 16:27:32,751 - DEBUG - Criando comanda para cliente_id: 67b4dec2e3892d9353f1cb96
+2025-02-18 16:27:32,753 - DEBUG - Buscando cliente com ID: 67b4dec2e3892d9353f1cb96
+2025-02-18 16:27:32,753 - DEBUG - Buscando cliente com ID: 67b4dec2e3892d9353f1cb96
+2025-02-18 16:27:32,758 - INFO - Cliente 67b4dec2e3892d9353f1cb96 encontrado com sucesso.
+2025-02-18 16:27:32,758 - INFO - Cliente 67b4dec2e3892d9353f1cb96 encontrado com sucesso.
+2025-02-18 16:27:32,768 - INFO - Comanda 67b4df24e3892d9353f1cb98 criada com sucesso.
+2025-02-18 16:27:32,768 - INFO - Comanda 67b4df24e3892d9353f1cb98 criada com sucesso.
+2025-02-18 16:27:43,754 - DEBUG - Criando comanda para cliente_id: 67b4dedae3892d9353f1cb97
+2025-02-18 16:27:43,754 - DEBUG - Criando comanda para cliente_id: 67b4dedae3892d9353f1cb97
+2025-02-18 16:27:43,755 - DEBUG - Buscando cliente com ID: 67b4dedae3892d9353f1cb97
+2025-02-18 16:27:43,755 - DEBUG - Buscando cliente com ID: 67b4dedae3892d9353f1cb97
+2025-02-18 16:27:43,759 - INFO - Cliente 67b4dedae3892d9353f1cb97 encontrado com sucesso.
+2025-02-18 16:27:43,759 - INFO - Cliente 67b4dedae3892d9353f1cb97 encontrado com sucesso.
+2025-02-18 16:27:43,766 - INFO - Comanda 67b4df2fe3892d9353f1cb99 criada com sucesso.
+2025-02-18 16:27:43,766 - INFO - Comanda 67b4df2fe3892d9353f1cb99 criada com sucesso.
+2025-02-18 16:28:25,182 - DEBUG - Criando prato: arroz com camarão
+2025-02-18 16:28:25,182 - DEBUG - Criando prato: arroz com camarão
+2025-02-18 16:28:25,189 - INFO - Prato 67b4df59e3892d9353f1cb9a criado com sucesso.
+2025-02-18 16:28:25,189 - INFO - Prato 67b4df59e3892d9353f1cb9a criado com sucesso.
+2025-02-18 16:28:59,860 - DEBUG - Criando prato: Pão com salsicha
+2025-02-18 16:28:59,860 - DEBUG - Criando prato: Pão com salsicha
+2025-02-18 16:28:59,865 - INFO - Prato 67b4df7be3892d9353f1cb9b criado com sucesso.
+2025-02-18 16:28:59,865 - INFO - Prato 67b4df7be3892d9353f1cb9b criado com sucesso.
+2025-02-18 16:29:06,038 - DEBUG - Listando pratos - página: 1, limite: 10, nome: None, categoria: None
+2025-02-18 16:29:06,038 - DEBUG - Listando pratos - página: 1, limite: 10, nome: None, categoria: None
+2025-02-18 16:29:06,045 - INFO - Listagem de pratos retornou 2 pratos (total: 2)
+2025-02-18 16:29:06,045 - INFO - Listagem de pratos retornou 2 pratos (total: 2)
+2025-02-18 16:30:08,254 - DEBUG - Criando ingrediente: camarão
+2025-02-18 16:30:08,254 - DEBUG - Criando ingrediente: camarão
+2025-02-18 16:30:08,260 - INFO - Ingrediente 67b4dfc0e3892d9353f1cb9c criado com sucesso.
+2025-02-18 16:30:08,260 - INFO - Ingrediente 67b4dfc0e3892d9353f1cb9c criado com sucesso.
+2025-02-18 16:30:21,508 - DEBUG - Criando ingrediente: arroz
+2025-02-18 16:30:21,508 - DEBUG - Criando ingrediente: arroz
+2025-02-18 16:30:21,513 - INFO - Ingrediente 67b4dfcde3892d9353f1cb9d criado com sucesso.
+2025-02-18 16:30:21,513 - INFO - Ingrediente 67b4dfcde3892d9353f1cb9d criado com sucesso.
+2025-02-18 16:30:31,042 - DEBUG - Criando ingrediente: pão
+2025-02-18 16:30:31,042 - DEBUG - Criando ingrediente: pão
+2025-02-18 16:30:31,050 - INFO - Ingrediente 67b4dfd7e3892d9353f1cb9e criado com sucesso.
+2025-02-18 16:30:31,050 - INFO - Ingrediente 67b4dfd7e3892d9353f1cb9e criado com sucesso.
+2025-02-18 16:30:43,406 - DEBUG - Criando ingrediente: salsicha
+2025-02-18 16:30:43,406 - DEBUG - Criando ingrediente: salsicha
+2025-02-18 16:30:43,415 - INFO - Ingrediente 67b4dfe3e3892d9353f1cb9f criado com sucesso.
+2025-02-18 16:30:43,415 - INFO - Ingrediente 67b4dfe3e3892d9353f1cb9f criado com sucesso.
+2025-02-18 16:32:12,471 - DEBUG - Criando ingrediente: arroz
+2025-02-18 16:32:12,471 - DEBUG - Criando ingrediente: arroz
+2025-02-18 16:32:12,477 - INFO - Ingrediente 67b4e03ce3892d9353f1cba1 criado com sucesso.
+2025-02-18 16:32:12,477 - INFO - Ingrediente 67b4e03ce3892d9353f1cba1 criado com sucesso.
+2025-02-18 16:34:04,267 - INFO - Comanda_prato criado com sucesso
+2025-02-18 16:34:04,267 - INFO - Comanda_prato criado com sucesso
+2025-02-18 16:34:06,277 - INFO - Comanda_prato criado com sucesso
+2025-02-18 16:34:06,277 - INFO - Comanda_prato criado com sucesso
+2025-02-18 16:34:43,970 - INFO - Comanda_prato criado com sucesso
+2025-02-18 16:34:43,970 - INFO - Comanda_prato criado com sucesso
+2025-02-18 16:34:46,183 - INFO - Comanda_prato criado com sucesso
+2025-02-18 16:34:46,183 - INFO - Comanda_prato criado com sucesso
+2025-02-18 16:34:46,996 - INFO - Comanda_prato criado com sucesso
+2025-02-18 16:34:46,996 - INFO - Comanda_prato criado com sucesso
+2025-02-18 16:36:00,232 - DEBUG - Listando comandas abertas.
+2025-02-18 16:36:00,232 - DEBUG - Listando comandas abertas.
+2025-02-18 16:36:00,238 - INFO - Listagem de comandas abertas retornou 2 comandas.
+2025-02-18 16:36:00,238 - INFO - Listagem de comandas abertas retornou 2 comandas.
+2025-02-18 16:36:24,618 - DEBUG - Fechando comanda com ID: 67b4df24e3892d9353f1cb98
+2025-02-18 16:36:24,618 - DEBUG - Fechando comanda com ID: 67b4df24e3892d9353f1cb98
+2025-02-18 16:36:24,624 - INFO - Comanda 67b4df24e3892d9353f1cb98 fechada com sucesso.
+2025-02-18 16:36:24,624 - INFO - Comanda 67b4df24e3892d9353f1cb98 fechada com sucesso.
+2025-02-18 16:36:35,625 - DEBUG - Listando comandas abertas.
+2025-02-18 16:36:35,625 - DEBUG - Listando comandas abertas.
+2025-02-18 16:36:35,630 - INFO - Listagem de comandas abertas retornou 1 comandas.
+2025-02-18 16:36:35,630 - INFO - Listagem de comandas abertas retornou 1 comandas.
+2025-02-18 16:37:08,749 - DEBUG - Buscando cliente e mesa para a comanda com ID: 67b4df24e3892d9353f1cb98
+2025-02-18 16:37:08,749 - DEBUG - Buscando cliente e mesa para a comanda com ID: 67b4df24e3892d9353f1cb98
+2025-02-18 16:37:08,757 - INFO - Dados encontrados para comanda 67b4df24e3892d9353f1cb98: {'nome_cliente': 'Guigui', 'capacidade_mesa': 2}
+2025-02-18 16:37:08,757 - INFO - Dados encontrados para comanda 67b4df24e3892d9353f1cb98: {'nome_cliente': 'Guigui', 'capacidade_mesa': 2}

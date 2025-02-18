@@ -36,6 +36,14 @@ async def get_comanda(comanda_id: str):
 async def update_comanda(comanda_id: str, comanda_data: ComandaUpdate):
     return await ComandaController.update_comanda(comanda_id, comanda_data)
 
+@router_comanda.get('/data/')
+async def read_comandas(
+    data_abertura: str = Query(..., description="Data de abertura (MM/DD/AAAA)"),
+    page: int = Query(1, ge=1, description="Número da página"),
+    page_size: int = Query(10, ge=1, le=100, description="Tamanho da página")
+):
+    return await ComandaController.listar_comandas_por_data(data_abertura, page, page_size)
+
 @router_comanda.delete("/{comanda_id}", status_code=204)
 async def delete_comanda(comanda_id: str):
     try:

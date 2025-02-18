@@ -4,6 +4,7 @@ from bson import ObjectId
 from app.models import *  # Certifique-se de que Comanda existe em models.py
 from app.config import *  # Importe a configuração do banco de dados (db)
 from .cliente import ClienteController # Importa o cliente controller
+from datetime import datetime
 
 class ComandaController:
     @staticmethod
@@ -340,3 +341,29 @@ class ComandaController:
         except Exception as e:
             logger.exception(f"Erro ao buscar dados para comanda {comanda_id}: {e}")
             raise HTTPException(status_code=500, detail="Erro interno ao buscar dados da comanda.")
+        
+    
+    async def listar_comandas_por_data(
+        data_abertura: str,  
+        page: int,
+        page_size: int
+    ) -> List[Comanda]:
+        try:
+            data_abertura_date = datetime.strptime(data_abertura, "%m/%d/%Y").date()
+            start_date = datetime(data_abertura_date.year, data_abertura_date.month, data_abertura_date.day, 0, 0, 0)
+            end_date = datetime(data_abertura_date.year, data_abertura_date.month, data_abertura_date.day, 23, 59, 59)
+        except ValueError:
+            raise HTTPException(status_code=400, detail="Formato de data inválido. Use MM/DD/AAAA.")
+
+        skip = (page - 1) * page_size
+
+        comandas_cursor = db.comandas.find(
+            {"data_abertura": {"$gte": start_date, "$lte": end_date}}
+        ).skip(skip).limit(page_size)
+
+        comandas_data = await comandas_cursor.to_list(length=page_size) 
+        comandas = [Comanda(**{**comanda_data, "_id": str(comanda_data["_id"])}) for comanda_data in comandas_data] 
+        if not comandas:
+            raise HTTPException(status_code=404, detail=f"Nenhuma comanda encontrada para a data: {data_abertura}")
+
+        return comandas

@@ -10,8 +10,8 @@ logger = setup_logging()
 app.include_router(router_mesa, prefix="/mesa",tags=["mesa"])
 app.include_router(router_cliente, prefix="/cliente",tags=["cliente"])
 app.include_router(router_comanda, prefix="/comanda",tags=["comanda"])
-app.include_router(router_ingrediente, prefix="/ingrediente",tags=["ingrediente"])
 app.include_router(router_prato, prefix="/prato",tags=["prato"])
+app.include_router(router_ingrediente, prefix="/ingrediente",tags=["ingrediente"])
 app.include_router(router_actions,prefix="/actions",tags=["actions"])
 
 
