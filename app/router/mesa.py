@@ -30,18 +30,8 @@ async def update_mesa(mesa_id: str, mesa_data: MesaUpdate):
 
 @router_mesa.delete("/{mesa_id}", status_code=204)
 async def delete_mesa(mesa_id: str):
-    try:
-        success = await MesaController.delete_mesa(mesa_id)
-        if success:
-            return Response(status_code=204)
-        else:
-            raise HTTPException(status_code=404, detail="Mesa não encontrada")
-    except HTTPException as e:
-        raise e  # Re-levanta a exceção para que o tratamento de erros do FastAPI a capture
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e)) # Lidar com outros erros inesperados
-    
-    
+   return {'ok' : await MesaController.delete_mesa(mesa_id)} 
+     
 @router_mesa.get("/info_mesa/{id}",status_code=200,response_model=List[ComandaInfo])
 async def info_das_mesas(id : str):
     return await MesaController.pegar_info_da_mesa(id) 

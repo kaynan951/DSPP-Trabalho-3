@@ -1,14 +1,12 @@
 from typing import Optional, List, Dict, Any
 from fastapi import HTTPException
 from bson import ObjectId
-from app.models import *  # Certifique-se de que Ingrediente existe em models.py
-from app.config import *  # Importe a configuração do banco de dados (db)
+from app.models import *
+from app.config import *
 
 class IngredienteController:
     @staticmethod
     async def create_ingrediente(ingrediente: IngredienteCreate) -> Ingrediente:
-        """Cria um novo ingrediente."""
-        logger.debug(f"Criando ingrediente: {ingrediente.nome}")
         try:
             ingrediente_dict = ingrediente.model_dump(by_alias=True, exclude={"id"})
             novo_ingrediente = await db.ingredientes.insert_one(ingrediente_dict)
@@ -27,15 +25,13 @@ class IngredienteController:
         except HTTPException as http_ex:
             raise http_ex
         except Exception as e:
-            logger.exception(f"Erro ao criar ingrediente: {e}")
+            logger.error(f"Erro ao criar ingrediente: {e}")
             raise HTTPException(
                 status_code=500, detail="Erro interno ao criar ingrediente."
             )
 
     @staticmethod
     async def get_ingrediente(ingrediente_id: str) -> Ingrediente:
-        """Busca um ingrediente pelo ID."""
-        logger.debug(f"Buscando ingrediente com ID: {ingrediente_id}")
         try:
             try:
                 object_id = ObjectId(ingrediente_id)
@@ -54,15 +50,13 @@ class IngredienteController:
         except HTTPException as http_ex:
             raise http_ex
         except Exception as e:
-            logger.exception(f"Erro ao buscar ingrediente com ID {ingrediente_id}: {e}")
+            logger.error(f"Erro ao buscar ingrediente com ID {ingrediente_id}: {e}")
             raise HTTPException(
                 status_code=500, detail="Erro interno ao buscar ingrediente."
             )
 
     @staticmethod
     async def update_ingrediente(ingrediente_id: str, ingrediente_data: IngredienteUpdate) -> Ingrediente:
-        """Atualiza um ingrediente."""
-        logger.debug(f"Atualizando ingrediente com ID: {ingrediente_id}, dados: {ingrediente_data}")
         try:
             try:
                 object_id = ObjectId(ingrediente_id)
@@ -72,7 +66,6 @@ class IngredienteController:
 
             update_data = ingrediente_data.model_dump(exclude_unset=True)
 
-            # Impedir a alteração do _id
             if "_id" in update_data:
                 del update_data["_id"]
 
@@ -94,15 +87,13 @@ class IngredienteController:
         except HTTPException as http_ex:
             raise http_ex
         except Exception as e:
-            logger.exception(f"Erro ao atualizar ingrediente com ID {ingrediente_id}: {e}")
+            logger.error(f"Erro ao atualizar ingrediente com ID {ingrediente_id}: {e}")
             raise HTTPException(
                 status_code=500, detail="Erro interno ao atualizar ingrediente."
             )
 
     @staticmethod
     async def delete_ingrediente(ingrediente_id: str) -> bool:
-        """Deleta um ingrediente."""
-        logger.debug(f"Deletando ingrediente com ID: {ingrediente_id}")
         try:
             try:
                 object_id = ObjectId(ingrediente_id)
@@ -120,7 +111,7 @@ class IngredienteController:
         except HTTPException as http_ex:
             raise http_ex
         except Exception as e:
-            logger.exception(f"Erro ao deletar ingrediente com ID {ingrediente_id}: {e}")
+            logger.error(f"Erro ao deletar ingrediente com ID {ingrediente_id}: {e}")
             raise HTTPException(
                 status_code=500, detail="Erro interno ao deletar ingrediente."
             )
@@ -131,16 +122,12 @@ class IngredienteController:
         limit: int = 10,
         nome: Optional[str] = None,
     ) -> Dict[str, Any]:
-        """Lista ingredientes com paginação e filtros."""
-        logger.debug(
-            f"Listando ingredientes - página: {page}, limite: {limit}, nome: {nome}"
-        )
         try:
             skip = (page - 1) * limit
             query = {}
 
             if nome:
-                query["nome"] = {"$regex": nome, "$options": "i"}  # Case-insensitive search
+                query["nome"] = {"$regex": nome, "$options": "i"}
 
             ingredientes = (
                 await db.ingredientes.find(query)
@@ -171,21 +158,19 @@ class IngredienteController:
         except HTTPException as http_ex:
             raise http_ex
         except Exception as e:
-            logger.exception(f"Erro ao listar ingredientes: {e}")
+            logger.error(f"Erro ao listar ingredientes: {e}")
             raise HTTPException(
                 status_code=500, detail="Erro interno ao listar ingredientes."
             )
 
     @staticmethod
     async def num_ingredientes() -> Dict[str, int]:
-        """Retorna o número total de ingredientes."""
-        logger.debug("Contando o número total de ingredientes.")
         try:
             total_ingredientes = await db.ingredientes.count_documents({})
             logger.info(f"Número total de ingredientes: {total_ingredientes}")
             return {"total": total_ingredientes}
         except Exception as e:
-            logger.exception(f"Erro ao contar ingredientes: {e}")
+            logger.error(f"Erro ao contar ingredientes: {e}")
             raise HTTPException(
                 status_code=500, detail="Erro interno ao contar ingredientes."
             )

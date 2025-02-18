@@ -1,18 +1,15 @@
 from typing import Optional, List, Dict, Any
 from fastapi import HTTPException
 from bson import ObjectId
-from app.models import *  # Certifique-se de que Comanda existe em models.py
-from app.config import *  # Importe a configuração do banco de dados (db)
-from .cliente import ClienteController # Importa o cliente controller
+from app.models import *
+from app.config import *
+from .cliente import ClienteController
 from datetime import datetime
 
 class ComandaController:
     @staticmethod
     async def create_comanda(comanda: ComandaCreate) -> Comanda:
-        """Cria uma nova comanda."""
-        logger.debug(f"Criando comanda para cliente_id: {comanda.cliente_id}")
         try:
-            # Validar se o cliente_id é um ObjectId válido
             if comanda.cliente_id:
                 try:
                     ObjectId(comanda.cliente_id)
@@ -22,7 +19,6 @@ class ComandaController:
                         status_code=400, detail="cliente_id inválido."
                     )
             
-            #Validar se o cliente existe:
             try:
                 await ClienteController.get_cliente(comanda.cliente_id)
             except HTTPException as e:
@@ -30,7 +26,6 @@ class ComandaController:
                         status_code=404, detail="Cliente não encontrado."
                     )
                 
-            # Verificar se já existe uma comanda aberta para este cliente
             existing_comanda = await db.comandas.find_one({
                 "cliente_id": comanda.cliente_id,
                 "status": "aberta"
@@ -62,15 +57,13 @@ class ComandaController:
         except HTTPException as http_ex:
             raise http_ex
         except Exception as e:
-            logger.exception(f"Erro ao criar comanda: {e}")
+            logger.error(f"Erro ao criar comanda: {e}")
             raise HTTPException(
                 status_code=500, detail="Erro interno ao criar comanda."
             )
         
     @staticmethod
     async def get_comanda(comanda_id: str) -> Comanda:
-        """Busca uma comanda pelo ID."""
-        logger.debug(f"Buscando comanda com ID: {comanda_id}")
         try:
             try:
                 object_id = ObjectId(comanda_id)
@@ -87,17 +80,15 @@ class ComandaController:
             logger.info(f"Comanda {comanda_id} encontrada com sucesso.")
             return Comanda(**comanda)
         except HTTPException as http_ex:
-            raise http_ex  # Re-levanta a exceção HTTP já tratada
+            raise http_ex
         except Exception as e:
-            logger.exception(f"Erro ao buscar comanda com ID {comanda_id}: {e}")
+            logger.error(f"Erro ao buscar comanda com ID {comanda_id}: {e}")
             raise HTTPException(
                 status_code=500, detail="Erro interno ao buscar comanda."
             )
 
     @staticmethod
     async def update_comanda(comanda_id: str, comanda_data: ComandaUpdate) -> Comanda:
-        """Atualiza uma comanda."""
-        logger.debug(f"Atualizando comanda com ID: {comanda_id}, dados: {comanda_data}")
         try:
             try:
                 object_id = ObjectId(comanda_id)
@@ -107,7 +98,6 @@ class ComandaController:
 
             update_data = comanda_data.model_dump(exclude_unset=True)
 
-            # Impedir a alteração do _id
             if "_id" in update_data:
                 del update_data["_id"]
 
@@ -129,15 +119,13 @@ class ComandaController:
         except HTTPException as http_ex:
             raise http_ex
         except Exception as e:
-            logger.exception(f"Erro ao atualizar comanda com ID {comanda_id}: {e}")
+            logger.error(f"Erro ao atualizar comanda com ID {comanda_id}: {e}")
             raise HTTPException(
                 status_code=500, detail="Erro interno ao atualizar comanda."
             )
 
     @staticmethod
     async def delete_comanda(comanda_id: str) -> bool:
-        """Deleta uma comanda."""
-        logger.debug(f"Deletando comanda com ID: {comanda_id}")
         try:
             try:
                 object_id = ObjectId(comanda_id)
@@ -155,7 +143,7 @@ class ComandaController:
         except HTTPException as http_ex:
             raise http_ex
         except Exception as e:
-            logger.exception(f"Erro ao deletar comanda com ID {comanda_id}: {e}")
+            logger.error(f"Erro ao deletar comanda com ID {comanda_id}: {e}")
             raise HTTPException(
                 status_code=500, detail="Erro interno ao deletar comanda."
             )
@@ -167,10 +155,6 @@ class ComandaController:
         status: Optional[str] = None,
         cliente_id: Optional[str] = None,
     ) -> Dict[str, Any]:
-        """Lista comandas com paginação e filtros."""
-        logger.debug(
-            f"Listando comandas - página: {page}, limite: {limit}, status: {status}, cliente_id: {cliente_id}"
-        )
         try:
             skip = (page - 1) * limit
             query = {}
@@ -216,29 +200,25 @@ class ComandaController:
         except HTTPException as http_ex:
             raise http_ex
         except Exception as e:
-            logger.exception(f"Erro ao listar comandas: {e}")
+            logger.error(f"Erro ao listar comandas: {e}")
             raise HTTPException(
                 status_code=500, detail="Erro interno ao listar comandas."
             )
 
     @staticmethod
     async def num_comandas() -> Dict[str, int]:
-        """Retorna o número total de comandas."""
-        logger.debug("Contando o número total de comandas.")
         try:
             total_comandas = await db.comandas.count_documents({})
             logger.info(f"Número total de comandas: {total_comandas}")
             return {"total": total_comandas}
         except Exception as e:
-            logger.exception(f"Erro ao contar comandas: {e}")
+            logger.error(f"Erro ao contar comandas: {e}")
             raise HTTPException(
                 status_code=500, detail="Erro interno ao contar comandas."
             )
         
     @staticmethod
     async def close_comanda(comanda_id: str) -> Comanda:
-        """Fecha uma comanda."""
-        logger.debug(f"Fechando comanda com ID: {comanda_id}")
         try:
             try:
                 object_id = ObjectId(comanda_id)
@@ -266,15 +246,13 @@ class ComandaController:
         except HTTPException as http_ex:
             raise http_ex
         except Exception as e:
-            logger.exception(f"Erro ao fechar comanda com ID {comanda_id}: {e}")
+            logger.error(f"Erro ao fechar comanda com ID {comanda_id}: {e}")
             raise HTTPException(
                 status_code=500, detail="Erro interno ao fechar comanda."
             )
         
     @staticmethod
     async def list_comandas_abertas() -> List[Comanda]:
-        """Lista comandas abertas."""
-        logger.debug("Listando comandas abertas.")
         try:
             query = {"status": "aberta"}
             comandas = await db.comandas.find(query).to_list(length=1000)
@@ -298,15 +276,13 @@ class ComandaController:
         except HTTPException as http_ex:
             raise http_ex
         except Exception as e:
-            logger.exception(f"Erro ao listar comandas abertas: {e}")
+            logger.error(f"Erro ao listar comandas abertas: {e}")
             raise HTTPException(
                 status_code=500, detail="Erro interno ao listar comandas abertas."
             )
         
     @staticmethod
     async def get_cliente_mesa_por_comanda(comanda_id: str) -> dict:
-        """Retorna o nome do cliente e a capacidade da mesa associada a uma comanda."""
-        logger.debug(f"Buscando cliente e mesa para a comanda com ID: {comanda_id}")
         try:
             try:
                 object_id = ObjectId(comanda_id)
@@ -339,7 +315,7 @@ class ComandaController:
         except HTTPException as http_ex:
             raise http_ex
         except Exception as e:
-            logger.exception(f"Erro ao buscar dados para comanda {comanda_id}: {e}")
+            logger.error(f"Erro ao buscar dados para comanda {comanda_id}: {e}")
             raise HTTPException(status_code=500, detail="Erro interno ao buscar dados da comanda.")
         
     

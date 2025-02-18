@@ -20,13 +20,7 @@ async def list_comandas(
 
 @router_comanda.get("/abertas", response_model=List[Comanda])
 async def list_comandas_abertas():
-    """Lista todas as comandas abertas."""
-    try:
-        return await ComandaController.list_comandas_abertas()
-    except HTTPException as e:
-        raise e
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+    return await ComandaController.list_comandas_abertas()
 
 @router_comanda.get("/{comanda_id}", response_model=Comanda, status_code=200)
 async def get_comanda(comanda_id: str):
@@ -45,18 +39,9 @@ async def read_comandas(
     return await ComandaController.listar_comandas_por_data(data_abertura, page, page_size)
 
 @router_comanda.delete("/{comanda_id}", status_code=204)
-async def delete_comanda(comanda_id: str):
-    try:
-        success = await ComandaController.delete_comanda(comanda_id)
-        if success:
-            return Response(status_code=204)
-        else:
-            raise HTTPException(status_code=404, detail="Comanda não encontrada")
-    except HTTPException as e:
-        raise e
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
-
+async def delete_comanda(comanda_id: str):  
+    return {'ok' :  await ComandaController.delete_comanda(comanda_id)}
+       
 @router_comanda.get("/num/",status_code=200)
 async def get_num():
     return await ComandaController.num_comandas()
@@ -64,21 +49,10 @@ async def get_num():
 
 @router_comanda.put("/{comanda_id}/fechar", response_model=Comanda)
 async def close_comanda(comanda_id: str):
-    """Fecha uma comanda."""
-    try:
-        comanda = await ComandaController.close_comanda(comanda_id)
-        return comanda
-    except HTTPException as e:
-        raise e
-    except Exception as e:
-        raise HTTPException(status_code=500, detail="Erro interno ao fechar comanda.")
-
+    return await ComandaController.close_comanda(comanda_id)
+    
 
 @router_comanda.get("/{comanda_id}/cliente-mesa", status_code=200)
 async def get_cliente_mesa(comanda_id: str):
-    try:
-        return await ComandaController.get_cliente_mesa_por_comanda(comanda_id)
-    except HTTPException as e:
-        raise e
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+    return await ComandaController.get_cliente_mesa_por_comanda(comanda_id)
+    

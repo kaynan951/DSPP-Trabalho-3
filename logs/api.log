@@ -1033,3 +1033,5 @@ pymongo.errors.ServerSelectionTimeoutError: SSL handshake failed: dbtrabalho3per
 2025-02-18 16:37:08,749 - DEBUG - Buscando cliente e mesa para a comanda com ID: 67b4df24e3892d9353f1cb98
 2025-02-18 16:37:08,757 - INFO - Dados encontrados para comanda 67b4df24e3892d9353f1cb98: {'nome_cliente': 'Guigui', 'capacidade_mesa': 2}
 2025-02-18 16:37:08,757 - INFO - Dados encontrados para comanda 67b4df24e3892d9353f1cb98: {'nome_cliente': 'Guigui', 'capacidade_mesa': 2}
+2025-02-18 17:29:03,788 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
+2025-02-18 17:29:03,788 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
