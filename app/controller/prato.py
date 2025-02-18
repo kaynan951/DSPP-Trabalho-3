@@ -1,6 +1,7 @@
 from typing import Optional, List, Dict, Any
 from fastapi import HTTPException
 from bson import ObjectId
+from pymongo.errors import ConnectionFailure, OperationFailure
 from app.models import *  # Certifique-se de que Prato existe em models.py
 from app.config import *  # Importe a configuração do banco de dados (db)
 from .comanda import ComandaController # Importa o comanda controller
@@ -179,6 +180,41 @@ class PratoController:
             raise HTTPException(
                 status_code=500, detail="Erro interno ao listar pratos."
             )
+
+   
+    @staticmethod
+    async def get_pratos_mais_pedidos(page: int = 1, limit: int = 10):
+        skip = (page - 1) * limit
+        pipeline = [
+            {"$group": {"_id": "$id_prato", "total_pedidos": {"$sum": 1}}},
+            {"$sort": {"total_pedidos": -1}},
+            {"$skip": skip},
+            {"$limit": limit},
+            {
+                "$lookup": {
+                    "from": "pratos",
+                    "let": {"prato_id": "$_id"},  
+                    "pipeline": [
+                        {"$match": {"$expr": {"$eq": [{"$toString": "$_id"}, "$$prato_id"]}}}
+                    ],
+                    "as": "detalhes_prato"
+                }
+            },
+            {"$unwind": "$detalhes_prato"},
+            {
+                "$project": {
+                    "_id": 0,
+                    "id_prato": "$_id",
+                    "total_pedidos": 1,
+                    "nome": "$detalhes_prato.nome",
+                    "descricao": "$detalhes_prato.descricao",
+                    "preco": "$detalhes_prato.preco",
+                    "categoria": "$detalhes_prato.categoria",
+                }
+            },
+        ]
+        return  await db.comandas_pratos.aggregate(pipeline).to_list(None)
+        
 
     @staticmethod
     async def num_pratos() -> Dict[str, int]:

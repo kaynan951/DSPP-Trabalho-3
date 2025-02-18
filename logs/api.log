@@ -4,8 +4,8 @@
 2025-02-06 21:58:51,679 - INFO - API inicializada
 2025-02-08 00:28:31,936 - INFO - API inicializada
 2025-02-08 00:28:31,936 - INFO - API inicializada
-2025-02-08 00:29:13,278 - DEBUG - Listando clientes - p�gina: 1, limite: 10, nome: None, email: None, cpf: None
-2025-02-08 00:29:13,278 - DEBUG - Listando clientes - p�gina: 1, limite: 10, nome: None, email: None, cpf: None
+2025-02-08 00:29:13,278 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None
+2025-02-08 00:29:13,278 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None
 2025-02-08 00:29:13,437 - INFO - Listagem de clientes retornou 0 clientes (total: 0)
 2025-02-08 00:29:13,437 - INFO - Listagem de clientes retornou 0 clientes (total: 0)
 2025-02-08 15:05:50,752 - INFO - API inicializada
@@ -20,8 +20,8 @@
 2025-02-08 15:18:44,279 - DEBUG - Iniciando create_cliente para o cliente: GUI GUI
 2025-02-08 15:18:44,401 - DEBUG - Clientes na mesa 67a54c23e8038a86132dc153: 1, Capacidade: 1
 2025-02-08 15:18:44,401 - DEBUG - Clientes na mesa 67a54c23e8038a86132dc153: 1, Capacidade: 1
-2025-02-08 15:18:44,401 - WARNING - Mesa 67a54c23e8038a86132dc153 est� cheia. Capacidade: 1, Clientes: 1
-2025-02-08 15:18:44,401 - WARNING - Mesa 67a54c23e8038a86132dc153 est� cheia. Capacidade: 1, Clientes: 1
+2025-02-08 15:18:44,401 - WARNING - Mesa 67a54c23e8038a86132dc153 está cheia. Capacidade: 1, Clientes: 1
+2025-02-08 15:18:44,401 - WARNING - Mesa 67a54c23e8038a86132dc153 está cheia. Capacidade: 1, Clientes: 1
 2025-02-08 15:19:04,860 - DEBUG - Iniciando create_cliente para o cliente: GUI GUI
 2025-02-08 15:19:04,860 - DEBUG - Iniciando create_cliente para o cliente: GUI GUI
 2025-02-08 15:19:04,985 - DEBUG - Clientes na mesa 67a79e804bf90e1cd1f1f5e8: 0, Capacidade: 2
@@ -34,32 +34,32 @@
 2025-02-08 15:21:05,836 - DEBUG - Clientes na mesa 67a79e804bf90e1cd1f1f5e8: 1, Capacidade: 2
 2025-02-08 15:21:05,961 - INFO - Cliente 67a7a0914bf90e1cd1f1f5ec criado com sucesso na mesa 67a79e804bf90e1cd1f1f5e8
 2025-02-08 15:21:05,961 - INFO - Cliente 67a7a0914bf90e1cd1f1f5ec criado com sucesso na mesa 67a79e804bf90e1cd1f1f5e8
-2025-02-08 15:21:14,240 - DEBUG - Listando clientes - p�gina: 1, limite: 10, nome: None, email: None, cpf: None
-2025-02-08 15:21:14,240 - DEBUG - Listando clientes - p�gina: 1, limite: 10, nome: None, email: None, cpf: None
+2025-02-08 15:21:14,240 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None
+2025-02-08 15:21:14,240 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None
 2025-02-08 15:21:14,365 - INFO - Listagem de clientes retornou 3 clientes (total: 3)
 2025-02-08 15:21:14,365 - INFO - Listagem de clientes retornou 3 clientes (total: 3)
-2025-02-08 15:23:49,323 - DEBUG - Listando clientes - p�gina: 1, limite: 10, nome: None, email: None, cpf: None
-2025-02-08 15:23:49,323 - DEBUG - Listando clientes - p�gina: 1, limite: 10, nome: None, email: None, cpf: None
+2025-02-08 15:23:49,323 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None
+2025-02-08 15:23:49,323 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None
 2025-02-08 15:23:49,440 - INFO - Listagem de clientes retornou 3 clientes (total: 3)
 2025-02-08 15:23:49,440 - INFO - Listagem de clientes retornou 3 clientes (total: 3)
-2025-02-08 15:24:04,133 - DEBUG - Listando clientes - p�gina: 1, limite: 10, nome: None, email: None, cpf: None
-2025-02-08 15:24:04,133 - DEBUG - Listando clientes - p�gina: 1, limite: 10, nome: None, email: None, cpf: None
+2025-02-08 15:24:04,133 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None
+2025-02-08 15:24:04,133 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None
 2025-02-08 15:24:04,914 - INFO - Listagem de clientes retornou 3 clientes (total: 3)
 2025-02-08 15:24:04,914 - INFO - Listagem de clientes retornou 3 clientes (total: 3)
-2025-02-08 15:24:17,827 - DEBUG - Listando clientes - p�gina: 1, limite: 1, nome: None, email: None, cpf: None
-2025-02-08 15:24:17,827 - DEBUG - Listando clientes - p�gina: 1, limite: 1, nome: None, email: None, cpf: None
+2025-02-08 15:24:17,827 - DEBUG - Listando clientes - página: 1, limite: 1, nome: None, email: None, cpf: None
+2025-02-08 15:24:17,827 - DEBUG - Listando clientes - página: 1, limite: 1, nome: None, email: None, cpf: None
 2025-02-08 15:24:17,958 - INFO - Listagem de clientes retornou 1 clientes (total: 3)
 2025-02-08 15:24:17,958 - INFO - Listagem de clientes retornou 1 clientes (total: 3)
-2025-02-08 15:24:32,537 - DEBUG - Listando clientes - p�gina: 2, limite: 1, nome: None, email: None, cpf: None
-2025-02-08 15:24:32,537 - DEBUG - Listando clientes - p�gina: 2, limite: 1, nome: None, email: None, cpf: None
+2025-02-08 15:24:32,537 - DEBUG - Listando clientes - página: 2, limite: 1, nome: None, email: None, cpf: None
+2025-02-08 15:24:32,537 - DEBUG - Listando clientes - página: 2, limite: 1, nome: None, email: None, cpf: None
 2025-02-08 15:24:32,658 - INFO - Listagem de clientes retornou 1 clientes (total: 3)
 2025-02-08 15:24:32,658 - INFO - Listagem de clientes retornou 1 clientes (total: 3)
-2025-02-08 15:24:36,036 - DEBUG - Listando clientes - p�gina: 3, limite: 1, nome: None, email: None, cpf: None
-2025-02-08 15:24:36,036 - DEBUG - Listando clientes - p�gina: 3, limite: 1, nome: None, email: None, cpf: None
+2025-02-08 15:24:36,036 - DEBUG - Listando clientes - página: 3, limite: 1, nome: None, email: None, cpf: None
+2025-02-08 15:24:36,036 - DEBUG - Listando clientes - página: 3, limite: 1, nome: None, email: None, cpf: None
 2025-02-08 15:24:36,161 - INFO - Listagem de clientes retornou 1 clientes (total: 3)
 2025-02-08 15:24:36,161 - INFO - Listagem de clientes retornou 1 clientes (total: 3)
-2025-02-08 15:24:40,908 - DEBUG - Listando clientes - p�gina: 1, limite: 10, nome: None, email: None, cpf: None
-2025-02-08 15:24:40,908 - DEBUG - Listando clientes - p�gina: 1, limite: 10, nome: None, email: None, cpf: None
+2025-02-08 15:24:40,908 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None
+2025-02-08 15:24:40,908 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None
 2025-02-08 15:24:41,031 - INFO - Listagem de clientes retornou 3 clientes (total: 3)
 2025-02-08 15:24:41,031 - INFO - Listagem de clientes retornou 3 clientes (total: 3)
 2025-02-08 15:27:02,090 - DEBUG - Criando comanda para cliente_id: 67a79fe84bf90e1cd1f1f5ea
@@ -86,8 +86,8 @@
 2025-02-08 15:27:46,614 - INFO - Cliente 67a7a0184bf90e1cd1f1f5eb encontrado com sucesso.
 2025-02-08 15:27:46,749 - INFO - Comanda 67a7a222311e319ee5a51cf2 criada com sucesso.
 2025-02-08 15:27:46,749 - INFO - Comanda 67a7a222311e319ee5a51cf2 criada com sucesso.
-2025-02-08 15:27:53,449 - DEBUG - Listando comandas - p�gina: 1, limite: 10, status: None, cliente_id: None
-2025-02-08 15:27:53,449 - DEBUG - Listando comandas - p�gina: 1, limite: 10, status: None, cliente_id: None
+2025-02-08 15:27:53,449 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-08 15:27:53,449 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
 2025-02-08 15:27:53,621 - INFO - Listagem de comandas retornou 3 comandas (total: 3)
 2025-02-08 15:27:53,621 - INFO - Listagem de comandas retornou 3 comandas (total: 3)
 2025-02-08 15:28:31,153 - DEBUG - Criando comanda para cliente_id: 67a79fe84bf90e1cd1f1f5ea
@@ -98,20 +98,20 @@
 2025-02-08 15:28:31,217 - INFO - Cliente 67a79fe84bf90e1cd1f1f5ea encontrado com sucesso.
 2025-02-08 15:28:31,346 - INFO - Comanda 67a7a24f311e319ee5a51cf3 criada com sucesso.
 2025-02-08 15:28:31,346 - INFO - Comanda 67a7a24f311e319ee5a51cf3 criada com sucesso.
-2025-02-08 15:28:39,112 - DEBUG - Listando comandas - p�gina: 1, limite: 10, status: None, cliente_id: None
-2025-02-08 15:28:39,112 - DEBUG - Listando comandas - p�gina: 1, limite: 10, status: None, cliente_id: None
+2025-02-08 15:28:39,112 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-08 15:28:39,112 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
 2025-02-08 15:28:39,257 - INFO - Listagem de comandas retornou 4 comandas (total: 4)
 2025-02-08 15:28:39,257 - INFO - Listagem de comandas retornou 4 comandas (total: 4)
-2025-02-08 15:32:34,214 - DEBUG - Listando comandas - p�gina: 1, limite: 10, status: None, cliente_id: None
-2025-02-08 15:32:34,214 - DEBUG - Listando comandas - p�gina: 1, limite: 10, status: None, cliente_id: None
+2025-02-08 15:32:34,214 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-08 15:32:34,214 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
 2025-02-08 15:32:34,889 - INFO - Listagem de comandas retornou 4 comandas (total: 4)
 2025-02-08 15:32:34,889 - INFO - Listagem de comandas retornou 4 comandas (total: 4)
-2025-02-08 15:34:10,767 - DEBUG - Listando comandas - p�gina: 1, limite: 1, status: None, cliente_id: None
-2025-02-08 15:34:10,767 - DEBUG - Listando comandas - p�gina: 1, limite: 1, status: None, cliente_id: None
+2025-02-08 15:34:10,767 - DEBUG - Listando comandas - página: 1, limite: 1, status: None, cliente_id: None
+2025-02-08 15:34:10,767 - DEBUG - Listando comandas - página: 1, limite: 1, status: None, cliente_id: None
 2025-02-08 15:34:10,884 - INFO - Listagem de comandas retornou 1 comandas (total: 4)
 2025-02-08 15:34:10,884 - INFO - Listagem de comandas retornou 1 comandas (total: 4)
-2025-02-08 15:34:17,771 - DEBUG - Listando comandas - p�gina: 1, limite: 2, status: None, cliente_id: None
-2025-02-08 15:34:17,771 - DEBUG - Listando comandas - p�gina: 1, limite: 2, status: None, cliente_id: None
+2025-02-08 15:34:17,771 - DEBUG - Listando comandas - página: 1, limite: 2, status: None, cliente_id: None
+2025-02-08 15:34:17,771 - DEBUG - Listando comandas - página: 1, limite: 2, status: None, cliente_id: None
 2025-02-08 15:34:17,886 - INFO - Listagem de comandas retornou 2 comandas (total: 4)
 2025-02-08 15:34:17,886 - INFO - Listagem de comandas retornou 2 comandas (total: 4)
 2025-02-08 15:34:47,470 - DEBUG - Criando ingrediente: cenoura
@@ -122,124 +122,124 @@
 2025-02-08 15:34:58,869 - DEBUG - Criando ingrediente: arroz
 2025-02-08 15:34:59,003 - INFO - Ingrediente 67a7a3d22487a31fe56b922b criado com sucesso.
 2025-02-08 15:34:59,003 - INFO - Ingrediente 67a7a3d22487a31fe56b922b criado com sucesso.
-2025-02-08 15:35:06,641 - DEBUG - Criando ingrediente: caf�
-2025-02-08 15:35:06,641 - DEBUG - Criando ingrediente: caf�
+2025-02-08 15:35:06,641 - DEBUG - Criando ingrediente: café
+2025-02-08 15:35:06,641 - DEBUG - Criando ingrediente: café
 2025-02-08 15:35:06,766 - INFO - Ingrediente 67a7a3da2487a31fe56b922c criado com sucesso.
 2025-02-08 15:35:06,766 - INFO - Ingrediente 67a7a3da2487a31fe56b922c criado com sucesso.
 2025-02-08 15:35:17,657 - DEBUG - Criando ingrediente: cebola
 2025-02-08 15:35:17,657 - DEBUG - Criando ingrediente: cebola
 2025-02-08 15:35:17,774 - INFO - Ingrediente 67a7a3e52487a31fe56b922d criado com sucesso.
 2025-02-08 15:35:17,774 - INFO - Ingrediente 67a7a3e52487a31fe56b922d criado com sucesso.
-2025-02-08 15:35:24,819 - DEBUG - Listando ingredientes - p�gina: 1, limite: 10, nome: None
-2025-02-08 15:35:24,819 - DEBUG - Listando ingredientes - p�gina: 1, limite: 10, nome: None
+2025-02-08 15:35:24,819 - DEBUG - Listando ingredientes - página: 1, limite: 10, nome: None
+2025-02-08 15:35:24,819 - DEBUG - Listando ingredientes - página: 1, limite: 10, nome: None
 2025-02-08 15:35:24,943 - INFO - Listagem de ingredientes retornou 4 ingredientes (total: 4)
 2025-02-08 15:35:24,943 - INFO - Listagem de ingredientes retornou 4 ingredientes (total: 4)
-2025-02-08 15:36:20,467 - DEBUG - Listando ingredientes - p�gina: 1, limite: 10, nome: None
-2025-02-08 15:36:20,467 - DEBUG - Listando ingredientes - p�gina: 1, limite: 10, nome: None
+2025-02-08 15:36:20,467 - DEBUG - Listando ingredientes - página: 1, limite: 10, nome: None
+2025-02-08 15:36:20,467 - DEBUG - Listando ingredientes - página: 1, limite: 10, nome: None
 2025-02-08 15:36:20,587 - INFO - Listagem de ingredientes retornou 4 ingredientes (total: 4)
 2025-02-08 15:36:20,587 - INFO - Listagem de ingredientes retornou 4 ingredientes (total: 4)
-2025-02-08 15:36:25,218 - DEBUG - Listando ingredientes - p�gina: 1, limite: 10, nome: None
-2025-02-08 15:36:25,218 - DEBUG - Listando ingredientes - p�gina: 1, limite: 10, nome: None
+2025-02-08 15:36:25,218 - DEBUG - Listando ingredientes - página: 1, limite: 10, nome: None
+2025-02-08 15:36:25,218 - DEBUG - Listando ingredientes - página: 1, limite: 10, nome: None
 2025-02-08 15:36:25,925 - INFO - Listagem de ingredientes retornou 4 ingredientes (total: 4)
 2025-02-08 15:36:25,925 - INFO - Listagem de ingredientes retornou 4 ingredientes (total: 4)
-2025-02-08 15:36:35,795 - DEBUG - Listando ingredientes - p�gina: 1, limite: 2, nome: None
-2025-02-08 15:36:35,795 - DEBUG - Listando ingredientes - p�gina: 1, limite: 2, nome: None
+2025-02-08 15:36:35,795 - DEBUG - Listando ingredientes - página: 1, limite: 2, nome: None
+2025-02-08 15:36:35,795 - DEBUG - Listando ingredientes - página: 1, limite: 2, nome: None
 2025-02-08 15:36:35,911 - INFO - Listagem de ingredientes retornou 2 ingredientes (total: 4)
 2025-02-08 15:36:35,911 - INFO - Listagem de ingredientes retornou 2 ingredientes (total: 4)
-2025-02-08 15:37:32,907 - DEBUG - Listando comandas - p�gina: 1, limite: 10, status: None, cliente_id: None
-2025-02-08 15:37:32,907 - DEBUG - Listando comandas - p�gina: 1, limite: 10, status: None, cliente_id: None
+2025-02-08 15:37:32,907 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-08 15:37:32,907 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
 2025-02-08 15:37:33,027 - INFO - Listagem de comandas retornou 4 comandas (total: 4)
 2025-02-08 15:37:33,027 - INFO - Listagem de comandas retornou 4 comandas (total: 4)
-2025-02-08 15:38:49,719 - DEBUG - Criando prato: Carneiro a l� fumac�
-2025-02-08 15:38:49,719 - DEBUG - Criando prato: Carneiro a l� fumac�
+2025-02-08 15:38:49,719 - DEBUG - Criando prato: Carneiro a lá fumacê
+2025-02-08 15:38:49,719 - DEBUG - Criando prato: Carneiro a lá fumacê
 2025-02-08 15:38:49,720 - DEBUG - Buscando comanda com ID: 67a7a1f6311e319ee5a51cf0
 2025-02-08 15:38:49,720 - DEBUG - Buscando comanda com ID: 67a7a1f6311e319ee5a51cf0
 2025-02-08 15:38:50,358 - INFO - Comanda 67a7a1f6311e319ee5a51cf0 encontrada com sucesso.
 2025-02-08 15:38:50,358 - INFO - Comanda 67a7a1f6311e319ee5a51cf0 encontrada com sucesso.
 2025-02-08 15:38:50,491 - INFO - Prato 67a7a4ba45d6fe4981e9ab3a criado com sucesso.
 2025-02-08 15:38:50,491 - INFO - Prato 67a7a4ba45d6fe4981e9ab3a criado com sucesso.
-2025-02-08 15:39:58,037 - DEBUG - Criando prato: Sorbet de Macaruj�
-2025-02-08 15:39:58,037 - DEBUG - Criando prato: Sorbet de Macaruj�
+2025-02-08 15:39:58,037 - DEBUG - Criando prato: Sorbet de Macarujá
+2025-02-08 15:39:58,037 - DEBUG - Criando prato: Sorbet de Macarujá
 2025-02-08 15:39:58,038 - DEBUG - Buscando comanda com ID: 67a7a1f6311e319ee5a51cf0
 2025-02-08 15:39:58,038 - DEBUG - Buscando comanda com ID: 67a7a1f6311e319ee5a51cf0
 2025-02-08 15:39:58,095 - INFO - Comanda 67a7a1f6311e319ee5a51cf0 encontrada com sucesso.
 2025-02-08 15:39:58,095 - INFO - Comanda 67a7a1f6311e319ee5a51cf0 encontrada com sucesso.
 2025-02-08 15:39:58,211 - INFO - Prato 67a7a4fe45d6fe4981e9ab3b criado com sucesso.
 2025-02-08 15:39:58,211 - INFO - Prato 67a7a4fe45d6fe4981e9ab3b criado com sucesso.
-2025-02-08 15:40:04,564 - DEBUG - Listando pratos - p�gina: 1, limite: 10, nome: None, categoria: None
-2025-02-08 15:40:04,564 - DEBUG - Listando pratos - p�gina: 1, limite: 10, nome: None, categoria: None
+2025-02-08 15:40:04,564 - DEBUG - Listando pratos - página: 1, limite: 10, nome: None, categoria: None
+2025-02-08 15:40:04,564 - DEBUG - Listando pratos - página: 1, limite: 10, nome: None, categoria: None
 2025-02-08 15:40:04,679 - INFO - Listagem de pratos retornou 2 pratos (total: 2)
 2025-02-08 15:40:04,679 - INFO - Listagem de pratos retornou 2 pratos (total: 2)
-2025-02-08 15:51:18,767 - DEBUG - Listando comandas - p�gina: 1, limite: 10, status: None, cliente_id: None
-2025-02-08 15:51:18,767 - DEBUG - Listando comandas - p�gina: 1, limite: 10, status: None, cliente_id: None
+2025-02-08 15:51:18,767 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-08 15:51:18,767 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
 2025-02-08 15:51:19,467 - INFO - Listagem de comandas retornou 4 comandas (total: 4)
 2025-02-08 15:51:19,467 - INFO - Listagem de comandas retornou 4 comandas (total: 4)
-2025-02-08 15:51:48,926 - DEBUG - Listando comandas - p�gina: 1, limite: 10, status: None, cliente_id: None
-2025-02-08 15:51:48,926 - DEBUG - Listando comandas - p�gina: 1, limite: 10, status: None, cliente_id: None
+2025-02-08 15:51:48,926 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-08 15:51:48,926 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
 2025-02-08 15:51:49,062 - INFO - Listagem de comandas retornou 4 comandas (total: 4)
 2025-02-08 15:51:49,062 - INFO - Listagem de comandas retornou 4 comandas (total: 4)
-2025-02-08 15:53:14,828 - DEBUG - Listando comandas - p�gina: 1, limite: 10, status: None, cliente_id: None
-2025-02-08 15:53:14,828 - DEBUG - Listando comandas - p�gina: 1, limite: 10, status: None, cliente_id: None
+2025-02-08 15:53:14,828 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-08 15:53:14,828 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
 2025-02-08 15:53:15,532 - INFO - Listagem de comandas retornou 4 comandas (total: 4)
 2025-02-08 15:53:15,532 - INFO - Listagem de comandas retornou 4 comandas (total: 4)
 2025-02-08 15:53:35,777 - DEBUG - Buscando comanda com ID: 67a7a1f6311e319ee5a51cf0
 2025-02-08 15:53:35,777 - DEBUG - Buscando comanda com ID: 67a7a1f6311e319ee5a51cf0
 2025-02-08 15:53:35,835 - INFO - Comanda 67a7a1f6311e319ee5a51cf0 encontrada com sucesso.
 2025-02-08 15:53:35,835 - INFO - Comanda 67a7a1f6311e319ee5a51cf0 encontrada com sucesso.
-2025-02-08 15:54:33,598 - DEBUG - Listando ingredientes - p�gina: 1, limite: 10, nome: None
-2025-02-08 15:54:33,598 - DEBUG - Listando ingredientes - p�gina: 1, limite: 10, nome: None
+2025-02-08 15:54:33,598 - DEBUG - Listando ingredientes - página: 1, limite: 10, nome: None
+2025-02-08 15:54:33,598 - DEBUG - Listando ingredientes - página: 1, limite: 10, nome: None
 2025-02-08 15:54:33,718 - INFO - Listagem de ingredientes retornou 4 ingredientes (total: 4)
 2025-02-08 15:54:33,718 - INFO - Listagem de ingredientes retornou 4 ingredientes (total: 4)
-2025-02-08 15:56:40,400 - DEBUG - Listando pratos - p�gina: 1, limite: 10, nome: None, categoria: None
-2025-02-08 15:56:40,400 - DEBUG - Listando pratos - p�gina: 1, limite: 10, nome: None, categoria: None
+2025-02-08 15:56:40,400 - DEBUG - Listando pratos - página: 1, limite: 10, nome: None, categoria: None
+2025-02-08 15:56:40,400 - DEBUG - Listando pratos - página: 1, limite: 10, nome: None, categoria: None
 2025-02-08 15:56:40,518 - INFO - Listagem de pratos retornou 2 pratos (total: 2)
 2025-02-08 15:56:40,518 - INFO - Listagem de pratos retornou 2 pratos (total: 2)
-2025-02-08 15:56:52,150 - DEBUG - Listando comandas - p�gina: 1, limite: 10, status: None, cliente_id: None
-2025-02-08 15:56:52,150 - DEBUG - Listando comandas - p�gina: 1, limite: 10, status: None, cliente_id: None
+2025-02-08 15:56:52,150 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-08 15:56:52,150 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
 2025-02-08 15:56:52,274 - INFO - Listagem de comandas retornou 4 comandas (total: 4)
 2025-02-08 15:56:52,274 - INFO - Listagem de comandas retornou 4 comandas (total: 4)
 2025-02-08 16:32:17,070 - DEBUG - Deletando comanda com ID: 67a7a24f311e319ee5a51cf3
 2025-02-08 16:32:17,070 - DEBUG - Deletando comanda com ID: 67a7a24f311e319ee5a51cf3
 2025-02-08 16:32:17,756 - INFO - Comanda 67a7a24f311e319ee5a51cf3 deletada com sucesso.
 2025-02-08 16:32:17,756 - INFO - Comanda 67a7a24f311e319ee5a51cf3 deletada com sucesso.
-2025-02-08 16:32:25,271 - DEBUG - Listando comandas - p�gina: 1, limite: 10, status: None, cliente_id: None
-2025-02-08 16:32:25,271 - DEBUG - Listando comandas - p�gina: 1, limite: 10, status: None, cliente_id: None
+2025-02-08 16:32:25,271 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-08 16:32:25,271 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
 2025-02-08 16:32:25,387 - INFO - Listagem de comandas retornou 3 comandas (total: 3)
 2025-02-08 16:32:25,387 - INFO - Listagem de comandas retornou 3 comandas (total: 3)
 2025-02-08 16:32:41,771 - DEBUG - Deletando comanda com ID: 67a7a222311e319ee5a51cf2
 2025-02-08 16:32:41,771 - DEBUG - Deletando comanda com ID: 67a7a222311e319ee5a51cf2
 2025-02-08 16:32:41,832 - INFO - Comanda 67a7a222311e319ee5a51cf2 deletada com sucesso.
 2025-02-08 16:32:41,832 - INFO - Comanda 67a7a222311e319ee5a51cf2 deletada com sucesso.
-2025-02-08 16:32:52,749 - DEBUG - Listando comandas - p�gina: 1, limite: 10, status: None, cliente_id: None
-2025-02-08 16:32:52,749 - DEBUG - Listando comandas - p�gina: 1, limite: 10, status: None, cliente_id: None
+2025-02-08 16:32:52,749 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-08 16:32:52,749 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
 2025-02-08 16:32:52,868 - INFO - Listagem de comandas retornou 2 comandas (total: 2)
 2025-02-08 16:32:52,868 - INFO - Listagem de comandas retornou 2 comandas (total: 2)
 2025-02-08 16:33:02,918 - DEBUG - Deletando comanda com ID: 67a7a21c311e319ee5a51cf1
 2025-02-08 16:33:02,918 - DEBUG - Deletando comanda com ID: 67a7a21c311e319ee5a51cf1
 2025-02-08 16:33:02,986 - INFO - Comanda 67a7a21c311e319ee5a51cf1 deletada com sucesso.
 2025-02-08 16:33:02,986 - INFO - Comanda 67a7a21c311e319ee5a51cf1 deletada com sucesso.
-2025-02-08 16:33:07,475 - DEBUG - Listando comandas - p�gina: 1, limite: 10, status: None, cliente_id: None
-2025-02-08 16:33:07,475 - DEBUG - Listando comandas - p�gina: 1, limite: 10, status: None, cliente_id: None
+2025-02-08 16:33:07,475 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-08 16:33:07,475 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
 2025-02-08 16:33:07,587 - INFO - Listagem de comandas retornou 1 comandas (total: 1)
 2025-02-08 16:33:07,587 - INFO - Listagem de comandas retornou 1 comandas (total: 1)
-2025-02-08 16:48:45,181 - DEBUG - Listando clientes - p�gina: 1, limite: 10, nome: None, email: None, cpf: None
-2025-02-08 16:48:45,181 - DEBUG - Listando clientes - p�gina: 1, limite: 10, nome: None, email: None, cpf: None
+2025-02-08 16:48:45,181 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None
+2025-02-08 16:48:45,181 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None
 2025-02-08 16:48:45,921 - INFO - Listagem de clientes retornou 3 clientes (total: 3)
 2025-02-08 16:48:45,921 - INFO - Listagem de clientes retornou 3 clientes (total: 3)
 2025-02-08 16:50:43,825 - DEBUG - Deletando cliente com ID: 67a7a0914bf90e1cd1f1f5ec
 2025-02-08 16:50:43,825 - DEBUG - Deletando cliente com ID: 67a7a0914bf90e1cd1f1f5ec
 2025-02-08 16:50:44,484 - INFO - Cliente 67a7a0914bf90e1cd1f1f5ec deletado com sucesso.
 2025-02-08 16:50:44,484 - INFO - Cliente 67a7a0914bf90e1cd1f1f5ec deletado com sucesso.
-2025-02-08 16:50:52,532 - DEBUG - Listando clientes - p�gina: 1, limite: 10, nome: None, email: None, cpf: None
-2025-02-08 16:50:52,532 - DEBUG - Listando clientes - p�gina: 1, limite: 10, nome: None, email: None, cpf: None
+2025-02-08 16:50:52,532 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None
+2025-02-08 16:50:52,532 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None
 2025-02-08 16:50:52,653 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
 2025-02-08 16:50:52,653 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
 2025-02-08 16:51:10,583 - DEBUG - Buscando cliente com ID: 67a7a0184bf90e1cd1f1f5eb
 2025-02-08 16:51:10,583 - DEBUG - Buscando cliente com ID: 67a7a0184bf90e1cd1f1f5eb
 2025-02-08 16:51:10,642 - INFO - Cliente 67a7a0184bf90e1cd1f1f5eb encontrado com sucesso.
 2025-02-08 16:51:10,642 - INFO - Cliente 67a7a0184bf90e1cd1f1f5eb encontrado com sucesso.
-2025-02-08 16:59:44,523 - DEBUG - Listando comandas - p�gina: 1, limite: 10, status: None, cliente_id: None
-2025-02-08 16:59:44,523 - DEBUG - Listando comandas - p�gina: 1, limite: 10, status: None, cliente_id: None
+2025-02-08 16:59:44,523 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-08 16:59:44,523 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
 2025-02-08 16:59:44,641 - INFO - Listagem de comandas retornou 1 comandas (total: 1)
 2025-02-08 16:59:44,641 - INFO - Listagem de comandas retornou 1 comandas (total: 1)
 2025-02-08 17:00:02,376 - DEBUG - Criando comanda para cliente_id: 67a79fe84bf90e1cd1f1f5ea
@@ -248,46 +248,46 @@
 2025-02-08 17:00:02,376 - DEBUG - Buscando cliente com ID: 67a79fe84bf90e1cd1f1f5ea
 2025-02-08 17:00:02,455 - INFO - Cliente 67a79fe84bf90e1cd1f1f5ea encontrado com sucesso.
 2025-02-08 17:00:02,455 - INFO - Cliente 67a79fe84bf90e1cd1f1f5ea encontrado com sucesso.
-2025-02-08 17:00:02,517 - WARNING - J� existe uma comanda aberta para o cliente 67a79fe84bf90e1cd1f1f5ea.
-2025-02-08 17:00:02,517 - WARNING - J� existe uma comanda aberta para o cliente 67a79fe84bf90e1cd1f1f5ea.
-2025-02-08 17:09:56,303 - DEBUG - Listando ingredientes - p�gina: 1, limite: 10, nome: a
-2025-02-08 17:09:56,303 - DEBUG - Listando ingredientes - p�gina: 1, limite: 10, nome: a
+2025-02-08 17:00:02,517 - WARNING - Já existe uma comanda aberta para o cliente 67a79fe84bf90e1cd1f1f5ea.
+2025-02-08 17:00:02,517 - WARNING - Já existe uma comanda aberta para o cliente 67a79fe84bf90e1cd1f1f5ea.
+2025-02-08 17:09:56,303 - DEBUG - Listando ingredientes - página: 1, limite: 10, nome: a
+2025-02-08 17:09:56,303 - DEBUG - Listando ingredientes - página: 1, limite: 10, nome: a
 2025-02-08 17:09:56,423 - INFO - Listagem de ingredientes retornou 4 ingredientes (total: 4)
 2025-02-08 17:09:56,423 - INFO - Listagem de ingredientes retornou 4 ingredientes (total: 4)
 2025-02-09 00:35:36,352 - DEBUG - Buscando cliente com ID: num
 2025-02-09 00:35:36,352 - DEBUG - Buscando cliente com ID: num
-2025-02-09 00:35:36,352 - WARNING - ID de cliente inválido: num
-2025-02-09 00:35:36,352 - WARNING - ID de cliente inválido: num
-2025-02-09 00:36:19,040 - DEBUG - Contando o número total de mesas
-2025-02-09 00:36:19,040 - DEBUG - Contando o número total de mesas
-2025-02-09 00:36:19,051 - INFO - Número total de mesas: 2
-2025-02-09 00:36:19,051 - INFO - Número total de mesas: 2
-2025-02-09 00:36:27,727 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None
-2025-02-09 00:36:27,727 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None
+2025-02-09 00:35:36,352 - WARNING - ID de cliente invÃ¡lido: num
+2025-02-09 00:35:36,352 - WARNING - ID de cliente invÃ¡lido: num
+2025-02-09 00:36:19,040 - DEBUG - Contando o nÃºmero total de mesas
+2025-02-09 00:36:19,040 - DEBUG - Contando o nÃºmero total de mesas
+2025-02-09 00:36:19,051 - INFO - NÃºmero total de mesas: 2
+2025-02-09 00:36:19,051 - INFO - NÃºmero total de mesas: 2
+2025-02-09 00:36:27,727 - DEBUG - Listando clientes - pÃ¡gina: 1, limite: 10, nome: None, email: None, cpf: None
+2025-02-09 00:36:27,727 - DEBUG - Listando clientes - pÃ¡gina: 1, limite: 10, nome: None, email: None, cpf: None
 2025-02-09 00:36:27,737 - INFO - Listagem de clientes retornou 1 clientes (total: 1)
 2025-02-09 00:36:27,737 - INFO - Listagem de clientes retornou 1 clientes (total: 1)
-2025-02-09 00:36:36,646 - DEBUG - Contando o número total de clientes.
-2025-02-09 00:36:36,646 - DEBUG - Contando o número total de clientes.
-2025-02-09 00:36:36,649 - INFO - Número total de clientes: 1
-2025-02-09 00:36:36,649 - INFO - Número total de clientes: 1
-2025-02-09 00:36:50,616 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
-2025-02-09 00:36:50,616 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-09 00:36:36,646 - DEBUG - Contando o nÃºmero total de clientes.
+2025-02-09 00:36:36,646 - DEBUG - Contando o nÃºmero total de clientes.
+2025-02-09 00:36:36,649 - INFO - NÃºmero total de clientes: 1
+2025-02-09 00:36:36,649 - INFO - NÃºmero total de clientes: 1
+2025-02-09 00:36:50,616 - DEBUG - Listando comandas - pÃ¡gina: 1, limite: 10, status: None, cliente_id: None
+2025-02-09 00:36:50,616 - DEBUG - Listando comandas - pÃ¡gina: 1, limite: 10, status: None, cliente_id: None
 2025-02-09 00:36:50,620 - INFO - Listagem de comandas retornou 0 comandas (total: 0)
 2025-02-09 00:36:50,620 - INFO - Listagem de comandas retornou 0 comandas (total: 0)
-2025-02-09 00:37:01,894 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None
-2025-02-09 00:37:01,894 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None
+2025-02-09 00:37:01,894 - DEBUG - Listando clientes - pÃ¡gina: 1, limite: 10, nome: None, email: None, cpf: None
+2025-02-09 00:37:01,894 - DEBUG - Listando clientes - pÃ¡gina: 1, limite: 10, nome: None, email: None, cpf: None
 2025-02-09 00:37:01,897 - INFO - Listagem de clientes retornou 1 clientes (total: 1)
 2025-02-09 00:37:01,897 - INFO - Listagem de clientes retornou 1 clientes (total: 1)
 2025-02-09 00:38:24,670 - DEBUG - Atualizando cliente com ID: 67a52533f2352b63717fc1de, dados: id='string' nome='Guilherme' telefone='88998748168' email='mail@google.com' cpf='08226810302' id_mesa='67a3e2e8d2881de8d2393289'
 2025-02-09 00:38:24,670 - DEBUG - Atualizando cliente com ID: 67a52533f2352b63717fc1de, dados: id='string' nome='Guilherme' telefone='88998748168' email='mail@google.com' cpf='08226810302' id_mesa='67a3e2e8d2881de8d2393289'
 2025-02-09 00:38:24,681 - INFO - Cliente 67a52533f2352b63717fc1de atualizado com sucesso.
 2025-02-09 00:38:24,681 - INFO - Cliente 67a52533f2352b63717fc1de atualizado com sucesso.
-2025-02-09 00:38:31,817 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None
-2025-02-09 00:38:31,817 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None
+2025-02-09 00:38:31,817 - DEBUG - Listando clientes - pÃ¡gina: 1, limite: 10, nome: None, email: None, cpf: None
+2025-02-09 00:38:31,817 - DEBUG - Listando clientes - pÃ¡gina: 1, limite: 10, nome: None, email: None, cpf: None
 2025-02-09 00:38:31,820 - INFO - Listagem de clientes retornou 1 clientes (total: 1)
 2025-02-09 00:38:31,820 - INFO - Listagem de clientes retornou 1 clientes (total: 1)
-2025-02-09 00:39:22,296 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None
-2025-02-09 00:39:22,296 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None
+2025-02-09 00:39:22,296 - DEBUG - Listando clientes - pÃ¡gina: 1, limite: 10, nome: None, email: None, cpf: None
+2025-02-09 00:39:22,296 - DEBUG - Listando clientes - pÃ¡gina: 1, limite: 10, nome: None, email: None, cpf: None
 2025-02-09 00:39:22,299 - INFO - Listagem de clientes retornou 1 clientes (total: 1)
 2025-02-09 00:39:22,299 - INFO - Listagem de clientes retornou 1 clientes (total: 1)
 2025-02-09 00:43:02,252 - DEBUG - Criando comanda para cliente_id: 67a52533f2352b63717fc1de
@@ -298,14 +298,14 @@
 2025-02-09 00:43:02,254 - INFO - Cliente 67a52533f2352b63717fc1de encontrado com sucesso.
 2025-02-09 00:43:02,280 - INFO - Comanda 67a82446ef9368ca6bfda7da criada com sucesso.
 2025-02-09 00:43:02,280 - INFO - Comanda 67a82446ef9368ca6bfda7da criada com sucesso.
-2025-02-09 00:43:11,455 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
-2025-02-09 00:43:11,455 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-09 00:43:11,455 - DEBUG - Listando comandas - pÃ¡gina: 1, limite: 10, status: None, cliente_id: None
+2025-02-09 00:43:11,455 - DEBUG - Listando comandas - pÃ¡gina: 1, limite: 10, status: None, cliente_id: None
 2025-02-09 00:43:11,461 - INFO - Listagem de comandas retornou 1 comandas (total: 1)
 2025-02-09 00:43:11,461 - INFO - Listagem de comandas retornou 1 comandas (total: 1)
-2025-02-09 00:43:21,907 - DEBUG - Contando o número total de comandas.
-2025-02-09 00:43:21,907 - DEBUG - Contando o número total de comandas.
-2025-02-09 00:43:21,909 - INFO - Número total de comandas: 1
-2025-02-09 00:43:21,909 - INFO - Número total de comandas: 1
+2025-02-09 00:43:21,907 - DEBUG - Contando o nÃºmero total de comandas.
+2025-02-09 00:43:21,907 - DEBUG - Contando o nÃºmero total de comandas.
+2025-02-09 00:43:21,909 - INFO - NÃºmero total de comandas: 1
+2025-02-09 00:43:21,909 - INFO - NÃºmero total de comandas: 1
 2025-02-09 00:48:10,318 - DEBUG - Criando prato: Hot Dog
 2025-02-09 00:48:10,318 - DEBUG - Criando prato: Hot Dog
 2025-02-09 00:48:10,318 - DEBUG - Buscando comanda com ID: 67a82446ef9368ca6bfda7da
@@ -314,34 +314,34 @@
 2025-02-09 00:48:10,320 - INFO - Comanda 67a82446ef9368ca6bfda7da encontrada com sucesso.
 2025-02-09 00:48:10,344 - INFO - Prato 67a8257aef9368ca6bfda7db criado com sucesso.
 2025-02-09 00:48:10,344 - INFO - Prato 67a8257aef9368ca6bfda7db criado com sucesso.
-2025-02-09 00:48:16,270 - DEBUG - Contando o número total de pratos.
-2025-02-09 00:48:16,270 - DEBUG - Contando o número total de pratos.
-2025-02-09 00:48:16,273 - INFO - Número total de pratos: 1
-2025-02-09 00:48:16,273 - INFO - Número total de pratos: 1
+2025-02-09 00:48:16,270 - DEBUG - Contando o nÃºmero total de pratos.
+2025-02-09 00:48:16,270 - DEBUG - Contando o nÃºmero total de pratos.
+2025-02-09 00:48:16,273 - INFO - NÃºmero total de pratos: 1
+2025-02-09 00:48:16,273 - INFO - NÃºmero total de pratos: 1
 2025-02-09 00:57:58,023 - DEBUG - Deletando prato com ID: 67a82446ef9368ca6bfda7da
 2025-02-09 00:57:58,023 - DEBUG - Deletando prato com ID: 67a82446ef9368ca6bfda7da
-2025-02-09 00:57:58,037 - WARNING - Prato não encontrado: 67a82446ef9368ca6bfda7da
-2025-02-09 00:57:58,037 - WARNING - Prato não encontrado: 67a82446ef9368ca6bfda7da
+2025-02-09 00:57:58,037 - WARNING - Prato nÃ£o encontrado: 67a82446ef9368ca6bfda7da
+2025-02-09 00:57:58,037 - WARNING - Prato nÃ£o encontrado: 67a82446ef9368ca6bfda7da
 2025-02-09 00:59:04,413 - DEBUG - Criando prato: Arroz
 2025-02-09 00:59:04,413 - DEBUG - Criando prato: Arroz
 2025-02-09 00:59:04,417 - INFO - Prato 67a828086e9b891153c355ad criado com sucesso.
 2025-02-09 00:59:04,417 - INFO - Prato 67a828086e9b891153c355ad criado com sucesso.
-2025-02-09 00:59:13,483 - DEBUG - Listando pratos - página: 1, limite: 10, nome: None, categoria: None
-2025-02-09 00:59:13,483 - DEBUG - Listando pratos - página: 1, limite: 10, nome: None, categoria: None
+2025-02-09 00:59:13,483 - DEBUG - Listando pratos - pÃ¡gina: 1, limite: 10, nome: None, categoria: None
+2025-02-09 00:59:13,483 - DEBUG - Listando pratos - pÃ¡gina: 1, limite: 10, nome: None, categoria: None
 2025-02-09 00:59:13,487 - INFO - Listagem de pratos retornou 1 pratos (total: 1)
 2025-02-09 00:59:13,487 - INFO - Listagem de pratos retornou 1 pratos (total: 1)
 2025-02-09 01:00:41,742 - DEBUG - Buscando prato com ID: 67a828086e9b891153c355ad
 2025-02-09 01:00:41,742 - DEBUG - Buscando prato com ID: 67a828086e9b891153c355ad
 2025-02-09 01:00:41,744 - INFO - Prato 67a828086e9b891153c355ad encontrado com sucesso.
 2025-02-09 01:00:41,744 - INFO - Prato 67a828086e9b891153c355ad encontrado com sucesso.
-2025-02-09 01:01:27,558 - DEBUG - Contando o número total de pratos.
-2025-02-09 01:01:27,558 - DEBUG - Contando o número total de pratos.
-2025-02-09 01:01:27,560 - INFO - Número total de pratos: 1
-2025-02-09 01:01:27,560 - INFO - Número total de pratos: 1
-2025-02-09 01:01:47,076 - DEBUG - Contando o número total de ingredientes.
-2025-02-09 01:01:47,076 - DEBUG - Contando o número total de ingredientes.
-2025-02-09 01:01:47,078 - INFO - Número total de ingredientes: 0
-2025-02-09 01:01:47,078 - INFO - Número total de ingredientes: 0
+2025-02-09 01:01:27,558 - DEBUG - Contando o nÃºmero total de pratos.
+2025-02-09 01:01:27,558 - DEBUG - Contando o nÃºmero total de pratos.
+2025-02-09 01:01:27,560 - INFO - NÃºmero total de pratos: 1
+2025-02-09 01:01:27,560 - INFO - NÃºmero total de pratos: 1
+2025-02-09 01:01:47,076 - DEBUG - Contando o nÃºmero total de ingredientes.
+2025-02-09 01:01:47,076 - DEBUG - Contando o nÃºmero total de ingredientes.
+2025-02-09 01:01:47,078 - INFO - NÃºmero total de ingredientes: 0
+2025-02-09 01:01:47,078 - INFO - NÃºmero total de ingredientes: 0
 2025-02-09 01:01:56,998 - DEBUG - Criando ingrediente: string
 2025-02-09 01:01:56,998 - DEBUG - Criando ingrediente: string
 2025-02-09 01:01:57,029 - INFO - Ingrediente 67a828b46e9b891153c355ae criado com sucesso.
@@ -378,12 +378,12 @@
 2025-02-09 13:05:31,262 - DEBUG - Criando ingrediente: Arroz
 2025-02-09 13:05:31,297 - INFO - Ingrediente 67a8d24b2390dbf6622a7604 criado com sucesso.
 2025-02-09 13:05:31,297 - INFO - Ingrediente 67a8d24b2390dbf6622a7604 criado com sucesso.
-2025-02-09 13:05:45,480 - DEBUG - Criando ingrediente: Camarão
-2025-02-09 13:05:45,480 - DEBUG - Criando ingrediente: Camarão
+2025-02-09 13:05:45,480 - DEBUG - Criando ingrediente: CamarÃ£o
+2025-02-09 13:05:45,480 - DEBUG - Criando ingrediente: CamarÃ£o
 2025-02-09 13:05:45,484 - INFO - Ingrediente 67a8d2592390dbf6622a7605 criado com sucesso.
 2025-02-09 13:05:45,484 - INFO - Ingrediente 67a8d2592390dbf6622a7605 criado com sucesso.
-2025-02-09 13:06:03,275 - DEBUG - Criando ingrediente: Pão
-2025-02-09 13:06:03,275 - DEBUG - Criando ingrediente: Pão
+2025-02-09 13:06:03,275 - DEBUG - Criando ingrediente: PÃ£o
+2025-02-09 13:06:03,275 - DEBUG - Criando ingrediente: PÃ£o
 2025-02-09 13:06:03,278 - INFO - Ingrediente 67a8d26b2390dbf6622a7606 criado com sucesso.
 2025-02-09 13:06:03,278 - INFO - Ingrediente 67a8d26b2390dbf6622a7606 criado com sucesso.
 2025-02-09 13:06:24,942 - DEBUG - Criando ingrediente: Salsicha
@@ -398,24 +398,24 @@
 2025-02-09 13:07:37,541 - DEBUG - Criando prato: Hot Dog
 2025-02-09 13:07:37,544 - INFO - Prato 67a8d2c92390dbf6622a7609 criado com sucesso.
 2025-02-09 13:07:37,544 - INFO - Prato 67a8d2c92390dbf6622a7609 criado com sucesso.
-2025-02-09 13:07:45,526 - DEBUG - Listando pratos - página: 1, limite: 10, nome: None, categoria: None
-2025-02-09 13:07:45,526 - DEBUG - Listando pratos - página: 1, limite: 10, nome: None, categoria: None
+2025-02-09 13:07:45,526 - DEBUG - Listando pratos - pÃ¡gina: 1, limite: 10, nome: None, categoria: None
+2025-02-09 13:07:45,526 - DEBUG - Listando pratos - pÃ¡gina: 1, limite: 10, nome: None, categoria: None
 2025-02-09 13:07:45,531 - INFO - Listagem de pratos retornou 2 pratos (total: 2)
 2025-02-09 13:07:45,531 - INFO - Listagem de pratos retornou 2 pratos (total: 2)
 2025-02-09 13:38:32,021 - INFO - Comanda_prato criado com sucesso
 2025-02-09 13:38:32,021 - INFO - Comanda_prato criado com sucesso
-2025-02-13 10:40:28,153 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None
-2025-02-13 10:40:28,153 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None
+2025-02-13 10:40:28,153 - DEBUG - Listando clientes - pÃ¡gina: 1, limite: 10, nome: None, email: None, cpf: None
+2025-02-13 10:40:28,153 - DEBUG - Listando clientes - pÃ¡gina: 1, limite: 10, nome: None, email: None, cpf: None
 2025-02-13 10:40:28,161 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
 2025-02-13 10:40:28,161 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
 2025-02-13 10:41:54,060 - DEBUG - Iniciando create_cliente para o cliente: joh
 2025-02-13 10:41:54,060 - DEBUG - Iniciando create_cliente para o cliente: joh
 2025-02-13 10:41:54,085 - DEBUG - Clientes na mesa 67a8d0692390dbf6622a75ff: 2, Capacidade: 2
 2025-02-13 10:41:54,085 - DEBUG - Clientes na mesa 67a8d0692390dbf6622a75ff: 2, Capacidade: 2
-2025-02-13 10:41:54,086 - WARNING - Mesa 67a8d0692390dbf6622a75ff está cheia. Capacidade: 2, Clientes: 2
-2025-02-13 10:41:54,086 - WARNING - Mesa 67a8d0692390dbf6622a75ff está cheia. Capacidade: 2, Clientes: 2
-2025-02-13 10:42:11,464 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
-2025-02-13 10:42:11,464 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-13 10:41:54,086 - WARNING - Mesa 67a8d0692390dbf6622a75ff estÃ¡ cheia. Capacidade: 2, Clientes: 2
+2025-02-13 10:41:54,086 - WARNING - Mesa 67a8d0692390dbf6622a75ff estÃ¡ cheia. Capacidade: 2, Clientes: 2
+2025-02-13 10:42:11,464 - DEBUG - Listando comandas - pÃ¡gina: 1, limite: 10, status: None, cliente_id: None
+2025-02-13 10:42:11,464 - DEBUG - Listando comandas - pÃ¡gina: 1, limite: 10, status: None, cliente_id: None
 2025-02-13 10:42:11,475 - INFO - Listagem de comandas retornou 2 comandas (total: 2)
 2025-02-13 10:42:11,475 - INFO - Listagem de comandas retornou 2 comandas (total: 2)
 2025-02-13 10:43:42,552 - DEBUG - Criando comanda para cliente_id: 67a8d0b82390dbf6622a7600
@@ -424,52 +424,52 @@
 2025-02-13 10:43:42,554 - DEBUG - Buscando cliente com ID: 67a8d0b82390dbf6622a7600
 2025-02-13 10:43:42,559 - INFO - Cliente 67a8d0b82390dbf6622a7600 encontrado com sucesso.
 2025-02-13 10:43:42,559 - INFO - Cliente 67a8d0b82390dbf6622a7600 encontrado com sucesso.
-2025-02-13 10:43:42,561 - WARNING - Já existe uma comanda aberta para o cliente 67a8d0b82390dbf6622a7600.
-2025-02-13 10:43:42,561 - WARNING - Já existe uma comanda aberta para o cliente 67a8d0b82390dbf6622a7600.
+2025-02-13 10:43:42,561 - WARNING - JÃ¡ existe uma comanda aberta para o cliente 67a8d0b82390dbf6622a7600.
+2025-02-13 10:43:42,561 - WARNING - JÃ¡ existe uma comanda aberta para o cliente 67a8d0b82390dbf6622a7600.
 2025-02-13 10:44:20,529 - INFO - Comanda_prato criado com sucesso
 2025-02-13 10:44:20,529 - INFO - Comanda_prato criado com sucesso
-2025-02-13 10:44:44,009 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
-2025-02-13 10:44:44,009 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-13 10:44:44,009 - DEBUG - Listando comandas - pÃ¡gina: 1, limite: 10, status: None, cliente_id: None
+2025-02-13 10:44:44,009 - DEBUG - Listando comandas - pÃ¡gina: 1, limite: 10, status: None, cliente_id: None
 2025-02-13 10:44:44,014 - INFO - Listagem de comandas retornou 2 comandas (total: 2)
 2025-02-13 10:44:44,014 - INFO - Listagem de comandas retornou 2 comandas (total: 2)
 2025-02-13 10:45:37,376 - INFO - Comanda_prato criado com sucesso
 2025-02-13 10:45:37,376 - INFO - Comanda_prato criado com sucesso
-2025-02-13 10:50:42,626 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
-2025-02-13 10:50:42,626 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-13 10:50:42,626 - DEBUG - Listando comandas - pÃ¡gina: 1, limite: 10, status: None, cliente_id: None
+2025-02-13 10:50:42,626 - DEBUG - Listando comandas - pÃ¡gina: 1, limite: 10, status: None, cliente_id: None
 2025-02-13 10:50:42,635 - INFO - Listagem de comandas retornou 2 comandas (total: 2)
 2025-02-13 10:50:42,635 - INFO - Listagem de comandas retornou 2 comandas (total: 2)
-2025-02-13 10:50:56,142 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None
-2025-02-13 10:50:56,142 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None
+2025-02-13 10:50:56,142 - DEBUG - Listando clientes - pÃ¡gina: 1, limite: 10, nome: None, email: None, cpf: None
+2025-02-13 10:50:56,142 - DEBUG - Listando clientes - pÃ¡gina: 1, limite: 10, nome: None, email: None, cpf: None
 2025-02-13 10:50:56,147 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
 2025-02-13 10:50:56,147 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
-2025-02-15 13:52:43,314 - DEBUG - Contando o número total de mesas
-2025-02-15 13:52:43,314 - DEBUG - Contando o número total de mesas
-2025-02-15 13:52:43,396 - INFO - Número total de mesas: 1
-2025-02-15 13:52:43,396 - INFO - Número total de mesas: 1
-2025-02-15 13:52:47,827 - DEBUG - Contando o número total de clientes.
-2025-02-15 13:52:47,827 - DEBUG - Contando o número total de clientes.
-2025-02-15 13:52:47,835 - INFO - Número total de clientes: 2
-2025-02-15 13:52:47,835 - INFO - Número total de clientes: 2
-2025-02-15 13:52:53,170 - DEBUG - Contando o número total de comandas.
-2025-02-15 13:52:53,170 - DEBUG - Contando o número total de comandas.
-2025-02-15 13:52:53,179 - INFO - Número total de comandas: 2
-2025-02-15 13:52:53,179 - INFO - Número total de comandas: 2
-2025-02-15 13:53:13,894 - DEBUG - Contando o número total de ingredientes.
-2025-02-15 13:53:13,894 - DEBUG - Contando o número total de ingredientes.
-2025-02-15 13:53:13,901 - INFO - Número total de ingredientes: 4
-2025-02-15 13:53:13,901 - INFO - Número total de ingredientes: 4
-2025-02-15 13:53:21,529 - DEBUG - Contando o número total de pratos.
-2025-02-15 13:53:21,529 - DEBUG - Contando o número total de pratos.
-2025-02-15 13:53:21,533 - INFO - Número total de pratos: 2
-2025-02-15 13:53:21,533 - INFO - Número total de pratos: 2
+2025-02-15 13:52:43,314 - DEBUG - Contando o nÃºmero total de mesas
+2025-02-15 13:52:43,314 - DEBUG - Contando o nÃºmero total de mesas
+2025-02-15 13:52:43,396 - INFO - NÃºmero total de mesas: 1
+2025-02-15 13:52:43,396 - INFO - NÃºmero total de mesas: 1
+2025-02-15 13:52:47,827 - DEBUG - Contando o nÃºmero total de clientes.
+2025-02-15 13:52:47,827 - DEBUG - Contando o nÃºmero total de clientes.
+2025-02-15 13:52:47,835 - INFO - NÃºmero total de clientes: 2
+2025-02-15 13:52:47,835 - INFO - NÃºmero total de clientes: 2
+2025-02-15 13:52:53,170 - DEBUG - Contando o nÃºmero total de comandas.
+2025-02-15 13:52:53,170 - DEBUG - Contando o nÃºmero total de comandas.
+2025-02-15 13:52:53,179 - INFO - NÃºmero total de comandas: 2
+2025-02-15 13:52:53,179 - INFO - NÃºmero total de comandas: 2
+2025-02-15 13:53:13,894 - DEBUG - Contando o nÃºmero total de ingredientes.
+2025-02-15 13:53:13,894 - DEBUG - Contando o nÃºmero total de ingredientes.
+2025-02-15 13:53:13,901 - INFO - NÃºmero total de ingredientes: 4
+2025-02-15 13:53:13,901 - INFO - NÃºmero total de ingredientes: 4
+2025-02-15 13:53:21,529 - DEBUG - Contando o nÃºmero total de pratos.
+2025-02-15 13:53:21,529 - DEBUG - Contando o nÃºmero total de pratos.
+2025-02-15 13:53:21,533 - INFO - NÃºmero total de pratos: 2
+2025-02-15 13:53:21,533 - INFO - NÃºmero total de pratos: 2
 2025-02-15 13:53:50,757 - INFO - API inicializada
 2025-02-15 13:53:50,757 - INFO - API inicializada
-2025-02-15 13:54:05,472 - DEBUG - Listando ingredientes - página: 1, limite: 10, nome: a
-2025-02-15 13:54:05,472 - DEBUG - Listando ingredientes - página: 1, limite: 10, nome: a
+2025-02-15 13:54:05,472 - DEBUG - Listando ingredientes - pÃ¡gina: 1, limite: 10, nome: a
+2025-02-15 13:54:05,472 - DEBUG - Listando ingredientes - pÃ¡gina: 1, limite: 10, nome: a
 2025-02-15 13:54:05,487 - INFO - Listagem de ingredientes retornou 3 ingredientes (total: 3)
 2025-02-15 13:54:05,487 - INFO - Listagem de ingredientes retornou 3 ingredientes (total: 3)
-2025-02-15 13:54:23,712 - DEBUG - Listando ingredientes - página: 1, limite: 10, nome: None
-2025-02-15 13:54:23,712 - DEBUG - Listando ingredientes - página: 1, limite: 10, nome: None
+2025-02-15 13:54:23,712 - DEBUG - Listando ingredientes - pÃ¡gina: 1, limite: 10, nome: None
+2025-02-15 13:54:23,712 - DEBUG - Listando ingredientes - pÃ¡gina: 1, limite: 10, nome: None
 2025-02-15 13:54:23,715 - INFO - Listagem de ingredientes retornou 4 ingredientes (total: 4)
 2025-02-15 13:54:23,715 - INFO - Listagem de ingredientes retornou 4 ingredientes (total: 4)
 2025-02-15 15:33:36,288 - INFO - Clientes ordenados por nome obtidos com sucesso.
@@ -480,21 +480,21 @@
 2025-02-15 15:36:54,461 - INFO - Clientes com comandas listados com sucesso.
 2025-02-15 15:37:04,365 - INFO - Clientes ordenados por nome obtidos com sucesso.
 2025-02-15 15:37:04,365 - INFO - Clientes ordenados por nome obtidos com sucesso.
-2025-02-15 15:41:13,915 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: nome, sort_direction: 1
-2025-02-15 15:41:13,915 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: nome, sort_direction: 1
+2025-02-15 15:41:13,915 - DEBUG - Listando clientes - pÃ¡gina: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: nome, sort_direction: 1
+2025-02-15 15:41:13,915 - DEBUG - Listando clientes - pÃ¡gina: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: nome, sort_direction: 1
 2025-02-15 15:41:13,929 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
 2025-02-15 15:41:13,929 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
-2025-02-15 15:41:28,169 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: cpf, sort_direction: 1
-2025-02-15 15:41:28,169 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: cpf, sort_direction: 1
+2025-02-15 15:41:28,169 - DEBUG - Listando clientes - pÃ¡gina: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: cpf, sort_direction: 1
+2025-02-15 15:41:28,169 - DEBUG - Listando clientes - pÃ¡gina: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: cpf, sort_direction: 1
 2025-02-15 15:41:28,173 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
 2025-02-15 15:41:28,173 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
 2025-02-15 15:46:27,780 - INFO - Clientes com comandas listados com sucesso.
 2025-02-15 15:46:27,780 - INFO - Clientes com comandas listados com sucesso.
-2025-02-15 15:54:36,996 - DEBUG - Listando clientes - p�gina: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
-2025-02-15 15:54:36,996 - DEBUG - Listando clientes - p�gina: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-15 15:54:36,996 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-15 15:54:36,996 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
 2025-02-15 15:55:07,025 - ERROR - Erro ao listar clientes: SSL handshake failed: dbtrabalho3persistencia-shard-00-02.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: dbtrabalho3persistencia-shard-00-00.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: dbtrabalho3persistencia-shard-00-01.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 67b0e2ca612890a23fa7960f, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('dbtrabalho3persistencia-shard-00-00.ly2eu.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: dbtrabalho3persistencia-shard-00-00.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('dbtrabalho3persistencia-shard-00-01.ly2eu.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: dbtrabalho3persistencia-shard-00-01.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('dbtrabalho3persistencia-shard-00-02.ly2eu.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: dbtrabalho3persistencia-shard-00-02.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
 Traceback (most recent call last):
-  File "C:\Users\Kaynan\Desktop\Trabalho 3 de Persist�ncia\DSPP-Trabalho-3\app\controller\cliente.py", line 114, in list_clientes
+  File "C:\Users\Kaynan\Desktop\Trabalho 3 de Persistência\DSPP-Trabalho-3\app\controller\cliente.py", line 114, in list_clientes
     await db.clientes.find(query)
   File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\motor\core.py", line 1696, in _to_list
     result = get_more_result.result()
@@ -548,7 +548,7 @@ Traceback (most recent call last):
 pymongo.errors.ServerSelectionTimeoutError: SSL handshake failed: dbtrabalho3persistencia-shard-00-02.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: dbtrabalho3persistencia-shard-00-00.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: dbtrabalho3persistencia-shard-00-01.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 67b0e2ca612890a23fa7960f, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('dbtrabalho3persistencia-shard-00-00.ly2eu.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: dbtrabalho3persistencia-shard-00-00.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('dbtrabalho3persistencia-shard-00-01.ly2eu.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: dbtrabalho3persistencia-shard-00-01.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('dbtrabalho3persistencia-shard-00-02.ly2eu.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: dbtrabalho3persistencia-shard-00-02.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
 2025-02-15 15:55:07,025 - ERROR - Erro ao listar clientes: SSL handshake failed: dbtrabalho3persistencia-shard-00-02.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: dbtrabalho3persistencia-shard-00-00.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: dbtrabalho3persistencia-shard-00-01.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 67b0e2ca612890a23fa7960f, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('dbtrabalho3persistencia-shard-00-00.ly2eu.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: dbtrabalho3persistencia-shard-00-00.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('dbtrabalho3persistencia-shard-00-01.ly2eu.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: dbtrabalho3persistencia-shard-00-01.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('dbtrabalho3persistencia-shard-00-02.ly2eu.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: dbtrabalho3persistencia-shard-00-02.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
 Traceback (most recent call last):
-  File "C:\Users\Kaynan\Desktop\Trabalho 3 de Persist�ncia\DSPP-Trabalho-3\app\controller\cliente.py", line 114, in list_clientes
+  File "C:\Users\Kaynan\Desktop\Trabalho 3 de Persistência\DSPP-Trabalho-3\app\controller\cliente.py", line 114, in list_clientes
     await db.clientes.find(query)
   File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\motor\core.py", line 1696, in _to_list
     result = get_more_result.result()
@@ -602,11 +602,11 @@ Traceback (most recent call last):
 pymongo.errors.ServerSelectionTimeoutError: SSL handshake failed: dbtrabalho3persistencia-shard-00-02.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: dbtrabalho3persistencia-shard-00-00.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: dbtrabalho3persistencia-shard-00-01.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 67b0e2ca612890a23fa7960f, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('dbtrabalho3persistencia-shard-00-00.ly2eu.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: dbtrabalho3persistencia-shard-00-00.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('dbtrabalho3persistencia-shard-00-01.ly2eu.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: dbtrabalho3persistencia-shard-00-01.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('dbtrabalho3persistencia-shard-00-02.ly2eu.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: dbtrabalho3persistencia-shard-00-02.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
 2025-02-15 15:57:13,083 - INFO - API inicializada
 2025-02-15 15:57:13,083 - INFO - API inicializada
-2025-02-15 15:57:23,483 - DEBUG - Listando clientes - p�gina: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
-2025-02-15 15:57:23,483 - DEBUG - Listando clientes - p�gina: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-15 15:57:23,483 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-15 15:57:23,483 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
 2025-02-15 15:57:53,866 - ERROR - Erro ao listar clientes: SSL handshake failed: dbtrabalho3persistencia-shard-00-02.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: dbtrabalho3persistencia-shard-00-00.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: dbtrabalho3persistencia-shard-00-01.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 67b0e37ee7b1b83ec9d34058, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('dbtrabalho3persistencia-shard-00-00.ly2eu.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: dbtrabalho3persistencia-shard-00-00.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('dbtrabalho3persistencia-shard-00-01.ly2eu.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: dbtrabalho3persistencia-shard-00-01.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('dbtrabalho3persistencia-shard-00-02.ly2eu.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: dbtrabalho3persistencia-shard-00-02.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
 Traceback (most recent call last):
-  File "C:\Users\Kaynan\Desktop\Trabalho 3 de Persist�ncia\DSPP-Trabalho-3\app\controller\cliente.py", line 114, in list_clientes
+  File "C:\Users\Kaynan\Desktop\Trabalho 3 de Persistência\DSPP-Trabalho-3\app\controller\cliente.py", line 114, in list_clientes
     await db.clientes.find(query)
   File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\motor\core.py", line 1696, in _to_list
     result = get_more_result.result()
@@ -660,7 +660,7 @@ Traceback (most recent call last):
 pymongo.errors.ServerSelectionTimeoutError: SSL handshake failed: dbtrabalho3persistencia-shard-00-02.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: dbtrabalho3persistencia-shard-00-00.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: dbtrabalho3persistencia-shard-00-01.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 67b0e37ee7b1b83ec9d34058, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('dbtrabalho3persistencia-shard-00-00.ly2eu.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: dbtrabalho3persistencia-shard-00-00.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('dbtrabalho3persistencia-shard-00-01.ly2eu.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: dbtrabalho3persistencia-shard-00-01.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('dbtrabalho3persistencia-shard-00-02.ly2eu.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: dbtrabalho3persistencia-shard-00-02.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
 2025-02-15 15:57:53,866 - ERROR - Erro ao listar clientes: SSL handshake failed: dbtrabalho3persistencia-shard-00-02.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: dbtrabalho3persistencia-shard-00-00.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: dbtrabalho3persistencia-shard-00-01.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 67b0e37ee7b1b83ec9d34058, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('dbtrabalho3persistencia-shard-00-00.ly2eu.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: dbtrabalho3persistencia-shard-00-00.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('dbtrabalho3persistencia-shard-00-01.ly2eu.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: dbtrabalho3persistencia-shard-00-01.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('dbtrabalho3persistencia-shard-00-02.ly2eu.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: dbtrabalho3persistencia-shard-00-02.ly2eu.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
 Traceback (most recent call last):
-  File "C:\Users\Kaynan\Desktop\Trabalho 3 de Persist�ncia\DSPP-Trabalho-3\app\controller\cliente.py", line 114, in list_clientes
+  File "C:\Users\Kaynan\Desktop\Trabalho 3 de Persistência\DSPP-Trabalho-3\app\controller\cliente.py", line 114, in list_clientes
     await db.clientes.find(query)
   File "C:\Users\Kaynan\AppData\Local\Programs\Python\Python312\Lib\site-packages\motor\core.py", line 1696, in _to_list
     result = get_more_result.result()
@@ -716,112 +716,112 @@ pymongo.errors.ServerSelectionTimeoutError: SSL handshake failed: dbtrabalho3per
 2025-02-15 16:20:03,579 - INFO - API inicializada
 2025-02-15 16:55:32,645 - INFO - Clientes com comandas listados com sucesso.
 2025-02-15 16:55:32,645 - INFO - Clientes com comandas listados com sucesso.
-2025-02-15 16:56:59,689 - DEBUG - Listando clientes - p�gina: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
-2025-02-15 16:56:59,689 - DEBUG - Listando clientes - p�gina: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-15 16:56:59,689 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-15 16:56:59,689 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
 2025-02-15 16:56:59,813 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
 2025-02-15 16:56:59,813 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
-2025-02-15 16:57:07,428 - DEBUG - Listando clientes - p�gina: 1, limite: 10, nome: ka, email: None, cpf: None, sort_by: None, sort_direction: 1
-2025-02-15 16:57:07,428 - DEBUG - Listando clientes - p�gina: 1, limite: 10, nome: ka, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-15 16:57:07,428 - DEBUG - Listando clientes - página: 1, limite: 10, nome: ka, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-15 16:57:07,428 - DEBUG - Listando clientes - página: 1, limite: 10, nome: ka, email: None, cpf: None, sort_by: None, sort_direction: 1
 2025-02-15 16:57:07,554 - INFO - Listagem de clientes retornou 1 clientes (total: 1)
 2025-02-15 16:57:07,554 - INFO - Listagem de clientes retornou 1 clientes (total: 1)
-2025-02-15 16:57:12,082 - DEBUG - Listando clientes - p�gina: 1, limite: 10, nome: y, email: None, cpf: None, sort_by: None, sort_direction: 1
-2025-02-15 16:57:12,082 - DEBUG - Listando clientes - p�gina: 1, limite: 10, nome: y, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-15 16:57:12,082 - DEBUG - Listando clientes - página: 1, limite: 10, nome: y, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-15 16:57:12,082 - DEBUG - Listando clientes - página: 1, limite: 10, nome: y, email: None, cpf: None, sort_by: None, sort_direction: 1
 2025-02-15 16:57:12,210 - INFO - Listagem de clientes retornou 1 clientes (total: 1)
 2025-02-15 16:57:12,210 - INFO - Listagem de clientes retornou 1 clientes (total: 1)
-2025-02-15 16:57:17,093 - DEBUG - Listando clientes - p�gina: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
-2025-02-15 16:57:17,093 - DEBUG - Listando clientes - p�gina: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-15 16:57:17,093 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-15 16:57:17,093 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
 2025-02-15 16:57:17,219 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
 2025-02-15 16:57:17,219 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
-2025-02-15 16:57:25,612 - DEBUG - Listando clientes - p�gina: 1, limite: 10, nome: None, email: None, cpf: 1, sort_by: None, sort_direction: 1
-2025-02-15 16:57:25,612 - DEBUG - Listando clientes - p�gina: 1, limite: 10, nome: None, email: None, cpf: 1, sort_by: None, sort_direction: 1
+2025-02-15 16:57:25,612 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: 1, sort_by: None, sort_direction: 1
+2025-02-15 16:57:25,612 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: 1, sort_by: None, sort_direction: 1
 2025-02-15 16:57:25,735 - INFO - Listagem de clientes retornou 0 clientes (total: 0)
 2025-02-15 16:57:25,735 - INFO - Listagem de clientes retornou 0 clientes (total: 0)
-2025-02-15 16:57:31,917 - DEBUG - Listando clientes - p�gina: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
-2025-02-15 16:57:31,917 - DEBUG - Listando clientes - p�gina: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-15 16:57:31,917 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-15 16:57:31,917 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
 2025-02-15 16:57:32,041 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
 2025-02-15 16:57:32,041 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
-2025-02-15 16:57:43,452 - DEBUG - Listando clientes - p�gina: 1, limite: 10, nome: None, email: nao, cpf: None, sort_by: None, sort_direction: 1
-2025-02-15 16:57:43,452 - DEBUG - Listando clientes - p�gina: 1, limite: 10, nome: None, email: nao, cpf: None, sort_by: None, sort_direction: 1
+2025-02-15 16:57:43,452 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: nao, cpf: None, sort_by: None, sort_direction: 1
+2025-02-15 16:57:43,452 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: nao, cpf: None, sort_by: None, sort_direction: 1
 2025-02-15 16:57:43,576 - INFO - Listagem de clientes retornou 1 clientes (total: 1)
 2025-02-15 16:57:43,576 - INFO - Listagem de clientes retornou 1 clientes (total: 1)
-2025-02-15 16:57:47,652 - DEBUG - Listando clientes - p�gina: 1, limite: 10, nome: None, email: a, cpf: None, sort_by: None, sort_direction: 1
-2025-02-15 16:57:47,652 - DEBUG - Listando clientes - p�gina: 1, limite: 10, nome: None, email: a, cpf: None, sort_by: None, sort_direction: 1
+2025-02-15 16:57:47,652 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: a, cpf: None, sort_by: None, sort_direction: 1
+2025-02-15 16:57:47,652 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: a, cpf: None, sort_by: None, sort_direction: 1
 2025-02-15 16:57:47,782 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
 2025-02-15 16:57:47,782 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
-2025-02-15 16:58:00,608 - DEBUG - Listando clientes - p�gina: 1, limite: 10, nome: None, email: None, cpf: 65156156155, sort_by: None, sort_direction: 1
-2025-02-15 16:58:00,608 - DEBUG - Listando clientes - p�gina: 1, limite: 10, nome: None, email: None, cpf: 65156156155, sort_by: None, sort_direction: 1
+2025-02-15 16:58:00,608 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: 65156156155, sort_by: None, sort_direction: 1
+2025-02-15 16:58:00,608 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: 65156156155, sort_by: None, sort_direction: 1
 2025-02-15 16:58:00,731 - INFO - Listagem de clientes retornou 1 clientes (total: 1)
 2025-02-15 16:58:00,731 - INFO - Listagem de clientes retornou 1 clientes (total: 1)
-2025-02-15 16:58:06,193 - DEBUG - Listando clientes - p�gina: 1, limite: 10, nome: None, email: None, cpf: 65, sort_by: None, sort_direction: 1
-2025-02-15 16:58:06,193 - DEBUG - Listando clientes - p�gina: 1, limite: 10, nome: None, email: None, cpf: 65, sort_by: None, sort_direction: 1
+2025-02-15 16:58:06,193 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: 65, sort_by: None, sort_direction: 1
+2025-02-15 16:58:06,193 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: 65, sort_by: None, sort_direction: 1
 2025-02-15 16:58:06,314 - INFO - Listagem de clientes retornou 0 clientes (total: 0)
 2025-02-15 16:58:06,314 - INFO - Listagem de clientes retornou 0 clientes (total: 0)
-2025-02-15 16:58:08,879 - DEBUG - Listando clientes - p�gina: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
-2025-02-15 16:58:08,879 - DEBUG - Listando clientes - p�gina: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-15 16:58:08,879 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-15 16:58:08,879 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
 2025-02-15 16:58:09,006 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
 2025-02-15 16:58:09,006 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
-2025-02-15 16:58:24,191 - DEBUG - Listando clientes - p�gina: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: cpf, sort_direction: 1
-2025-02-15 16:58:24,191 - DEBUG - Listando clientes - p�gina: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: cpf, sort_direction: 1
+2025-02-15 16:58:24,191 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: cpf, sort_direction: 1
+2025-02-15 16:58:24,191 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: cpf, sort_direction: 1
 2025-02-15 16:58:24,318 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
 2025-02-15 16:58:24,318 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
-2025-02-15 16:58:39,973 - DEBUG - Listando clientes - p�gina: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
-2025-02-15 16:58:39,973 - DEBUG - Listando clientes - p�gina: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-15 16:58:39,973 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-15 16:58:39,973 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
 2025-02-15 16:58:40,108 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
 2025-02-15 16:58:40,108 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
 2025-02-16 20:26:25,791 - INFO - API inicializada
 2025-02-16 20:26:25,791 - INFO - API inicializada
 2025-02-16 20:31:01,049 - INFO - Clientes com comandas listados com sucesso.
 2025-02-16 20:31:01,049 - INFO - Clientes com comandas listados com sucesso.
-2025-02-16 20:34:49,221 - DEBUG - Listando pratos - p�gina: 1, limite: 10, nome: None, categoria: None
-2025-02-16 20:34:49,221 - DEBUG - Listando pratos - p�gina: 1, limite: 10, nome: None, categoria: None
+2025-02-16 20:34:49,221 - DEBUG - Listando pratos - página: 1, limite: 10, nome: None, categoria: None
+2025-02-16 20:34:49,221 - DEBUG - Listando pratos - página: 1, limite: 10, nome: None, categoria: None
 2025-02-16 20:34:49,341 - INFO - Listagem de pratos retornou 2 pratos (total: 2)
 2025-02-16 20:34:49,341 - INFO - Listagem de pratos retornou 2 pratos (total: 2)
 2025-02-16 20:35:13,559 - WARNING - id de prato invalido: string
 2025-02-16 20:35:13,559 - WARNING - id de prato invalido: string
-2025-02-16 20:36:03,783 - DEBUG - Listando comandas - p�gina: 1, limite: 10, status: None, cliente_id: None
-2025-02-16 20:36:03,783 - DEBUG - Listando comandas - p�gina: 1, limite: 10, status: None, cliente_id: None
+2025-02-16 20:36:03,783 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-16 20:36:03,783 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
 2025-02-16 20:36:03,910 - INFO - Listagem de comandas retornou 1 comandas (total: 1)
 2025-02-16 20:36:03,910 - INFO - Listagem de comandas retornou 1 comandas (total: 1)
 2025-02-16 20:53:10,334 - DEBUG - Buscando comanda com ID: abertas
 2025-02-16 20:53:10,334 - DEBUG - Buscando comanda com ID: abertas
-2025-02-16 20:53:10,335 - WARNING - ID de comanda inv�lido: abertas
-2025-02-16 20:53:10,335 - WARNING - ID de comanda inv�lido: abertas
+2025-02-16 20:53:10,335 - WARNING - ID de comanda inválido: abertas
+2025-02-16 20:53:10,335 - WARNING - ID de comanda inválido: abertas
 2025-02-16 20:53:26,686 - DEBUG - Buscando comanda com ID: abertas
 2025-02-16 20:53:26,686 - DEBUG - Buscando comanda com ID: abertas
-2025-02-16 20:53:26,687 - WARNING - ID de comanda inv�lido: abertas
-2025-02-16 20:53:26,687 - WARNING - ID de comanda inv�lido: abertas
-2025-02-16 20:56:38,014 - DEBUG - Listando comandas - p�gina: 1, limite: 10, status: None, cliente_id: None
-2025-02-16 20:56:38,014 - DEBUG - Listando comandas - p�gina: 1, limite: 10, status: None, cliente_id: None
+2025-02-16 20:53:26,687 - WARNING - ID de comanda inválido: abertas
+2025-02-16 20:53:26,687 - WARNING - ID de comanda inválido: abertas
+2025-02-16 20:56:38,014 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-16 20:56:38,014 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
 2025-02-16 20:56:38,790 - INFO - Listagem de comandas retornou 1 comandas (total: 1)
 2025-02-16 20:56:38,790 - INFO - Listagem de comandas retornou 1 comandas (total: 1)
 2025-02-16 20:57:49,978 - DEBUG - Fechando comanda com ID: 67a7a1f6311e319ee5a51cf0
 2025-02-16 20:57:49,978 - DEBUG - Fechando comanda com ID: 67a7a1f6311e319ee5a51cf0
 2025-02-16 20:57:50,113 - INFO - Comanda 67a7a1f6311e319ee5a51cf0 fechada com sucesso.
 2025-02-16 20:57:50,113 - INFO - Comanda 67a7a1f6311e319ee5a51cf0 fechada com sucesso.
-2025-02-16 20:57:58,846 - DEBUG - Listando comandas - p�gina: 1, limite: 10, status: None, cliente_id: None
-2025-02-16 20:57:58,846 - DEBUG - Listando comandas - p�gina: 1, limite: 10, status: None, cliente_id: None
+2025-02-16 20:57:58,846 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-16 20:57:58,846 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
 2025-02-16 20:57:58,973 - INFO - Listagem de comandas retornou 1 comandas (total: 1)
 2025-02-16 20:57:58,973 - INFO - Listagem de comandas retornou 1 comandas (total: 1)
 2025-02-16 20:58:04,586 - DEBUG - Buscando comanda com ID: abertas
 2025-02-16 20:58:04,586 - DEBUG - Buscando comanda com ID: abertas
-2025-02-16 20:58:04,586 - WARNING - ID de comanda inv�lido: abertas
-2025-02-16 20:58:04,586 - WARNING - ID de comanda inv�lido: abertas
+2025-02-16 20:58:04,586 - WARNING - ID de comanda inválido: abertas
+2025-02-16 20:58:04,586 - WARNING - ID de comanda inválido: abertas
 2025-02-16 20:58:06,812 - DEBUG - Buscando comanda com ID: abertas
 2025-02-16 20:58:06,812 - DEBUG - Buscando comanda com ID: abertas
-2025-02-16 20:58:06,813 - WARNING - ID de comanda inv�lido: abertas
-2025-02-16 20:58:06,813 - WARNING - ID de comanda inv�lido: abertas
+2025-02-16 20:58:06,813 - WARNING - ID de comanda inválido: abertas
+2025-02-16 20:58:06,813 - WARNING - ID de comanda inválido: abertas
 2025-02-16 21:01:17,233 - DEBUG - Buscando comanda com ID: abertas
 2025-02-16 21:01:17,233 - DEBUG - Buscando comanda com ID: abertas
-2025-02-16 21:01:17,233 - WARNING - ID de comanda inv�lido: abertas
-2025-02-16 21:01:17,233 - WARNING - ID de comanda inv�lido: abertas
+2025-02-16 21:01:17,233 - WARNING - ID de comanda inválido: abertas
+2025-02-16 21:01:17,233 - WARNING - ID de comanda inválido: abertas
 2025-02-17 13:27:40,528 - INFO - API inicializada
 2025-02-17 13:27:40,528 - INFO - API inicializada
-2025-02-17 13:27:54,792 - DEBUG - Listando comandas - p�gina: 1, limite: 10, status: None, cliente_id: None
-2025-02-17 13:27:54,792 - DEBUG - Listando comandas - p�gina: 1, limite: 10, status: None, cliente_id: None
+2025-02-17 13:27:54,792 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-17 13:27:54,792 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
 2025-02-17 13:27:55,619 - INFO - Listagem de comandas retornou 1 comandas (total: 1)
 2025-02-17 13:27:55,619 - INFO - Listagem de comandas retornou 1 comandas (total: 1)
-2025-02-17 13:28:12,774 - DEBUG - Listando clientes - p�gina: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
-2025-02-17 13:28:12,774 - DEBUG - Listando clientes - p�gina: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-17 13:28:12,774 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-17 13:28:12,774 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
 2025-02-17 13:28:12,898 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
 2025-02-17 13:28:12,898 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
 2025-02-17 13:49:11,246 - DEBUG - Criando comanda para cliente_id: 67a7a0184bf90e1cd1f1f5eb
@@ -832,32 +832,32 @@ pymongo.errors.ServerSelectionTimeoutError: SSL handshake failed: dbtrabalho3per
 2025-02-17 13:49:11,312 - INFO - Cliente 67a7a0184bf90e1cd1f1f5eb encontrado com sucesso.
 2025-02-17 13:49:11,492 - INFO - Comanda 67b36887c6d860ffbffe430e criada com sucesso.
 2025-02-17 13:49:11,492 - INFO - Comanda 67b36887c6d860ffbffe430e criada com sucesso.
-2025-02-17 13:49:17,803 - DEBUG - Listando comandas - p�gina: 1, limite: 10, status: None, cliente_id: None
-2025-02-17 13:49:17,803 - DEBUG - Listando comandas - p�gina: 1, limite: 10, status: None, cliente_id: None
+2025-02-17 13:49:17,803 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-17 13:49:17,803 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
 2025-02-17 13:49:17,919 - INFO - Listagem de comandas retornou 2 comandas (total: 2)
 2025-02-17 13:49:17,919 - INFO - Listagem de comandas retornou 2 comandas (total: 2)
 2025-02-17 13:49:26,105 - DEBUG - Buscando comanda com ID: abertas
 2025-02-17 13:49:26,105 - DEBUG - Buscando comanda com ID: abertas
-2025-02-17 13:49:26,105 - WARNING - ID de comanda inv�lido: abertas
-2025-02-17 13:49:26,105 - WARNING - ID de comanda inv�lido: abertas
+2025-02-17 13:49:26,105 - WARNING - ID de comanda inválido: abertas
+2025-02-17 13:49:26,105 - WARNING - ID de comanda inválido: abertas
 2025-02-17 13:52:39,823 - DEBUG - Buscando comanda com ID: abertas
 2025-02-17 13:52:39,823 - DEBUG - Buscando comanda com ID: abertas
-2025-02-17 13:52:39,823 - WARNING - ID de comanda inv�lido: abertas
-2025-02-17 13:52:39,823 - WARNING - ID de comanda inv�lido: abertas
-2025-02-17 13:53:58,979 - DEBUG - Listando comandas - p�gina: 1, limite: 10, status: None, cliente_id: None
-2025-02-17 13:53:58,979 - DEBUG - Listando comandas - p�gina: 1, limite: 10, status: None, cliente_id: None
+2025-02-17 13:52:39,823 - WARNING - ID de comanda inválido: abertas
+2025-02-17 13:52:39,823 - WARNING - ID de comanda inválido: abertas
+2025-02-17 13:53:58,979 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-17 13:53:58,979 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
 2025-02-17 13:53:59,809 - INFO - Listagem de comandas retornou 2 comandas (total: 2)
 2025-02-17 13:53:59,809 - INFO - Listagem de comandas retornou 2 comandas (total: 2)
 2025-02-17 14:03:53,292 - DEBUG - Buscando comanda com ID: abertas
 2025-02-17 14:03:53,292 - DEBUG - Buscando comanda com ID: abertas
-2025-02-17 14:03:53,292 - WARNING - ID de comanda inv�lido: abertas
-2025-02-17 14:03:53,292 - WARNING - ID de comanda inv�lido: abertas
+2025-02-17 14:03:53,292 - WARNING - ID de comanda inválido: abertas
+2025-02-17 14:03:53,292 - WARNING - ID de comanda inválido: abertas
 2025-02-17 14:05:06,879 - DEBUG - Buscando comanda com ID: abertas
 2025-02-17 14:05:06,879 - DEBUG - Buscando comanda com ID: abertas
-2025-02-17 14:05:06,879 - WARNING - ID de comanda inv�lido: abertas
-2025-02-17 14:05:06,879 - WARNING - ID de comanda inv�lido: abertas
-2025-02-17 14:05:33,556 - DEBUG - Listando comandas - p�gina: 1, limite: 10, status: None, cliente_id: None
-2025-02-17 14:05:33,556 - DEBUG - Listando comandas - p�gina: 1, limite: 10, status: None, cliente_id: None
+2025-02-17 14:05:06,879 - WARNING - ID de comanda inválido: abertas
+2025-02-17 14:05:06,879 - WARNING - ID de comanda inválido: abertas
+2025-02-17 14:05:33,556 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-17 14:05:33,556 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
 2025-02-17 14:05:34,300 - INFO - Listagem de comandas retornou 2 comandas (total: 2)
 2025-02-17 14:05:34,300 - INFO - Listagem de comandas retornou 2 comandas (total: 2)
 2025-02-17 14:05:40,121 - DEBUG - Buscando cliente e mesa para a comanda com ID: 67b36887c6d860ffbffe430e
@@ -866,8 +866,8 @@ pymongo.errors.ServerSelectionTimeoutError: SSL handshake failed: dbtrabalho3per
 2025-02-17 14:05:40,311 - INFO - Dados encontrados para comanda 67b36887c6d860ffbffe430e: {'nome_cliente': 'GUI GUI', 'capacidade_mesa': 2}
 2025-02-17 14:09:11,739 - DEBUG - Buscando comanda com ID: abertas
 2025-02-17 14:09:11,739 - DEBUG - Buscando comanda com ID: abertas
-2025-02-17 14:09:11,739 - WARNING - ID de comanda inv�lido: abertas
-2025-02-17 14:09:11,739 - WARNING - ID de comanda inv�lido: abertas
+2025-02-17 14:09:11,739 - WARNING - ID de comanda inválido: abertas
+2025-02-17 14:09:11,739 - WARNING - ID de comanda inválido: abertas
 2025-02-17 14:16:22,471 - DEBUG - Buscando comanda com ID: 67b36887c6d860ffbffe430e
 2025-02-17 14:16:22,471 - DEBUG - Buscando comanda com ID: 67b36887c6d860ffbffe430e
 2025-02-17 14:16:23,166 - INFO - Comanda 67b36887c6d860ffbffe430e encontrada com sucesso.
@@ -876,8 +876,8 @@ pymongo.errors.ServerSelectionTimeoutError: SSL handshake failed: dbtrabalho3per
 2025-02-17 14:17:31,211 - DEBUG - Listando comandas abertas.
 2025-02-17 14:17:31,860 - INFO - Listagem de comandas abertas retornou 1 comandas.
 2025-02-17 14:17:31,860 - INFO - Listagem de comandas abertas retornou 1 comandas.
-2025-02-17 14:33:27,184 - DEBUG - Listando clientes - p�gina: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
-2025-02-17 14:33:27,184 - DEBUG - Listando clientes - p�gina: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-17 14:33:27,184 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
+2025-02-17 14:33:27,184 - DEBUG - Listando clientes - página: 1, limite: 10, nome: None, email: None, cpf: None, sort_by: None, sort_direction: 1
 2025-02-17 14:33:27,308 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
 2025-02-17 14:33:27,308 - INFO - Listagem de clientes retornou 2 clientes (total: 2)
 2025-02-17 14:33:45,914 - DEBUG - Criando comanda para cliente_id: 67a79fe84bf90e1cd1f1f5ea
@@ -888,31 +888,32 @@ pymongo.errors.ServerSelectionTimeoutError: SSL handshake failed: dbtrabalho3per
 2025-02-17 14:33:45,993 - INFO - Cliente 67a79fe84bf90e1cd1f1f5ea encontrado com sucesso.
 2025-02-17 14:33:46,195 - INFO - Comanda 67b372fad0cf22d22e439550 criada com sucesso.
 2025-02-17 14:33:46,195 - INFO - Comanda 67b372fad0cf22d22e439550 criada com sucesso.
-2025-02-17 14:33:53,130 - DEBUG - Listando comandas - p�gina: 1, limite: 10, status: None, cliente_id: None
-2025-02-17 14:33:53,130 - DEBUG - Listando comandas - p�gina: 1, limite: 10, status: None, cliente_id: None
+2025-02-17 14:33:53,130 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-17 14:33:53,130 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
 2025-02-17 14:33:53,247 - INFO - Listagem de comandas retornou 3 comandas (total: 3)
 2025-02-17 14:33:53,247 - INFO - Listagem de comandas retornou 3 comandas (total: 3)
 2025-02-17 14:34:02,370 - DEBUG - Listando comandas abertas.
 2025-02-17 14:34:02,370 - DEBUG - Listando comandas abertas.
 2025-02-17 14:34:02,431 - INFO - Listagem de comandas abertas retornou 2 comandas.
 2025-02-17 14:34:02,431 - INFO - Listagem de comandas abertas retornou 2 comandas.
-2025-02-17 14:34:26,475 - DEBUG - Listando comandas - p�gina: 1, limite: 10, status: None, cliente_id: None
-2025-02-17 14:34:26,475 - DEBUG - Listando comandas - p�gina: 1, limite: 10, status: None, cliente_id: None
+2025-02-17 14:34:26,475 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-17 14:34:26,475 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
 2025-02-17 14:34:26,697 - INFO - Listagem de comandas retornou 3 comandas (total: 3)
 2025-02-17 14:34:26,697 - INFO - Listagem de comandas retornou 3 comandas (total: 3)
 2025-02-17 14:34:39,179 - DEBUG - Buscando cliente e mesa para a comanda com ID: 67a79fe84bf90e1cd1f1f5ea
 2025-02-17 14:34:39,179 - DEBUG - Buscando cliente e mesa para a comanda com ID: 67a79fe84bf90e1cd1f1f5ea
-2025-02-17 14:34:39,252 - WARNING - Comanda n�o encontrada: 67a79fe84bf90e1cd1f1f5ea
-2025-02-17 14:34:39,252 - WARNING - Comanda n�o encontrada: 67a79fe84bf90e1cd1f1f5ea
-2025-02-17 14:34:47,963 - DEBUG - Listando comandas - p�gina: 1, limite: 10, status: None, cliente_id: None
-2025-02-17 14:34:47,963 - DEBUG - Listando comandas - p�gina: 1, limite: 10, status: None, cliente_id: None
+2025-02-17 14:34:39,252 - WARNING - Comanda não encontrada: 67a79fe84bf90e1cd1f1f5ea
+2025-02-17 14:34:39,252 - WARNING - Comanda não encontrada: 67a79fe84bf90e1cd1f1f5ea
+2025-02-17 14:34:47,963 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-17 14:34:47,963 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
 2025-02-17 14:34:48,086 - INFO - Listagem de comandas retornou 3 comandas (total: 3)
 2025-02-17 14:34:48,086 - INFO - Listagem de comandas retornou 3 comandas (total: 3)
 2025-02-17 14:35:01,377 - DEBUG - Buscando cliente e mesa para a comanda com ID: 67b372fad0cf22d22e439550
 2025-02-17 14:35:01,377 - DEBUG - Buscando cliente e mesa para a comanda com ID: 67b372fad0cf22d22e439550
 2025-02-17 14:35:01,557 - INFO - Dados encontrados para comanda 67b372fad0cf22d22e439550: {'nome_cliente': 'Kaynan', 'capacidade_mesa': 1}
 2025-02-17 14:35:01,557 - INFO - Dados encontrados para comanda 67b372fad0cf22d22e439550: {'nome_cliente': 'Kaynan', 'capacidade_mesa': 1}
-2025-02-17 14:35:15,374 - DEBUG - Listando comandas - p�gina: 1, limite: 10, status: None, cliente_id: None
-2025-02-17 14:35:15,374 - DEBUG - Listando comandas - p�gina: 1, limite: 10, status: None, cliente_id: None
+2025-02-17 14:35:15,374 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
+2025-02-17 14:35:15,374 - DEBUG - Listando comandas - página: 1, limite: 10, status: None, cliente_id: None
 2025-02-17 14:35:15,498 - INFO - Listagem de comandas retornou 3 comandas (total: 3)
 2025-02-17 14:35:15,498 - INFO - Listagem de comandas retornou 3 comandas (total: 3)
+
